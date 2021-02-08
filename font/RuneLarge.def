@@ -1,0 +1,12 @@
+﻿[FNT v2]
+fntversion = 2.00
+name = "RuneLarge"
+author = "Jagex"
+
+[Def]
+Type = truetype
+Size = 20,32
+Spacing = 1,3
+Offset = 0,0
+File = RuneLarge.ttf
+Blend = 1

@@ -1,0 +1,332 @@
+;<==========================>
+[Characters]
+;===========================ROW 1
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+Goku, stages/Goku.def
+Goku Legend SSJ, stages/Goku Legend SSJ.def
+Goku SSJ2, stages/Goku SSJ2.def
+Goku SSJ3, stages/Goku SSJ3.def
+Goku GT, stages/Goku GT.def
+Goku SSJ4, stages/Goku SSJ4.def
+Goku Deus, stages/Goku Deus.def
+Vegeta, stages/Vegeta.def
+Vegeta SSJ2, stages/Vegeta SSJ2.def
+Majin Vegeta SSJ2, stages/Majin Vegeta SSJ2.def
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+;===========================ROW 2
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+Vegeta Transform, stages/Vegeta Transform.def
+Vegeta GT, stages/Vegeta GT.def
+Vegeta SSJ4, stages/Vegeta SSJ4.def
+Mystic Gohan, stages/Mystic Gohan.def
+Gohan SSJ teen, stages/Gohan SSJ teen.def
+Gohan Z Sword, stages/Gohan Z Sword.def
+Gohan SSJ Z, stages/Gohan SSJ Z.def
+Trunks, stages/Trunks.def
+Trunks Sword, stages/Trunks Sword.def
+Trunks SSJ2, stages/Trunks SSJ2.def
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+;===========================ROW 3
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+Piccolo, stages/Piccolo.def
+Piccolo2, stages/Piccolo2.def
+PiccoloUB22, stages/PiccoloUB22.def
+Goten SSJ kid, stages/Goten SSJ kid.def
+Goten GT, stages/Goten GT.def
+Trunks SSJ kid, stages/Trunks SSJ kid.def
+Gotenks SSJ, stages/Gotenks SSJ.def
+Gotenks AF, stages/Gotenks AF.def
+Krillin, stages/Krillin.def
+Krillin Z, stages/Krillin Z.def
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+;===========================ROW 4
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+Tien, stages/Tien.def
+Yamcha, stages/Yamcha.def
+18, stages/18.def
+Recoome, stages/Recoome.def
+Ginyu, stages/Ginyu.def
+Frieza All Forms, stages/Frieza All Forms.def
+Frieza, stages/Frieza.def
+Mecha Frieza, stages/Mecha Frieza.def
+Android 16, stages/Android 16.def
+Android 17, stages/Android 17.def
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+;===========================ROW 5
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+Dr. Gero, stages/Dr. Gero.def
+cell 2ºfaze, stages/cell 2ºfaze.def
+Cell, stages/Cell.def
+babidi, stages/babidi.def
+Dabura, stages/Dabura.def
+Super Buu, stages/Super Buu.def
+Kid Buu, stages/Kid Buu.def
+Android 13, stages/Android 13.def
+Bojack, stages/Bojack.def
+Zangya, stages/Zangya.def
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+;===========================ROW 6
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+Bardock, stages/Bardock.def
+Bardock SSJ, stages/Bardock SSJ.def
+brolyn, stages/brolyn.def
+Broly, stages/Broly.def
+Broly LSSJ3, stages/Broly LSSJ3.def
+Limiter Cut Broly, stages/Limiter Cut Broly.def
+Pikkon, stages/Pikkon.def
+Master Roshi, stages/Master Roshi.def
+Jackie Chun, stages/Jackie Chun.def
+Majuub, stages/Majuub.def
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+;===========================ROW 7
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+Pan, stages/Pan.def
+Majin Buu, stages/Majin Buu.def
+Mr Satan, stages/Mr Satan.def
+GokuHR, stages/GokuHR.def
+ssjsongoku, stages/ssjsongoku.def
+SSJ3songoku, stages/SSJ3songoku.def
+Goku SSJ5, stages/Goku SSJ5.def
+Goku Damaged, stages/Goku Damaged.def
+Vegetto, stages/Vegetto.def
+Vegetto SSJ, stages/Vegetto SSJ.def
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+BLANK <NO CHARACTER>
+;===========================ROW 8
+Gogeta SSJ, stages/Gogeta SSJ.def
+Gogeta SSJ4, stages/Gogeta SSJ4.def
+Super Baby Vegeta, stages/Super Baby Vegeta.def
+Super 17, stages/Super 17.def
+Nuova Shenron, stages/Nuova Shenron.def
+Omega Shenron, stages/Omega Shenron.def
+Gogeta SSJ5, stages/Gogeta SSJ5.def
+randomselect
+seiya, stages/seiya.def
+Seiya de Pegaso II, stages/Seiya de Pegaso II.def
+Odin, stages/Odin.def
+Seiya Sagitario, stages/Seiya Sagitario.def
+Seiya de Pegaso v3, stages/Seiya de Pegaso v3.def
+Seiya Divino, stages/Seiya Divino.def
+shiryu, stages/shiryu.def
+Shiryu del Dragon II, stages/Shiryu del Dragon II.def
+shiryu3, stages/shiryu3.def
+Shiryu de Libra, stages/Shiryu de Libra.def
+Shiryu Divino, stages/Shiryu Divino.def
+hyogaman, stages/hyogaman.def
+;===========================ROW 9
+Hyoga del Cisne II, stages/Hyoga del Cisne II.def
+Hyoga del Cisne III, stages/Hyoga del Cisne III.def
+Hyoga de Acuario, stages/Hyoga de Acuario.def
+ikki, stages/ikki.def
+Ikki del Fenix II, stages/Ikki del Fenix II.def
+Phoenix, stages/Phoenix.def
+Ikki de Leo, stages/Ikki de Leo.def
+shundeandromeda, stages/shundeandromeda.def
+Shun de Andromeda II, stages/Shun de Andromeda II.def
+Shun de Andromeda III, stages/Shun de Andromeda III.def
+Shun de Virgo, stages/Shun de Virgo.def
+jabu, stages/jabu.def
+nachi, stages/nachi.def
+hydra, stages/hydra.def
+geki, stages/geki.def
+Ban de Leoncillo, stages/Ban de Leoncillo.def
+mu, stages/mu.def
+aldebaran, stages/aldebaran.def
+aioria, stages/aioria.def
+Aioros de Sagitario, stages/Aioros de Sagitario.def
+;===========================ROW 10
+cancer, stages/cancer.def
+camus, stages/camus.def
+Dohko de Libra Tecla 2000, stages/Dohko de Libra Tecla 2000.def
+milo, stages/milo.def
+Shaka de Virgo Tecla 2000, stages/Shaka de Virgo Tecla 2000.def
+Shura de Capricornio Tecla 2000, stages/Shura de Capricornio Tecla 2000.def
+Afrodita28, stages/Afrodita28.def
+Shion de Aries, stages/Shion de Aries.def
+saga, stages/saga.def
+Saga de Geminis Genmaken, stages/Saga de Geminis Genmaken.def
+Saga Espectro, stages/Saga Espectro.def
+Sigfried de Doble Alfa, stages/Sigfried de Doble Alfa.def
+Hilda 3, stages/Hilda 3.def
+Hagen de Merak Beta, stages/Hagen de Merak Beta.def
+Fenrill de Ariotto Epsilon, stages/Fenrill de Ariotto Epsilon.def
+Mime de Eta de Bennet-Ash, stages/Mime de Eta de Bennet-Ash.def
+Bud de Alckor Zeta, stages/Bud de Alckor Zeta.def
+Cid de Mizar Zeta, stages/Cid de Mizar Zeta.def
+Alberich de Delta de Megres, stages/Alberich de Delta de Megres.def
+Tholl de Penta Gamma, stages/Tholl de Penta Gamma.def
+;===========================ROW 11
+Cavallodelmare, stages/Cavallodelmare.def
+Scylla1, stages/Scylla1.def
+krista, stages/krista.def
+Isaac de Kraken, stages/Isaac de Kraken.def
+Kaysa_de_Leumnades, stages/Kaysa_de_Leumnades.def
+Sorento de Sirene, stages/Sorento de Sirene.def
+tethys, stages/tethys.def
+kanon, stages/kanon.def
+poseidon, stages/poseidon.def
+Pegaso_Negro, stages/Pegaso_Negro.def
+dragonnegro, stages/dragonnegro.def
+Cisne Negro Devlin, stages/Cisne Negro Devlin.def
+PhoenixNero, stages/PhoenixNero.def
+Andromeda Negro, stages/Andromeda Negro.def
+Shadir, stages/Shadir.def
+Ushio, stages/Ushio.def
+Daichi, stages/Daichi.def
+Athena 2, stages/Athena 2.def
+kikijamir, stages/kikijamir.def
+Marin, stages/Marin.def
+;===========================ROW 12
+Tisifone, stages/Tisifone.def
+Afrodita Espectro, stages/Afrodita Espectro.def
+cancer_specter, stages/cancer_specter.def
+Camus de Acuario, stages/Camus de Acuario.def
+myu, stages/myu.def
+Shion de Aries Version Tecla 2000, stages/Shion de Aries Version Tecla 2000.def
+Shura Espectro Devlin, stages/Shura Espectro Devlin.def
+Aiacos de Garuda, stages/Aiacos de Garuda.def
+Minos de Grifon, stages/Minos de Grifon.def
+Radamanthys de Wyvern, stages/Radamanthys de Wyvern.def
+pandora, stages/pandora.def
+Orfeo de Lira Aquarius_no_Mauro, stages/Orfeo de Lira Aquarius_no_Mauro.def
+Kanon de Geminis Genmaken, stages/Kanon de Geminis Genmaken.def
+Hypnos, stages/Hypnos.def
+Thanatos, stages/Thanatos.def
+Shun de Hades, stages/Shun de Hades.def
+Hades, stages/Hades.def
+Seiya de Pegaso, stages/Seiya de Pegaso.def
+CDZ_Furious_Seiya, stages/CDZ_Furious_Seiya.def
+seiyahr, stages/seiyahr.def
+;===========================ROW 13
+tenma de pegaso, stages/tenma de pegaso.def
+AioliaHIRES, stages/AioliaHIRES.def
+Seiya Sin Casco, stages/Seiya Sin Casco.def
+Raditz, stages/Raditz.def
+Nappa, stages/Nappa.def
+Turles, stages/Turles.def
+Saibaman, stages/Saibaman.def
+Tapion, stages/Tapion.def
+Metal Cooler, stages/Metal Cooler.def
+Cooler, stages/Cooler.def
+Chiaotzu, stages/Chiaotzu.def
+Dende, stages/Dende.def
+Cell Jr, stages/Cell Jr.def
+Baby Vegeta, stages/Baby Vegeta.def
+Baby Tuffle, stages/Baby Tuffle.def
+Bulla, stages/Bulla.def
+kakarot, stages/kakarot.def
+vegeta_ssj4, stages/vegeta_ssj4.def
+Future Gohan, stages/Future Gohan.def
+Garlic Jr, stages/Garlic Jr.def
+;===========================ROW 14
+Lune de Balrog, stages/Lune de Balrog.def
+Zeros de Frog, stages/Zeros de Frog.def
+Giganto de Cyclope, stages/Giganto de Cyclope.def
+Lucifer, stages/Lucifer.def
+Albafica, stages/Albafica.def
+Apolo, stages/Apolo.def
+Arles_Saga, stages/Arles_Saga.def
+Argol de Perseo, stages/Argol de Perseo.def
+misty, stages/misty.def
+Ohko, stages/Ohko.def
+puipui, stages/puipui.def
+Zarbon, stages/Zarbon.def
+pegasus, stages/pegasus.def
+GokuSD, stages/GokuSD.def
+GOHAN AF SSJ4, stages/GOHAN AF SSJ4.def
+Vegeta SSJ5, stages/Vegeta SSJ5.def
+Supreme Kai, stages/Supreme Kai.def
+Goku SSj3af, stages/Goku SSj3af.def
+Videl, stages/Videl.def
+Bulma2, stages/Bulma2.def
+;<==========================>
+[ExtraStages]
+stages/5picchi.def
+stages/abismodelhades.def
+stages/acheron.def
+stages/albert.def
+stages/aldebaran.def
+stages/arles.def
+stages/babelbg.def
+stages/Cascata_luxor_stage.def
+stages/GS_Leo_Temple.def
+stages/GW_Andromeda_Island.def
+stages/GW_Coliseum1.def
+stages/HS_Giudecca_Throne.def
+stages/SA_Death_Cliffs.def
+stages/SA_Lizard_Beach.def
+stages/caverne_hagen.def
+stages/Arctic.def
+stages/Baba_Arena.def
+stages/BardockStage.def
+stages/Capsule_Corp_HR.def
+stages/cataract.def
+stages/CELL_GAMES.def
+stages/City_Destroyed.def
+stages/City_Temple.def
+stages/Burning_Forest.def
+stages/HS_Aries_Temple.def
+stages/[betochac]_SFIII_NG_Gill.def
+stages/Earth_Rocks.def
+stages/GarlicJr-Lookout.def
+stages/inferno.def
+stages/kamehouse.def
+;<==========================>
+[Options]
+arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0
+team.maxmatches = 4,1,1,0,0,0,0,0,0,0
