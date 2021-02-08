@@ -1,0 +1,74 @@
+
+Moves of Cancer DeathMask (80% version by ElRoSSo and DeathMask)
+
+--------------------------
+
+Reversal (Energy grows by 500)
+B, c
+
+--------------------------
+
+SuperKnee
+F, F, a
+
+--------------------------
+
+Air Combo (energy -500)
+F, F, b
+
+--------------------------
+
+Running Slide
+F, F, c
+
+--------------------------
+
+Hyper Punch
+F, F, z
+
+--------------------------
+
+Fliyng kick (must be done in air)
+D, DF, F, x
+
+--------------------------
+
+Knock down kick (must be done in air)
+D, DF, F, a
+
+--------------------------
+
+3 Strike Combo (energy -200)
+D, DF, F, x
+
+--------------------------
+
+Kicks Combo  (energy -400)
+D, DB, B, y
+
+--------------------------
+
+High speed punch (energy -500)
+D, DF, F, y
+
+--------------------------
+
+Cancer Cosmo: attack and defense grows (energy -1000)
+D, DF, F, z
+
+--------------------------
+
+Dark World Waves version 1  (energy -1000)
+D, DF, F, a
+
+--------------------------
+
+Dark World Waves version 2  (energy -2000)
+D, DF, F, b
+
+--------------------------
+
+Dark World Waves version 3  (energy -3000)
+D, DF, F, c
+
+--------------------------

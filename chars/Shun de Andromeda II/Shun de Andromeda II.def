@@ -1,0 +1,45 @@
+;------------------------------------------------
+;Definition file Andromeda la Notte by TonyADV
+;------------------------------------------------
+
+; Player information
+[Info]
+name = "Andromeda la Notte"        
+displayname = "Shun" 
+versiondate = 28,10,2004    
+mugenversion = 04,14,2001 
+author = "TONY ADV & KingSeiya"         
+pal.defaults = 1,2,3,4,5,6,7    
+
+; Files for the player
+[Files]
+cmd     = andromeda.cmd   
+cns     = andromeda.cns   
+st      = andromeda.cns 
+stcommon = andromedaB.cns 
+sprite  = andromeda.sff   
+anim    = andromeda.air   
+sound   = andromeda.snd  
+pal1 = 000.act		;Hades Color		
+pal2 = 001.act		;Poseidon Color	
+pal3 = 002.act		;Deluxe Color	
+pal4 = 003.act		;First Cloth Color
+pal5 = 004.act		;Black Saint Color		 
+pal6 = 005.act		;Spectre Color		
+pal7 = 006.act		;Gold Color
+
+[Arcade]
+intro.storyboard =  ;introend\intro.def
+ending.storyboard = ;introend\end.def
+
+;-------------------------------------------------
+;-------------------------------------------------
+;Special Thanks
+;King Seiya For original Concept and Design
+;Author FirstCloth version: Kalangueb & Gouketsu
+;-------------------------------------------------
+;-------------------------------------------------
+
+
+
+

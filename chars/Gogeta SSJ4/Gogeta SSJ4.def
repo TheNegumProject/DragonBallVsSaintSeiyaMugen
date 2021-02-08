@@ -1,0 +1,29 @@
+;...........................................................................................
+[Info]
+name ="gogeta ssj4 evolution by franciynaldo"
+displayname ="Gogeta SSJ4"
+versiondate =15,05,2009
+mugenversion =14,04,2002
+author ="FRS GAMES"
+pal.defaults =1,2
+[Files]
+cmd =gogetassj4.cmd
+cns =gogetassj4.cns
+st  =gogetassj4.cns
+stcommon =common1.cns
+sprite =gogetassj4.sff
+anim  =gogetassj4.air
+sound =gogetassj4.snd
+pal1=1.act
+pal2=2.act
+
+[Arcade]
+intro.storyboard =
+ending.storyboard=final/final.def
+
+;...........................................................................................
+
+                                ; Feito no Brasil           
+;                              Autor: equipe FRS GAMES
+
+;[[[[[[[[[[[[[[[[[[[[[[E-mail& msn: superkakarotto@hotmail.com]]]]]]]]]]]]]]]]]]]]]]]]]]]]]

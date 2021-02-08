@@ -1,0 +1,29 @@
+[Info]
+name="Hyoga de Cisne"
+DisplayName="Cisne Negro" 
+mugenversion =01,01,2002   
+author ="Tecla2000"
+versiondate=11/11/2006
+pal.defaults=1,2,3,4,5
+
+;------- Los sprit y algo de la programacion pertenecen a Terric & YoungZac, base de la programacion del chars Shiryu.
+
+[Files]
+cmd=CisneNegro.cmd
+cns=CisneNegro.cns
+st=CisneNegro.cns
+stcommon=CisneNegro2.cns
+sprite=CisneNegro.sff
+anim=CisneNegro.air
+sound=CisneNegro.snd
+pal1=CisneNegro.act
+pal2=CisneNegro.act
+
+
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;intro.storyboard = Filme\Intro\cisneintro.def
+;ending.storyboard = Filme\hyogaending.def

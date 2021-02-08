@@ -1,0 +1,3 @@
+usar pierna izquierda del sprite 49
+ponerle el pie del sprite 94syd
+insertar esa pierna en el del 49 pegado con el pie del 94syd en el sprite 94.pcx

@@ -1,0 +1,20 @@
+[Info]
+name="Hagen"
+DisplayName="Hagen" 
+mugenversion = 01,04,2000   
+author = "tmich & voldiar" "Son: genmaken" "modif:hades81"
+
+[Files]
+cmd=Hagen.cmd
+cns=Hagen.cns
+st=Hagen.cns
+stcommon=Hagen2.cns
+sprite=Hagen.sff
+anim=Hagen.air
+sound=hagen.snd
+pal1=Hagen.act
+;pal2=Hagen2.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

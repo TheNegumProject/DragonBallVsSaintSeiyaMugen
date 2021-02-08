@@ -1,0 +1,19 @@
+;-| Super|--------------------------------------------------------
+;---------------------------
+Poder 1: B, DB, D, DF, F, a  power >= 1000
+;---------------------------
+Poder 2: B, DB, D, DF, F, a  power >= 3000
+;---------------------------
+;---------------------------
+;Cosmo carga: b+c
+;---------------------------
+Fireball 1: D, DF, F, a
+;---------------------------
+Fireball 2: D, DF, F, b
+;---------------------------
+Teleportation: U power >= 1000
+
+By caballeropirata: 
+
+Conclusion el char: 50 %
+Falta: mejorar siendo golpeado sprites (varios sprites) darle un retoque a los poderes y mas poderes

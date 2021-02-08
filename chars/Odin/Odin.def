@@ -1,0 +1,23 @@
+[Info]
+name="odin"
+DisplayName="Odin"    
+versiondate =11,27,2005    
+mugenversion =11,29,2000   
+author ="Mey_z (Original: Seiya)" 
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd=odin.cmd
+cns=odin.cns
+st=odin.cns
+stcommon=odin2.cns
+sprite=odin.sff
+anim=odin.air
+sound=odin1.snd
+pal1=odin1.act
+pal2=odin1.act
+pal3=odin1.act
+pal4=odin1.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

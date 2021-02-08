@@ -1,0 +1,31 @@
+[Info]
+name="Baian"        
+displayname="Cavallo del Mare" 
+versiondate=01,11,2003    
+mugenversion=04,14,2001  
+author="TonyADV (Tony World S.r.L.)" 
+pal.defaults=1,2,3,4,5,6,7,8,9  
+
+[Files]
+cmd=baian.cmd   
+cns=baian.cns 
+st=baian.cns  
+st2=baian3.cns
+stcommon=baian2.cns 
+sprite=baian.sff   
+anim=baian.air   
+sound=baian.snd
+pal1=normal.act
+pal2=normalnew1.act
+pal3=invert.act
+pal4=normalnew0.act
+pal5=surplix.act
+pal6=normalnew2.act
+pal7=marine.act
+pal8=dragon.act
+pal9=goldsaint.act
+
+
+[Arcade]
+intro.storyboard=baianintro.def
+ending.storyboard=baianending.def

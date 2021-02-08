@@ -1,0 +1,33 @@
+/--------------------------\
+)    	Saint Seiya        (  
+)	 Mythologie        (
+)	   Mugen 	   (
+)                          (
+)  Tehar Magellan Tristane (
+\--------------------------/
+
+; Information of the chars
+[Info]
+name="Geki"
+displayname="Geki de L'OUrs"
+versionchars="beta"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+pal.defaults=1
+
+
+; Files for the player
+[Files]
+cmd=Gekicmd.cmd
+cns=Gekicns.cns
+st=Gekicns.cns
+stcommon=Gekicom.cns
+sprite=Geki.sff
+anim=Gekiair.air
+sound=Geki.snd
+pal1=GekiBronce1.act
+pal2=GekiBronce2.act
+
+[Arcade]
+intro.storyboard= gekiintro.def
+ending.storyboard=

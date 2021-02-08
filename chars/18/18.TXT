@@ -1,0 +1,165 @@
+Jinzoningen Juuhachigou(#18) by XCB
+
+***************************[READ FIRST]***************************[7/17/05]
+This is an unfinished beta. She will never be finished. Do whatever the fuck you want with
+this character, I don't care.
+
+Do not e-mail me about this character or about ANYTHING MUGEN related. This is not a comeback.
+This is a "I'm-doing-this-so-you'll-leave-me-the-fuck-alone" release. Fuck the MUGEN community.
+
+I am not doing the same thing with Silent Storm and Jill. Don't even ask.
+
+If you want to fix it/finish it/use coding from it/change the authorname and say it's yours, I don't fucking care.
+
+If you think this character sucks, you're not obligated to keep it. I didn't do this for you.
+
+These characters are released on the condition that I no longer be bother by leechers. If this condition is broken, they will be removed and you're back to bitching about it on request forums.
+
+I fixed the SFF, So it will work with DOS and WinMUGEN. Don't bother thanking me.
+
+-XCB (formerly Big Eli King)
+
+Number 18 by Big Eli_________________________
+To install the character (about everyone knows how to do this, this is just 
+for newbies) extract the files into the directory "chars\18\" and open
+select.cfg and add the line:"18, stages/_______.def" 
+
+What's new?________________________________________________________________
+What do you think?
+
+Gameplay Overview__________________________________________________________
+
+
+Use special moves and combos to build your meter. Energy attacks are free to use. Charging not in play. Guard Cancels in play. Roman Cancels in play. Flight Resrictions: You can fly at will, but you can only spend a limited time in the air before being forced to land. Once you land from flying, you cannot fly again until you hear a chime and see the words "FLIGHT OK".
+
+Brief definition of game systems:
+
+Charging: You can use this to build up your power meter manually. 
+
+Hyper Battle: If you get tech hitted during a throw attempt, you and your opponent will engage in a high-speed battle. During this time, both players must press buttons as fast as possible. Whoever has the most button presses during the battle time will have the opponent at their mercy. 
+
+Guard Cancels: If you have 1 1/2 levels of power, you can cancel a guard into certain specials.
+
+Roman Cancels: Just like in GGX, use it to interrupt any move, including specials.
+
+Moves Key_________________________________________________________________
+
+F=forward
+B=back 
+U=up
+D=Down
+x=weak punck
+y=medium punch
+z=strong punch
+a=weak kick
+b=medium kick
+c=strong kick
+
+
+Normal Moves_______________________________________________________________
+
+Dash - Double tap F
+-Get there quick, fast, and in a hurry! Can dash in the air.
+
+Hop Back - Double tap B
+-Evasive manuever. In the air, it's a back dash.
+
+Spine Breaker - F or B+y/z
+-18 flips over opponent and slams them hard into the pavement. Throws them in front of you.
+
+Leg Lift - F or B+b/c
+-18 slams you with her leg. Throws opponent behind you.
+
+(B only)Charge - Hold z+c
+-Build your power meter up
+
+Fly - y+b
+-Take to the skies for an aerial assault. Use the same command to fall back down. Each groove has different 'flight restrictions'.
+
+Razz - Start
+-18 will call her foe out.
+
+Guard Cancel - Perform a move marked with (GC) while guarding - need 1 1/2 levels to use
+-Suprise your opponent with a counter attack
+
+Roman Cancel - a+y+c - Need 1 level to use
+-Interrupt any attack move. Makes for some interesting combo possibilities.
+
+
+Special Moves__________________________________________________________
+
+(GC)Energy Blast - D,DF,F,punch
+-Your basic fireball.  Can be done in air.
+
+(GC)Rocket Kick - F,D,DF,kick
+-Anti-air.
+
+Missile Kick - D,DF,F,kick in air
+-A Quick Diving Attack
+
+Twin Moons - F,D,DF,punch
+-An overhead chop followed by a somersault kick. First hit cannot be blocked low.
+
+Android Blitz - F,DF,D,DB,B,punch
+-I know she's not a true android, but I couldn't think of a better name.
+
+Meteo Attacks___________________________________________________
+
+Android Assault - Level 1 - D,DB,B,D,DB,B,punch
+-An upgraded Android Blitz
+
+Power Blitz - Level 1 - D,DB,B,F,punch(Slow) or kick(Fast)
+-18 shoots a forceful blast that will blow her opponent across the arena. Slow and easy to see coming, but potent. 
+
+Energy Field - Level 1 - D,DF,F,D,DF,F,punch
+-Her weakest ground Super, but also the fastest and easiest to combo. A Kikosho-type attack inspired by Budokai. Somewhat close range.
+
+18 Finale - Level 2 - D,DB,B,DB,D,DF,F,kick
+-Her super from Super Battle. It's a throw, so you must be close to connect. Unblockable. You cannot combo it.
+
+Energy Rain - Level 1 -  D,DF,F,D,DF,F,punch in air 
+-18 fires a volley of energy shots that home on you. A bit weak, but can set up some nasty combos.
+
+Aerial Power Blitz - Level 1 - D,DB,B,F,punch 
+-Same as ground version. But in the air. Faster than ground version.
+
+Fighting tips_______________________________________________________________
+18's air fireballs can hit grounded opponents. Quite a handy technique, especially when you've put the opponent on their back. ;)
+
+You can tell who's winning the Hyper Battle by the direction the fight is going. If you're being pushed backwards, it's not a good sign.
+
+On that note, 18 is in a more compromising position if she loses a Hyper Battle, so TAP THOSE BUTTONS!
+
+The Aerial Power Blitz fires slightly faster than the Ground power blitz, but has a longer lag time afterward.
+
+Roman cancels are great for making some insane combos.... just be sure to only use them when you can't cancel a move any other way.
+
+Known Issues____________________________________________________
+Hyper Battle may not look correct with everyone. It will still work.
+
+Plans for next version____________________________________________________
+Fuck you.
+
+Thanks______________________________________________________________________
+To FlowaGirl, for the UB22 18 sounds, the beam charge effect, and for inspiration. 
+
+To Pneophen for the Special attack hit sound effect.
+
+To Daria, I used his fly code combined with FlowaGirl's as a reference, and for inspiring me with Vegeta.
+
+To Rikard, for the effect used in the Rocket/Missle Kicks.
+
+To Chotto-Komaru, for the inspiration to do the effects in this manner.
+
+To [Judas], for helping me with some editing.
+
+To LegatoB, HoShin.... oops, ShoShingo, and Rabite, my beta testers.
+
+To Banpresto, for making the original game.
+
+To Akira Toriyama for not making Bulma(annoying slut) and Chi-Chi(annoying slut #2) the only two women in the series. o_O Okay, Videl is kinda cool, too.
+
+To NeOcIdE for the Destructo Disc graphic.
+
+
+

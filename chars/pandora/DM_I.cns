@@ -1,0 +1,743 @@
+;----------------------------------------------------------------------------------------------------------------------------------
+
+
+; specialJ a (HCB*2+Kick )
+[Statedef 3800]
+type    = S
+movetype = A
+physics = S
+juggle  = 4
+poweradd = 90
+velset = 0,0
+anim = 3800
+ctrl = 0
+
+
+[State 3800, 0]
+type = explod
+trigger1 = AnimElem = 3
+anim = 7030
+pos = 20,-73
+postype = p1
+sprpriority = 3
+supermove = 1
+bindtime = 1
+
+[State 3800, 0]
+type = explod
+trigger1 = AnimElem = 3
+anim = 7030
+pos = -39,-68
+postype = p1
+sprpriority = 3
+supermove = 1
+bindtime = 1
+
+[State 3800, 1]
+type = PowerAdd
+trigger1 = animelem = 6
+value = -1000
+
+[State 3800, 2]
+type = SuperPause
+trigger1 = animelem = 3
+pos = -15, -80
+anim = 31
+;movetime = 30
+
+[State 3800, 3]
+type = PlaySnd
+trigger1 = animelem = 3
+value = s4, 22
+
+[State 3800, 4]
+type = AfterImage
+trigger1 = Time = 1
+time = 2
+
+[State 3800, 5]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3800, 6]
+type = EnvColor
+trigger1 = animelem = 2
+value = 245,245,245
+time = 2
+
+
+
+[State 3800, varset ]
+type = Varset
+trigger1 = time = 0
+v = 5
+persistent = 0
+value = 1
+
+
+[State 3800, Helper]
+type = Helper
+trigger1 = AnimElem = 17,[0,28]
+persistent = 3
+helpertype = normal
+name = "3801"
+id = 3801
+postype = p1
+pos = 0 ,-90
+stateno = 3801 + (random % 2)
+keyctrl = 0
+ownpal = 1
+supermovetime = 1000
+size.xscale = 0.5
+size.yscale = 0.5
+
+
+[State 3800, 1]
+type = PlaySnd
+trigger1 = animelem = 8
+value = s7, 3
+
+[State 3800, 1]
+type = PlaySnd
+trigger1 = animelem = 3
+value = s4, 1
+
+[State 3800, 1]
+type = PlaySnd
+trigger1 = animelem = 9,=3
+value = s8, 0
+
+[State 3800, 6]
+type = Projectile
+trigger1 = AnimElem = 15
+projanim = 7020
+projremovetime = 9
+projpriority = 5
+projshadow = -1
+offset = 0,-80
+velocity = 0,-2
+attr = S, SP
+
+[State 3800, 9]
+type = changestate 
+trigger1 = animtime = 0 
+value = 0
+ctrl = 1 
+
+;----------------------------------------------------
+
+
+;3801 helper start
+[Statedef 3801]
+type    = A
+movetype = A
+physics = N
+ctrl = 0
+velset = 0,0,0
+juggle = 3
+anim = 1091
+hitcountpersist = 1
+
+[State 3801, 2]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 3801, Super D]
+type = AfterImage
+trigger1 = Time = 0
+time = 2
+PalBright   =   50,  50,  50
+PalContrast = 50,50,50
+PalAdd      =  5,5,5
+PalMul      = .6,.6,.6
+trans = add
+
+[State 3801, Super E]
+type = AfterImageTime
+trigger1 = Time = [0,4000]
+time = 2
+
+[State 3801, varset ]
+type = Varset
+trigger1 = BackEdgeDist < 10 || Pos Y < -220
+v = 5
+persistent = 0
+value = 3
+
+[State 3801, 1]
+type = HitOverride
+trigger1 = time = 0
+time = -1
+attr = SCA, AA, AT, AP
+slot = 0
+stateno = 1099
+
+[State 3801, 2]
+type = sprpriority
+trigger1 = Time >= 18
+value = 1
+
+[State 3801, 112]
+type = velset
+trigger1 = time >= 0 && (BackEdgeDist >= 10 || Pos Y >= -220)
+y = -1.5
+x = -2
+
+[State 3801, 112]
+type = veladd
+trigger1 = time >= 0 && (BackEdgeDist >= 10 || Pos Y >= -220)
+y = 0.1
+x = -0.1
+
+[State 3801, 112]
+type = velmul
+trigger1 = BackEdgeDist <= 10
+x = 0.1
+y = 0.1
+
+[State 3801, 112]
+type = velmul
+trigger1 = Pos Y <= -220
+y = 0.1
+x = 0.1
+
+
+[State 3801, 112]
+type = velset
+trigger1 = time > 0 && var(5) = 3; && (BackEdgeDist >= 10 || Pos Y >= -220)
+y = ((sin(0.15*time))*(0.002*(time**2)))*0.3 ;(sin(time**2))*0.4*(0.2*time)
+x = 2.05-(1.0/(0.09*time));0.5*((0.1*time)**2)
+
+[State 3801, 112]
+type = velset
+trigger1 = ScreenPos Y <= 5 || Pos Y >= -5
+y = -1.1*(vel Y)
+x = 1.05*(vel X)
+
+[State 3801, 112]
+type = velset
+trigger1 = ScreenPos X <= 5 || ScreenPos X >= 315
+x = -1.1*(vel X)
+y = 1.05*(vel Y)
+
+[State 3801,NotHitBy]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 100
+
+[State 3801, 2]
+type = HitDef
+trigger1 = time = 0 && hitcount <= 12
+attr = A, HP
+animtype  = medium
+damage    = 25,3
+getpower = 60
+givepower = 20
+guardflag = MA
+hitflag = MAFDP
+pausetime = 0,12
+sparkno = S8012
+guard.sparkno = S8002
+sparkxy = 30,-5
+hitsound   = s8,0
+guardsound = s4,7
+ground.type = high
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -6
+air.animtype = Back
+air.velocity = -3,-6
+air.fall = 1
+down.velocity = -3,-6
+down.hittime = 30
+down.bounce = 0
+fall.recovertime = 100
+fall.recover = 0
+
+[State 3801, varset ]
+type = Varset
+trigger1 = time = 100
+v = 5
+persistent = 0
+value = 1
+
+[State 3801, 1]
+type = ChangeState
+trigger1 = movecontact = 1 || time >= 240
+value = 1099
+ctrl = 0
+
+
+
+
+
+;3802 helper start
+[Statedef 3802]
+type    = A
+movetype = A
+physics = N
+ctrl = 0
+velset = 0,0,0
+juggle = 3
+anim = 1091
+hitcountpersist = 1
+
+[State 3802, 2]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 3802, Super D]
+type = AfterImage
+trigger1 = Time = 0
+time = 2
+PalBright   =   50,  50,  50
+PalContrast = 50,50,50
+PalAdd      =  5,5,5
+PalMul      = .6,.6,.6
+trans = add
+
+[State 3802, Super E]
+type = AfterImageTime
+trigger1 = Time = [0,4000]
+time = 2
+
+[State 3802, 1]
+type = HitOverride
+trigger1 = time = 0
+time = -1
+attr = SCA, AA, AT, AP
+slot = 0
+stateno = 1099
+
+[State 3802, 2]
+type = sprpriority
+trigger1 = Time >= 18
+value = 1
+
+
+[State 3802, 112]
+type = velset
+trigger1 = time > 0
+x = (((sin(0.15*time))*(0.15*time))*0.5) ;4*(sin(0.1*time)) + 0.5*((0.1*time))
+y = (((cos(0.15*time))*(0.15*time))*0.5); 4*(cos(0.1*time))
+
+[State 3802,NotHitBy]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 100
+
+[State 3802, 112]
+type = velset
+trigger1 = ScreenPos Y <= 5 || Pos Y >= -5
+y = -1.1*(vel Y)
+x = 1.05*(vel X)
+
+[State 3802, 112]
+type = velset
+trigger1 = ScreenPos X <= 5 || ScreenPos X >= 315
+x = -1.1*(vel X)
+y = 1.05*(vel Y)
+
+[State 3802, 2]
+type = HitDef
+trigger1 = time = 0 && hitcount <= 12
+attr = A, HP
+animtype  = medium
+damage    = 30,3
+getpower = 60
+givepower = 20
+guardflag = MA
+hitflag = MAFDP
+pausetime = 0,12
+sparkno = S8012
+guard.sparkno = S8002
+sparkxy = 30,-5
+hitsound   = s8,0
+guardsound = s4,7
+ground.type = high
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -6
+air.animtype = Back
+air.velocity = -3,-6
+air.fall = 1
+down.velocity = -3,-6
+down.hittime = 30
+down.bounce = 0
+fall.recovertime = 100
+fall.recover = 0
+
+[State 3802, varset ]
+type = Varset
+trigger1 = time = 100
+v = 5
+persistent = 0
+value = 1
+
+[State 3802, 1]
+type = ChangeState
+trigger1 = movecontact = 1 || time >= 420
+value = 1099
+ctrl = 0
+
+
+
+;3803 helper start
+[Statedef 3803]
+type    = A
+movetype = A
+physics = N
+ctrl = 0
+velset = 0,0,0
+juggle = 3
+anim = 1091
+hitcountpersist = 1
+
+[State 3803, 2]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 3803, Super D]
+type = AfterImage
+trigger1 = Time = 0
+time = 2
+PalBright   =   50,  50,  50
+PalContrast = 50,50,50
+PalAdd      =  5,5,5
+PalMul      = .6,.6,.6
+trans = add
+
+[State 3803, Super E]
+type = AfterImageTime
+trigger1 = Time = [0,4000]
+time = 2
+
+[State 3803, 1]
+type = HitOverride
+trigger1 = time = 0
+time = -1
+attr = SCA, AA, AT, AP
+slot = 0
+stateno = 1099
+
+[State 3803, 2]
+type = sprpriority
+trigger1 = Time >= 18
+value = 1
+
+
+[State 3803, 112]
+type = velset
+trigger1 = time > 0
+x = 3*(sin(0.1*time)) + 0.5*((0.1*time))
+y = 4*(cos(0.1*time))
+
+[State 3803, 112]
+type = velset
+trigger1 = ScreenPos Y <= 5 || Pos Y >= -5
+y = -1.1*(vel Y)
+x = 1.05*(vel X)
+
+[State 3803, 112]
+type = velset
+trigger1 = ScreenPos X <= 5 || ScreenPos X >= 315
+x = -1.1*(vel X)
+y = 1.05*(vel Y)
+
+[State 3803,NotHitBy]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 100
+
+[State 3803, 2]
+type = HitDef
+trigger1 = time = 0 && hitcount <= 12
+attr = A, HP
+animtype  = medium
+damage    = 30,3
+getpower = 60
+givepower = 20
+guardflag = MA
+hitflag = MAFDP
+pausetime = 0,12
+sparkno = S8012
+guard.sparkno = S8002
+sparkxy = 30,-5
+hitsound   = s8,0
+guardsound = s4,7
+ground.type = high
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -6
+air.animtype = Back
+air.velocity = -3,-6
+air.fall = 1
+down.velocity = -3,-6
+down.hittime = 30
+down.bounce = 0
+fall.recovertime = 100
+fall.recover = 0
+
+[State 3803, varset ]
+type = Varset
+trigger1 = time = 100
+v = 5
+persistent = 0
+value = 1
+
+[State 3803, 1]
+type = ChangeState
+trigger1 = movecontact = 1 || time >= 360
+value = 1099
+ctrl = 0
+
+
+
+
+
+;3804 helper start
+[Statedef 3804]
+type    = A
+movetype = A
+physics = N
+ctrl = 0
+velset = (random % 4)+1,(random % 4)+1
+juggle = 3
+anim = 1091
+
+[State 3804, 2]
+type = AssertSpecial
+trigger1 = 1
+flag = NoShadow
+
+[State 3804, Super D]
+type = AfterImage
+trigger1 = Time = 0
+time = 2
+PalBright   =   50,  50,  50
+PalContrast = 50,50,50
+PalAdd      =  5,5,5
+PalMul      = .6,.6,.6
+trans = add
+
+[State 3804, Super E]
+type = AfterImageTime
+trigger1 = Time = [0,4000]
+time = 2
+
+[State 3804, 1]
+type = HitOverride
+trigger1 = time = 0
+time = -1
+attr = SCA, AA, AT, AP
+slot = 0
+stateno = 1099
+
+[State 3804, 2]
+type = sprpriority
+trigger1 = Time >= 18
+value = 1
+
+[State 3804, 112]
+type = velset
+trigger1 = ScreenPos Y <= 5 || Pos Y >= -5
+y = -1.1*(vel Y)
+x = 1.05*(vel X)
+
+[State 3804, 112]
+type = velset
+trigger1 = ScreenPos X <= 5 || ScreenPos X >= 315
+x = -1.1*(vel X)
+y = 1.05*(vel Y)
+
+[State 3804,NotHitBy]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 100
+
+[State 3804, 2]
+type = HitDef
+trigger1 = time = 0
+attr = A, SP
+animtype  = medium
+damage    = 48,5
+getpower = 60
+givepower = 20
+guardflag = MA
+hitflag = MAFDP
+pausetime = 0,12
+sparkno = S8012
+guard.sparkno = S8002
+sparkxy = 30,-5
+hitsound   = s8,0
+guardsound = s4,7
+ground.type = high
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -6
+air.animtype = Back
+air.velocity = -3,-6
+air.fall = 1
+down.velocity = -3,-6
+down.hittime = 30
+down.bounce = 0
+fall.recovertime = 100
+fall.recover = 0
+
+[State 3804, 10]
+type = ChangeState
+trigger1 = movecontact = 1 || time >= 2400 || vel X > 18 || vel Y > 17 || vel X < -18 || vel Y < -17
+value = 1099
+ctrl = 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+;----------------------------------------------------------------------------------------------------------------------------------
+
+
+; specialJ B (HCB*2+Kick )
+[Statedef 3850]
+type    = S
+movetype = A
+physics = S
+juggle  = 4
+poweradd = 90
+velset = 0,0
+anim = 3800
+ctrl = 0
+
+
+[State 3850, 0]
+type = explod
+trigger1 = AnimElem = 3
+anim = 7030
+pos = 20,-73
+postype = p1
+sprpriority = 3
+supermove = 1
+bindtime = 1
+
+[State 3850, 0]
+type = explod
+trigger1 = AnimElem = 3
+anim = 7030
+pos = -39,-68
+postype = p1
+sprpriority = 3
+supermove = 1
+bindtime = 1
+
+[State 3850, 1]
+type = PowerAdd
+trigger1 = animelem = 6
+value = -2000
+
+[State 3850, 2]
+type = SuperPause
+trigger1 = animelem = 3
+pos = -15, -80
+anim = 31
+;movetime = 30
+
+[State 3850, 3]
+type = PlaySnd
+trigger1 = animelem = 3
+value = s4, 22
+
+[State 3850, 4]
+type = AfterImage
+trigger1 = Time = 1
+time = 2
+PalBright   =   0,  0,  0
+PalContrast = 120,120,220
+PalAdd      =  0,0,0 ;29, 29, 29
+PalMul      = .77,.77,.77
+trans = add
+
+[State 3850, 5]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3850, 6]
+type = EnvColor
+trigger1 = animelem = 2
+value = 245,245,245
+time = 2
+
+
+
+[State 3850, varset ]
+type = Varset
+trigger1 = time = 0
+v = 5
+persistent = 0
+value = 1
+
+
+[State 3850, Helper]
+type = Helper
+trigger1 = AnimElem = 17,[0,38]
+persistent = 2
+helpertype = normal
+name = "3801"
+id = 3801
+postype = p1
+pos = 0 ,-90
+stateno = 3801 + (random % 4)
+keyctrl = 0
+ownpal = 1
+supermovetime = 1000
+size.xscale = 0.5 ;+0.05*(random % 10)
+size.yscale = 0.5 ;+0.05*(random % 10)
+
+
+[State 3850, 1]
+type = PlaySnd
+trigger1 = animelem = 8
+value = s7, 3
+
+[State 3850, 1]
+type = PlaySnd
+trigger1 = animelem = 3
+value = s4, 1
+
+[State 3850, 1]
+type = PlaySnd
+trigger1 = animelem = 9,=3
+value = s8, 0
+
+[State 3850, 6]
+type = Projectile
+trigger1 = AnimElem = 15
+projanim = 7020
+projremovetime = 9
+projpriority = 5
+projshadow = -1
+offset = 0,-80
+velocity = 0,-2
+attr = S, SP
+
+[State 3850, 9]
+type = changestate 
+trigger1 = animtime = 0 
+value = 0
+ctrl = 1 

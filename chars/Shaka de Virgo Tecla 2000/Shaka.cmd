@@ -1,0 +1,1027 @@
+;--------------------------------------------------------------------------
+;                     Shaka De
+;                      Virgo
+;--------------------------------------------------------------------------
+
+;-| Super Motions |--------------------------------------------------------
+[Command]
+name = "dmmove1_x"
+command = ~D, DF, F, D, DF, F, x
+time = 30
+
+[Command]
+name = "dmmove1_y"
+command = ~D, DF, F, D, DF, F, y
+time = 30
+
+;--------------------------------------------------------------------------
+
+; Redencion al Demonio Celestial
+[Command]
+name = "tenma_Kofuku"
+command = F, DF, D, DB, B, a
+time = 45
+
+; Redencion al Demonio Celestial2
+[Command]
+name = "tenma_Kofuku2"
+command = F, DF, D, DB, B, c
+time = 45
+
+; Ruptura de Espiritus Demoniacos
+[Command]
+name = "tenkuuhaja_Chimimouryouho"
+command = F, DF, D, DB, b
+time = 45
+
+;caida a los infiernos
+[Command]
+name = "caida_infiernos"
+command = B, DB, D, DF, F, z
+time = 45
+;----------------------------------------------
+;Tesoro del cielo
+[Command]
+name = "tesoro_cielo"
+command = B, DB, D, DF, F, x
+time = 45
+
+;Comandos de golpes "Tesoro del Cielo"
+
+[Command]
+name = "tesoro_cielo2"
+command = F, y
+time = 45
+
+[Command]
+name = "tesoro_cielo3"
+command = B, y
+time = 45
+
+;----------------------------------------------
+
+;-| Special Motions |------------------------------------------------------
+
+;-------------------
+[Command]
+name = "AIRluz"
+command = /B , c
+time = 30
+;-------------------
+;Golpe de Luz
+[Command]
+name = "luzcont"
+command = /B , c
+time = 20
+;-------------------
+;Golpe de Luz
+[Command]
+name = "luz"
+command = /F , c
+time = 30
+;-------------------
+
+[Command]
+name = "patada1"
+command = /D, x
+
+;-------------------
+
+[Command]
+name = "gpft"
+command = /B, b
+time =1
+
+;------------------
+[Command]
+name = "carga"
+command = /b
+time = 1
+
+[Command]
+name = "carga1"
+command = /c
+time = 1
+
+;muro espiritual
+[Command]
+name = "muro"
+command = /b
+time = 1
+[Command]
+name = "muro1"
+command = /y
+time = 1
+
+;------------------
+;lighting hit
+[Command]
+name = "qcb_x"
+command = D, DF, F, a
+time = 25
+
+;Combo finta
+[Command]
+name = "Combo"
+command = D, DF, F, b
+time = 30
+
+[Command]
+name = "launcher"
+command = D,DF,F, c                   
+time = 30
+
+[Command]
+name = "uppercut_y"
+command = ~F, D, DF, y
+
+[Command]
+name = "scorch_a"
+command = ~F, D, DF, a
+
+[Command]
+name = "scorch_b"
+command = ~F, D, DF, b
+
+[Command]
+name = "fire_x"
+command = ~D, DF, F, x
+
+[Command]
+name = "fire_y"
+command = ~D, DF, F, y
+
+[Command]
+name = "2_punch_x"
+command = ~D, DB, B, x
+
+[Command]
+name = "3_punch_x"
+command = ~D, DB, B, x
+
+[Command]
+name = "1_punch_y"
+command = ~D, DB, B, y
+
+[Command]
+name = "2_punch_y"
+command = ~D, DB, B, y
+
+[Command]
+name = "3_punch_y"
+command = ~D, DB, B, y
+
+;-| Double Tap |-----------------------------------------------------------
+[Command]
+name = "FF"
+command = F, F
+time = 10
+
+[Command]
+name = "BB"
+command = B, B
+time = 10
+---------------------------------------------------------------------------
+
+;-| 2/3 Button Combination |-----------------------------------------------
+
+;Calcio volante diagonale
+[Command]
+name = "dragon_kick"
+command = ~D,DF,F, y
+time = 8
+
+;reversaldef
+[Command]
+name = "qcf_a"
+command = b+c
+time = 15
+
+;reversaldef
+[Command]
+name = "bloc"
+command = c
+time = 15
+
+;Recover
+[Command]
+name = "recover"
+command = a+x
+time = 30
+---------------------------------------
+[Command]
+name = "recovery";Required (do not remove)
+command = ~D,DF,F, y      ;a+b+c;B+z
+time = 50
+;[Command]
+;name = "recovery";Extra recovery commands (optional)
+;command = y+z
+;time = 1
+;[Command]
+;name = "recovery";Extra recovery commands (optional)
+;command = x+z
+;time = 15
+
+
+[Command]
+name = "qcf_a"
+command = c
+time = 15
+
+[Command]
+name = "ab"
+command = a+b
+time = 1
+
+[Command]
+name = "yz"
+command = y+z
+time = 1
+
+;rozan
+[Command]
+name = "abc"
+command = a+b+c
+time = 5
+
+;-| Dir + Button |---------------------------------------------------------
+[Command]
+name = "fwd_a"
+command = /F,a
+time = 15
+[Command]
+name = "fwd_b"
+command = /F,b
+time = 1
+[Command]
+name = "fwd_x"
+command = /F,x
+time = 10
+;--------------------
+;Calcio alto
+[Command]
+name = "fwd_y"
+command = /F,y
+time = 1
+;--------------------
+[Command]
+name = "fwd_z"
+command = /F,z
+time = 1
+
+[Command]
+name = "back_a"
+command = /B,a
+time = 1
+[Command]
+name = "back_b"
+command = /B,b
+time = 1
+[Command]
+name = "back_c"
+command = /B,c
+time = 1
+[Command]
+name = "back_x"
+command = /B,x
+time = 1
+[Command]
+name = "back_y"
+command = /B,y
+time = 1
+[Command]
+name = "back_z"
+command = /B,z
+time = 1
+
+[Command]
+name = "down_a"
+command = /D,a
+time = 1
+[Command]
+name = "down_b"
+command = /D,b
+time = 1
+[Command]
+name = "down_c"
+command = /D,c
+time = 1
+[Command]
+name = "down_x"
+command = /D,x
+time = 1
+[Command]
+name = "down_y"
+command = /D,y
+time = 1
+[Command]
+name = "down_z"
+command = /D,z
+time = 1
+
+[Command]
+name = "fwd_ab"
+command = /F, a+b
+time = 1
+[Command]
+name = "fwd_bc"
+command = /F, b+c
+time = 1
+
+[Command]
+name = "fwd_xy"
+command = /F, x+y
+time = 1
+[Command]
+name = "fwd_yz"
+command = /F, y+z
+time = 1
+
+[Command]
+name = "back_xy"
+command = /B, x+y
+time = 1
+[Command]
+name = "back_yz"
+command = /B, y+z
+time = 1
+
+[Command]
+name = "back_ab"
+command = /B, a+b
+time = 1
+[Command]
+name = "back_bc"
+command = /B, b+c
+time = 1
+
+
+
+;-| Single Button |---------------------------------------------------------
+
+;Pugno semplice
+[Command]
+name = "a"
+command = a
+time = 1
+
+;Pugno medio
+[Command]
+name = "b"
+command = b
+time = 1
+
+;Pugno hard
+[Command]
+name = "c"
+command = c
+time = 1
+
+;Calcio semplice
+[Command]
+name = "x"
+command = x
+time = 1
+
+;Calcio medio
+[Command]
+name = "y"
+command = y
+time = 1
+
+;Calcio hard
+[Command]
+name = "z"
+command = z
+time = 1
+
+;provocazione
+[Command]
+name = "s"
+command = s
+time = 1
+
+
+;-| Hold Button |-----------------------------------------------------------
+[Command]
+name = "hold_x"
+command = /x
+time = 1
+
+[Command]
+name = "hold_y"
+command = /y
+time = 1
+
+[Command]
+name = "hold_z"
+command = /z
+time = 1
+
+[Command]
+name = "hold_a"
+command = /a
+time = 1
+
+[Command]
+name = "hold_b"
+command = /b
+time = 1
+
+[Command]
+name = "hold_c"
+command = /c
+time = 1
+
+;-| Hold Dir |--------------------------------------------------------------
+[Command]
+name = "holdfwd"
+command = /$F
+time = 1
+
+[Command]
+name = "holdback"
+command = /$B
+time = 1
+;-----------------------
+;prova per superguard
+[Command]
+name = "holdback3"
+command = /$B   
+time = 50
+;------------------------
+[Command]
+name = "holdup"
+command = /$U
+time = 1
+
+[Command]
+name = "holddown"
+command = /$D
+time = 1
+
+
+
+
+
+;---------------------------------------------------------------------------
+;speciales
+;---------------------------------------------------------------------------
+; Commands
+[Statedef -1]
+
+
+;Combo aerea
+[State -1]
+type = ChangeState
+value = 40
+triggerall = command = "holdup"
+trigger1 = movecontact = 1
+trigger1 = stateno = 405
+
+;-----------------------------------
+;golpe Aereo de luz
+;Airluz
+[State -1, ]
+type = ChangeState
+value = 799
+triggerall = command = "AIRluz" 
+trigger1 = ((statetype = A) && (ctrl = 1)) || ((stateno = [600,630]) && (movecontact = 1)) || ((stateno = 640) && (movecontact = 1))
+;-----------------------------------
+;Golpe de luz
+[State -1, ]
+type = ChangeState
+value = 804
+triggerall = command = "luz" 
+trigger1 = ((statetype != A) && (ctrl = 1))
+tregger1 = ((stateno = [215,401]) && (movecontact = 1))
+
+;---------------------------------------------------------------------------
+;RunFwd
+[State -1]
+type = ChangeState
+value = 100
+trigger1 = command = "FF"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;RunB
+[State -1]
+type = ChangeState
+value = 105
+trigger1 = command = "BB"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;carga
+[State -1]
+type = ChangeState
+value = 73777
+triggerall = command = "carga1"
+triggerall = command = "carga"
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+
+;--------------------------
+
+
+[State -1]
+type = ChangeState
+value = 244
+triggerall = command = "fwd_y"
+triggerall = command != "holddown"
+triggerall = command = "holdfwd"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+
+
+[State -1]
+type = ChangeState
+value = 405
+triggerall = command = "launcher"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 200
+trigger2 = movecontact = 1
+trigger2 = stateno = 3000
+trigger2 = movecontact = 1
+
+;---------------------------------------------------------------------------
+
+;muro espiritual
+[State -1]
+type = ChangeState
+value = 88961
+triggerall = command = "muro"
+triggerall = command = "muro1"
+triggerall = power >= 200 
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+; "gpft"
+
+[State -1]
+type = ChangeState
+value = 202
+trigger1 = command = "gpft"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+
+[State -1]
+type = ChangeState
+value = 18562
+triggerall = command = "patada1" && statetype = A && winko = 0
+trigger1 = ctrl
+trigger2 = stateno = 106
+
+;---------------------------------------------------------------------------
+;Combo finta
+[State -1]
+type = ChangeState
+value = 350
+triggerall = command = "Combo"
+triggerall = p2dist x <= 200
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+---------------------------------------------------------------------------
+;======================
+;Super Ataques        =
+;======================
+;----------------
+; Redencion al Demonio Celestial
+[State -1]
+type = ChangeState
+value = 14000
+trigger1 = Var(1) != 1
+triggerall = command = "tenma_Kofuku"
+triggerall = power >= 3000
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+;---------------------------------------------------------------------------
+; Redencion al Demonio Celestial2
+[State -1]
+type = ChangeState
+value = 19001
+trigger1 = Var(1) != 1
+triggerall = command = "tenma_Kofuku2"
+triggerall = power >= 6000
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+;---------------------------------------------------------------------------
+; Ruptura de Espiritus Demoniacos
+[State -1]
+type = ChangeState
+value = 19101
+trigger1 = Var(1) != 1
+triggerall = command = "tenkuuhaja_Chimimouryouho"
+triggerall = power >= 4000
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+;---------------------------------------------------------------------------
+;caida a los infiernos
+[State -1]
+type = ChangeState
+value = 19309
+triggerall = command = "caida_infiernos"
+triggerall = power >= 2000
+trigger1 = statetype != A
+trigger1 = ctrl = 1  
+
+;---------------------------------------------------------------------------
+;Tesoro del cielo
+;Primer sentido
+[State -1]
+type = ChangeState
+value = 7000
+trigger1 = Var(1) != 1
+triggerall = command = "tesoro_cielo" 
+triggerall = power >= 2000
+trigger1 = statetype != A
+trigger1 = ctrl = 1 
+
+;---------------------------------------------------------------------------
+
+;lighting hit
+[State -1]
+type = ChangeState
+value = 1010
+triggerall = command = "qcb_x"
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+;---------------------------------------------------
+;recover
+[State -1]
+type = ChangeState
+value = 2000
+trigger1 = Var(1) != 1
+triggerall = command = "recover"
+trigger1 = power >= 5000
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+
+;reversal
+[State -1]
+type = ChangeState
+value = 8002
+triggerall = command = "bloc"
+triggerall = command = "holdback"
+trigger1 = statetype != A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------
+
+;Pugno semplice
+[State -1]
+type = ChangeState
+value = 290
+triggerall = statetype = S
+triggerall = command != "holddown"
+triggerall = ctrl = 1
+trigger1 = command = "a"
+;-----------------------------------------------------
+
+;Pugno medio
+[State -1]
+type = ChangeState
+value = 230
+triggerall = command = "b"
+triggerall = command != "holddown"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 290
+trigger2 = movecontact = 1
+;---------------------------------------------------------------------------
+
+;Pugno hard
+[State -1]
+type = ChangeState
+value = 220
+triggerall = command = "c"   
+triggerall = command != "holddown"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 230
+trigger2 = movecontact = 1
+;---------------------------------------------------------------------------
+
+;Ginochiata x
+[State -1]
+type = ChangeState
+value = 250
+triggerall = command = "x" 
+triggerall = command != "holddown"
+triggerall = P2BodyDist X < 25
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+
+;Ginochiata y
+[State -1]
+type = ChangeState
+value = 250
+triggerall = command = "y" 
+triggerall = command != "holddown"
+triggerall = P2BodyDist X < 25
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+;Ginochiata z
+[State -1]
+type = ChangeState
+value = 250
+triggerall = command = "z" 
+triggerall = command != "holddown"
+triggerall = P2BodyDist X < 20
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+
+
+;---------------------------------------------------------------------------
+;Calcio semplice
+[State -1]
+type = ChangeState
+value = 260
+triggerall = command = "x"
+triggerall = command != "holddown"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+----------------------------------------------------------------------------
+;Calcio medio
+[State -1]
+type = ChangeState
+value = 240
+triggerall = command = "y"
+triggerall = command != "holddown"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 244
+trigger2 = movecontact = 1
+trigger3 = stateno = 230
+trigger3 = movecontact = 1
+
+;---------------------------------------------------------------------------
+;Calcio hard
+[State -1]
+type = ChangeState
+value = 215
+triggerall = command = "z"
+triggerall = command != "holddown"
+trigger1 = statetype = S
+trigger1 = ctrl = 1
+trigger2 = stateno = 240
+trigger2 = movecontact = 1
+;---------------------------------------------------------------------------
+;DA COPIARE
+;----------------
+
+;Crouch_a
+[State -1]
+type = ChangeState
+value = 410
+triggerall = command = "a"
+triggerall = command = "holddown"
+trigger1 = statetype = C
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Crouch_B
+[State -1]
+type = ChangeState
+value = 430
+triggerall = command = "b"
+triggerall = command = "holddown"
+trigger1 = statetype = C
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Crouch_c
+[State -1]
+type = ChangeState
+value = 400
+triggerall = command = "c"
+triggerall = command = "holddown"
+trigger1 = statetype = C
+trigger1 = ctrl = 1
+
+;FINE COPIA
+;-----------------
+
+;---------------------------------------------------------------------------
+;Calcio basso x
+[State -1]
+type = ChangeState
+value = 440
+triggerall = command = "x"
+triggerall = command = "holddown"
+trigger1 = statetype = C
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Calcio basso y
+[State -1]
+type = ChangeState
+value = 409
+triggerall = command = "y"
+triggerall = command = "holddown"
+trigger1 = statetype = C
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Calcio basso z
+[State -1]
+type = ChangeState
+value = 408
+triggerall = command = "z"
+triggerall = command = "holddown"
+trigger1 = statetype = C
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;pugno in volo a
+[State -1]
+type = ChangeState
+value = 605
+triggerall = command = "a"
+triggerall = Vel X = 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;pugno in volo a(moving)
+[State -1]
+type = ChangeState
+value = 605
+triggerall = command = "a"
+triggerall = Vel X != 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;pugno in volo b
+[State -1]
+type = ChangeState
+value = 605
+triggerall = command = "b"
+triggerall = Vel X = 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;pugno in volo b(moving)
+[State -1]
+type = ChangeState
+value = 605
+triggerall = command = "b"
+triggerall = Vel X != 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+
+;pugno in volo c
+[State -1]
+type = ChangeState
+value = 605
+triggerall = command = "c"
+triggerall = Vel X = 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;pugno in volo c(moving)
+[State -1]
+type = ChangeState
+value = 605
+triggerall = command = "c"
+triggerall = Vel X != 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+
+
+
+;---------------------------------------------------------------------------
+;Calcio volante diagonale
+[State -1]
+type = ChangeState
+value = 630
+triggerall = command = "dragon_kick"
+triggerall = Vel X = 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Calcio volante diagonale(moving)
+[State -1]
+type = ChangeState
+value = 630
+triggerall = command = "dragon_kick"
+triggerall = Vel X != 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Calcio volante x
+[State -1]
+type = ChangeState
+value = 610
+triggerall = command = "x"
+triggerall = Vel X = 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Calcio volante x(moving)
+[State -1]
+type = ChangeState
+value = 610
+triggerall = command = "x"
+triggerall = Vel X != 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+
+;Calcio volante y
+[State -1]
+type = ChangeState
+value = 610
+triggerall = command = "y"
+triggerall = Vel X = 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+;Calcio volante y(moving)
+[State -1]
+type = ChangeState
+value = 610
+triggerall = command = "y"
+triggerall = Vel X != 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;---------------------------------------------------------------------------
+
+;Calcio volante hard
+[State -1]
+type = ChangeState
+value = 640
+triggerall = command = "z"
+triggerall = Vel X = 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+trigger2 = movecontact = 1
+trigger2 = stateno = 610
+
+
+;---------------------------------------------------------------------------
+;Jump_Y (moving)
+[State -1]
+type = ChangeState
+value = 640
+triggerall = command = "z"
+triggerall = Vel X != 0
+trigger1 = statetype = A
+trigger1 = ctrl = 1
+
+;-----------------------------------
+
+[State -1]
+type = ChangeState
+value = 199
+trigger1 = command = "s"
+trigger1 = statetype != A
+trigger1 = stateno != 199
+trigger1 = ctrl = 1
+
+;----------------------------------
+;wall jump
+[State -1, WallJump]
+type = ChangeState 
+value = 45
+triggerall = (statetype = A) && (ctrl) 
+trigger1 = ((command = "holdup") && (command = "holdfwd") && (backedgebodydist <= 10) && (backedgebodydist > -10))
+trigger2 = ((command = "holdup") && (command = "holdback") && (frontedgebodydist <= 10) && (frontedgebodydist > -10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

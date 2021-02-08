@@ -1,0 +1,28 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name="Lune de Balrog"
+displayname="Lune"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+author="Hades Team"
+pal.defaults=6,3,4,2
+
+[Files]
+cmd=Lune.cmd
+cns=Lune.cns
+st=Lune.cns
+stcommon=Lune2.cns
+sprite=Lune.sff
+anim=Lune.air
+sound=Lune.snd
+pal1=Lune.act
+
+[Arcade]
+
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br

@@ -1,0 +1,47 @@
+ANKOKU PHOENIX
+--------------
+
+- LEGENDA:
+
+F = Avanti / Forward / Adelante
+B = Indietro / Backward / Atràs
+U = Su / Up / Arriba
+D = Giù / Down / Abajo
+a = Pugno Debole / Weak Punch / Puño Debil
+b = Pugno Medio / Medium Punch / Puño Medio
+c = Pugno Forte / Strong Punch / Puño Fuerte
+x = Calcio Debole / Weak Kick / Patada Debil
+y = Calcio Medio / Medium Punch / Patada Media
+z = Calcio Forte / Strong Punch / Patada Fuerte
+s = Provocazione / Taunt / Burla
+
+- HYPER MOVES:
+
+Fuoco della Fenice Nera (Black Phoenix Fire) = B, DB, D, DF, F, a (Power 1000)
+Volo della Fenice Nera (Black Phoenix Flight) = B, DB, D, DF, F, b (Power 2000)
+Fantasma Diabolico Nero (Ankoku Houou GenMaKen) = B, DB, D, DF, F, c (Power 3000)
+
+- SPECIAL MOVES:
+
+Pugno Infiammante (Burning Punch) = D, DF, F, a
+Salto della Fenice Nera (Black Phoenix Jump) = D, DF, F, b
+Pugno in Corsa (Running Punch) = D, DF, F, c
+Decollo della Fenice Nera (Black Phoenix Takeoff) = D, DF, F, x
+Vento della Fenice Nera (Black Phoenix Wind) = D, DB, B, a
+Fiamme della Fenice Nera (Black Phoenix Flames) = D, DB, B, b
+Rabbia della Fenice Nera (Black Phoenix Rage) = D, DB, B, c
+Piume Nere Deboli (Weak Black Feathers) = D, DB, B, x
+Piume Nere Forti (Strong Black Feathers) = D, DB, B, y
+Pugno Perforante (Piercing Punch) = D, DB, B, z
+Piume Nere Aeree Deboli (Weak Aerial Black Feathers) = U, D, DF, F, a
+Piume Nere Aeree Forti (Strong Aerial Black Feathers) = U, D, DF, F, b
+Piume Nere Aeree Massive (Massive Aerial Black Feathers) = U, D, DF, F, c
+Calcio Volante Debole (Weak Flying Kick) = U, D, DB, B, x
+Calcio Volante Medio (Medium Flying Kick) = U, D, DB, B, y
+Calcio Volante Forte (Strong Flying Kick) = U, D, DB, B, z
+Pugno in Pancia (Belly Punch) = F, a
+Presa Spezza-Collo (Neck-Breaker) = F, b / B, b
+Presa Combo (Combo Hold) = F, c / B, c
+Doppia Ginocchiata (Double Knee Attack) = F, y
+Pugno Multiplo (Multiple Punch) = F, z
+Carica Cosmo (Cosmo Charge) = c + z

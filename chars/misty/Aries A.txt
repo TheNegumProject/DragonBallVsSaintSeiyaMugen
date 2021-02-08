@@ -1,0 +1,15 @@
+Pour le portrait, j'ai simplement enlevé la case "shared palette".
+En effet, les portraits peuvent avoir leur propre palette.
+
+
+Pour les sprites, la palette n'etait pas la bonne.
+J'ai reprise la bonne (celle du standing) et j'ai rajouté les couleurs qui manquaient (le bleu des sparks et de l'aura).
+
+J'ai desactivé l'aura quand moins de 500 de vie (car l'aura a ete faite sur l'autre standing).
+
+J'ai retouché 2 sprites, sur l'attaque avec le fond, car dans le fond, il attaque avec son doigt, alors que la, il pliait juste son poignet.
+Je lui ai fait pointer le doigt.
+
+
+
+Ca devrait aller.

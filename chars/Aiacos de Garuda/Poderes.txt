@@ -1,0 +1,21 @@
+;-| Super|--------------------------------------------------------
+;---------------------------
+Ilusion Galactica 4: D, DF, F, b  power >= 3000
+;---------------------------
+Aletazo de garuda: F, DF, D, DB, B, a power >= 3000
+;---------------------------
+Ilusion Galactica 1: D, DF, F, x  power >= 1000
+;---------------------------
+Ilusion Galactica 2: D, DF, F, y  power >= 2000
+;---------------------------
+Ilusion Galactica 3: D, DF, F, z  power >= 3000
+;---------------------------
+;Cosmo carga: b+c
+;---------------------------
+Combo_de_Garuda : D, DF, F, a
+
+
+By caballeropirata: 
+
+Conclusion el char: 90 %
+Falta: mejorar siendo golpeado

@@ -1,0 +1,32 @@
+;Megres Definition file  by TonyADV
+;Megres - Beta Version Date: 14/09/2004
+
+
+; Player information
+[Info]
+name = "Megres"        
+displayname = "Alberich" 
+versiondate = 12,08,2004    
+mugenversion = 04,14,2001 
+author = "TonyADV & Kayo"         
+pal.defaults = 1,2,3,4,5,6    
+
+; Files for the player
+[Files]
+cmd     = Megres.cmd   
+cns     = Megres.cns   
+st      = Megres.cns 
+stcommon = MegresB.cns 
+sprite  = Megres.sff   
+anim    = Megres.air   
+sound   = Megres.snd  
+pal1 = 002.act		;Normal Color		
+pal2 = 001.act		;Original Color
+pal3 = 003.act		;Silver Color		
+pal4 = 004.act		;Spectre Color		
+pal5 = 005.act		;Black Color		
+pal6 = 006.act		;Platinium Color		
+
+[Arcade]
+intro.storyboard = ;intro.def
+ending.storyboard = ;end.def

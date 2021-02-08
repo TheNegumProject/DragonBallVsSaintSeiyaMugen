@@ -1,0 +1,40 @@
+[Info]
+name="Mascara de Muerte"
+displayname="Mascara da Morte"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+author="ElRoSSo y despues de mil reprogramaciones las final de gouketsuuuuuu"
+pal.defaults=6,3,4,2
+
+[Files]
+cmd=CANCER.cmd
+cns=cancer.cns
+st=cancer.cns
+stcommon=cancer.cns
+sprite=cancer.sff
+anim=cancer.air
+sound=cancer.snd
+pal1=oro.act
+pal2=classic.act
+pal3=brillo.act
+pal4=rojizo.act
+pal5=blanco.act
+pal6=cancerspecter.act
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+pal13=
+pal14=
+pal15=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+

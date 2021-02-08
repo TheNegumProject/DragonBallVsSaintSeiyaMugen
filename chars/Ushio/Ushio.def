@@ -1,0 +1,41 @@
+;------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
+;Ushio\Lear By Beja, Argol, TonyADV & Vegeth1985
+;------------------------------------------------------------------------------------
+;------------------------------------------------------------------------------------
+;----------------------------------
+;----------------------------------
+;Definition file by TonyADV
+;----------------------------------
+;----------------------------------
+
+; Player information
+[Info]
+name = "Ushio\Lear"        
+displayname = "Lear" 
+versiondate = 07,11,2005    
+mugenversion = 04,14,2001 
+author = "TonyADV, Beja, Argol & Vegeth1985"         
+pal.defaults = 1,2,3,4,5,6 
+
+; Files for the player
+[Files]
+cmd     = Ushio.cmd   
+cns     = Ushio.cns   
+st      = Ushio.cns
+stcommon = UshioB.cns 
+sprite  = Ushio.sff   
+anim    = Ushio.air   
+sound   = Ushio.snd  
+pal1 = 001.act		
+pal2 = 002.act		
+pal3 = 003.act
+pal4 = 004.act
+pal5 = 005.act
+pal6 = 006.act
+pal7 = 007.act
+pal8 = 000.act
+
+[Arcade]
+intro.storyboard =  ;intro.def
+ending.storyboard = ;end.def

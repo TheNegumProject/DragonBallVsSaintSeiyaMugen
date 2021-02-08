@@ -1,0 +1,25 @@
+[Criado no Z-CharCAD]
+
+
+[Info]
+name="Shion de Aries"
+displayname="Shion de Aries"
+versiondate=07,22,2002
+mugenversion=11,29,2000
+author="Genmakeny  reeditado por Zahori-son"
+pal.defaults=
+;basado en char de Mu de Mû,Shion de Ikki de Leao y algunos poderes del char de Tecla 2000 y el preintro de zahori_son
+
+[Files]
+cmd=Shion.cmd
+cns=Shion.cns
+st=Shion.cns
+stcommon=Shion2.cns
+sound=Shion.snd
+sprite=Shion.sff
+anim=Shion.air
+
+
+
+
+

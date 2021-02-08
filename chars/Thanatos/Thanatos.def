@@ -1,0 +1,33 @@
+---------------------------------------------------------------------
+; Definition file for Thanatos
+; Contains all the filenames needed for the character
+;This char was inspired on Masami Kurumada Thanatos Character
+;By "caballeropirata"
+---------------------------------------------------------------------
+[Info]
+name="Thanatos Dios del Sueño"
+DisplayName="Thanatos" 
+mugenversion =01,04,2000   
+author ="Caballeropirata" 
+versiondate=19/09/2006
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd=thanatos.cmd
+cns=thanatos.cns
+st=thanatos.cns
+stcommon=thanatos2.cns
+sprite=thanatos.sff
+anim=thanatos.air
+sound=thanatos.snd
+pal1=thanatos.act
+
+
+
+
+
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

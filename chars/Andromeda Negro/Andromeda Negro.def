@@ -1,0 +1,39 @@
+[Info]
+name="Andromede Noir"
+DisplayName="Andromeda Negro"
+versiondate=31-,1,2003
+mugenversion=11,29,2000
+author="kalangueb y gouketsu la parejita, Aries.A for Modif"
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd=andromede_noir.cmd
+cns=andromede_noir.cns
+st=andromede_noir.cns
+stcommon=andromede_noir2.cns
+sprite=andromede_noir.sff
+anim=andromede_noir.air
+sound=andromede_noir.snd
+pal1=AndromedaNegro.act
+
+;[Arcade]
+;intro.storyboard=
+;ending.storyboard=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

@@ -1,0 +1,22 @@
+[Info]
+name="Shun Andromede"
+DisplayName="Shun" 
+mugenversion = 01,04,2000   
+author = "Original Shun by Basarov---Shun 3th by Saga SSGA" 
+
+[Files]
+cmd=shun3.cmd
+cns=shun3.cns
+st=shun3.cns
+stcommon=shun3-2.cns
+sprite=shun3.sff
+anim=shun3.air
+sound=shun3.snd
+pal1=shun.act
+pal2=shung.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 
+
+

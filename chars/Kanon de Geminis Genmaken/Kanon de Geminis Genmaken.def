@@ -1,0 +1,37 @@
+; Definition file for Kanon - Dragone del Mare
+; Author: Tony ADV
+; Thanks to KingSeiya for some Kanon sprites
+; Thanks to Tux for the improvements of some moves
+; Thanks to Sarednab for some Kanon sounds
+
+; Player information
+[Info]
+name="Saga De Gemeos"
+displayname="Kanon"
+versiondate=6,12,2003
+mugenversion=14,04,2001
+author="Master Saga, y actualizado para Winmugen por Genmaken"
+pal.defaults=
+
+; Files for the player
+[Files]
+cmd=Kanon.cmd
+cns=Kanon.cns
+st=Kanon.cns
+st3=special.cns 
+stcommon=Kanon2.cns
+sprite=Kanon.sff
+anim=Kanon.air
+sound=Kanon.snd
+pal1=Kanon.act
+pal2=Kanon.act
+st1=super.cns
+st2=special.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br

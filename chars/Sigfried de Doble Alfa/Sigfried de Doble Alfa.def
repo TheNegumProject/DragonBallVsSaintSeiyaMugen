@@ -1,0 +1,34 @@
+[Info]
+name="sigfried"
+DisplayName="Sigfried"    
+versiondate = 11,03,2003    
+mugenversion = 14,04,2001   
+author = "Aqualudo et Pegasuseb SAINT SEIYA ALLIANCE team"
+
+; Remerciements à toute  la Team Saint Seiya Alliance et plus particulièrement à : 
+;Kakarotto et Feed pour l'aide à la prog, 
+;Néo pour le portrait de sélection
+;Macross, Hagen59, Saga ^_^, Huby, pour leurs bon conseils.
+
+
+[Files]
+;cmd=sigfried.cmd
+cmd=sigfriedAI.cmd
+cns=sigfried.cns
+st=sigfried.cns
+stcommon=sigfried2.cns
+sprite=sigfried.sff
+anim=Sigfried.air
+sound=sigfried.snd
+pal1=sigfried.act
+;pal2=delta.act
+;pal3=zeta.act
+;pal4=epsilon.act
+;pal5=beta.act
+;pal6=eta.act
+
+
+;pour les newbies, inversez les commandes cmd en inversant le ;. 
+;Par défaut l'IA est activée, Siegfried n'est pas n'importe qui non plus!
+
+

@@ -1,0 +1,20 @@
+[Info]
+mugenversion = 7, 31, 2000  ; Convertido pelo Conversor 2.0
+name = "OHKO DE TIGRE"
+Displayname = "Ohko"
+Por Angel Aceves Y Neo Cali 
+
+[Files]
+cmd=Ohko.cmd
+cns=Ohko.cns
+st=Ohko.cns
+stcommon=common1.cns
+sprite=Ohko.sff
+anim=Ohko.air
+pal1=Ohko.act
+pal2=ohko2.act
+sound=Ohko.snd
+
+Parte de los sprites son de neo cali pero  
+gran parte son mios a neo cali 
+se le agradese su autorisacion para usar sus sprites.

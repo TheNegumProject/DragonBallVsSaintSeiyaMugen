@@ -1,0 +1,36 @@
+[Info]
+name = "blackPhoenix"
+displayname = "Phoenix Nero"
+versiondate = 12/18/2011
+mugenversion = 06,14,2003
+author = "Arsène Lupin (Disegnatore) / Pardo (Programmatore)"
+;Autori del Phoenix originale: "Tonos, Vegeth1985, SeiyaDivin & Tux"
+;Voci italiane procurate da Mikehaggar
+pal.defaults = 1,6,2,3,4,5,7,8,9,10,11,12
+
+[Files]
+sprite = PhoenixNero.sff
+anim = PhoenixNero.air
+sound = PhoenixNero.snd
+cmd = PhoenixNero.cmd
+cns = PhoenixNero.cns
+stcommon = PhoenixNeroB.st
+st = PhoenixNero.st
+st1 = PhoenixNeroS.st
+st2 = PhoenixNeroH.st
+pal1 = 001.act
+pal2 = 002.act
+pal3 = 003.act
+pal4 = 004.act
+pal5 = 005.act
+pal6 = 006.act
+pal7 = 007.act
+pal8 = 008.act
+pal9 = 009.act
+pal10 = 010.act
+pal11 = 011.act
+pal12 = 012.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

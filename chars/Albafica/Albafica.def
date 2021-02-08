@@ -1,0 +1,22 @@
+[Info]
+name="Albafica"
+displayname="Pisces Albafica"
+author="Arcadia" restilizado y agregado de ataques por Grevius JRMM Arequipa-Peru"
+pal.defaults=1,2
+versiondate=30/07/2010
+mugenversion=
+
+[Files]
+cmd=Albafica.cmd
+cns=gold.cns
+st=Albafica.st
+stcommon=Albafica2.st
+sprite=Albafica.sff
+anim=Albafica.air
+sound=Albafica.snd
+pal1=Albafica1.act
+
+
+[Arcade] 
+ending.storyboard=
+intro.storyboard=

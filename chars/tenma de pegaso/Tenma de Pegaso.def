@@ -1,0 +1,44 @@
+
+
+;*****************************************************************************************
+;                                                                                        *                               *
+;Seiya de Pegasus V3 Autor  Grafica : Arsene Lupin (base general de sprit                *
+;                                    Claudio Ricci(MIM) , David Bazbar y Tecla2000)      *                   *
+;                         Programacion : Tecla2000                                       *
+;                                                                                        *                               *
+;*****************************************************************************************
+
+; Player information
+
+[Info]
+
+name = "Tenma de Pegasus"      
+displayname = "Pegasus Tenma" 
+versiondate =   01,09,2011  ; inicio 07-07-2011
+mugenversion = 18,01,2011
+author = "Arsene Lupin & Tecla2000" 
+pal.defaults = 1,2,3,4,5,6
+
+;----------------------------------------------------------------------------------------
+;
+; Autor original de la base grafica seiya V1 Claudio Ricci ( MIN ), REformado por David 
+; Bazbar a la grafica de seiya V3 y luego Arsene Lupin lo edito a la grafica final.
+; y programacion de la vercion Final termina por Tecla2000 y una minima colaboracion en
+; la edicion de los sprit.gracias a shunchain por colaborar con sprit de sasha y hakurei.
+; 
+;----------------------------------------------------------------------------------------
+
+[Files]
+
+cmd      = Tenma_Pegaso.cmd
+cns      = Tenma_Pegaso.cns
+st       = Tenma_Pegaso.cns
+st1      = Tenma_Pegaso_Poderes.cns
+st2      = Tenma_Pegaso_speciales.cns
+stcommon = Tenma_Pegaso_2.cns
+sprite   = Tenma_Pegaso.sff
+anim     = Tenma_Pegaso.air
+sound    = Tenma_Pegaso.snd
+
+pal1     = Tenma_Pegaso_LC.act
+

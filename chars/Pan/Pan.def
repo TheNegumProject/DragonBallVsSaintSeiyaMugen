@@ -1,0 +1,26 @@
+; Definition file for kfm
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name ="Pan Dragonball GT por Ssonic"
+displayname ="Pan"
+versiondate =07,31,2000
+mugenversion =07,31,2000
+author ="Ssonic"
+pal.defaults =1,2,4,5
+
+; Files for the player
+[Files]
+cmd     =pan.cmd
+cns     =pan.cns
+st      =pan.cns
+stcommon =common1.cns
+sprite  =pan.sff
+anim    =pan.air
+sound   =pan.snd
+pal1	=original.act
+pal2	=azul.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=..\data\final.def

@@ -1,0 +1,29 @@
+; Definition file for Seiya Second Cloth by Tux
+;--------------------------------------------------------------------------
+
+[Info]
+name="seiya2"
+DisplayName="Seiya"
+versiondate=04,24,2006 (TO BE RESTYLED)
+mugenversion=06,14,2003 (WINMUGEN)
+author="Sprites: Claudio Ricci(MIM) and Sarednab - Code by Gouketsu and Tux"
+pal.defaults=1,2,3,4
+
+[Files]
+cmd = seiya2.cmd
+cns = seiya2.cns
+st = seiya2.cns
+st2 = seiya2a.cns
+st3 = seiya2b.cns
+stcommon = seiya2c.cns
+sprite = seiya2.sff
+anim = seiya2.air
+sound = seiya2.snd
+pal1 = 001.act
+pal2 = 002.act
+pal3 = 003.act
+pal4 = 004.act
+
+[Arcade] 
+;intro.storyboard = intro-ending/Seiya2Intro.def
+;ending.storyboard = intro-ending/Seiya2Ending.def ;By Octavo Sentido and Midtaurus

@@ -1,0 +1,30 @@
+
+[Info]
+name="Shiryu"
+DisplayName="Shiryu de Dragao" 
+mugenversion = 01,04,2000   
+author = "Chrystian Cattaneo(cheitta)" 
+paletas y sonido en castellano por = "Calamix"
+
+[Files]
+cmd=shiryu.cmd
+cns=shiryu.cns
+st=shiryu.cns
+stcommon=shiryu2.cns
+sprite=shiryu.sff
+anim=shiryu.air
+sound=shiryu.snd
+pal1=1.act
+pal2=2.act
+pal3=3.act
+pal4=4.act
+pal5=5.act
+pal6=6.act
+pal7=7.act
+pal8=8.act
+pal9=9.act
+pal10=10.act
+
+
+;[Arcade]
+;intro.storyboard = intro.def

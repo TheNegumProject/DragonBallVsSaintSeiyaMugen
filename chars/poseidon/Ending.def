@@ -1,0 +1,459 @@
+:----------------------------------------------------
+Ending for Athena Versiom Poseidon Project By TonyADV
+:----------------------------------------------------
+
+[SceneDef]
+spr = ending.sff
+
+:-------------------------------------
+[Scene 1];julian vs isabel
+; Fade
+fadein.time = 15
+fadein.col = 0,0,0
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 10
+layer0.offset = 0,0
+
+;passegiata
+layer1.anim = 100
+layer1.offset = 0,50
+
+;nettuno
+layer2.anim = 201
+layer2.offset = -5,50
+
+;cosmo
+layer5.anim = 203
+layer5.offset = 50,92
+layer5.starttime = 900
+
+;isabel
+layer6.anim = 200
+layer6.offset = 65,135
+
+;saint
+layer3.anim = 202
+layer3.offset = -10,47
+
+;text
+layer9.anim = 901
+layer9.offset = 5,5
+layer9.starttime = 50
+
+;Musica
+bgm = sound/Poseidon.mp3                    
+bgm.loop = 0
+
+; Total time
+end.time = 1550
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 10]
+12,0, 0,0, -1
+
+;passegiata
+[Begin Action 100]
+6,0, 0,0, -1
+
+;sfondo
+[Begin Action 200]
+3,0, 0,0, 1250
+3,1, 0,0, 10
+3,2, 0,0, 10
+3,3, 0,0, 10
+3,4, 0,0, 10
+3,5, 0,0, 10
+loopstart
+3,6, 0,0, 10
+3,7, 0,0, 10
+
+;nettuno
+[Begin Action 201]
+4,0, 0,0, -1
+
+;cosmo
+[Begin Action 203]
+7,0, 0,0, 10,,a
+7,1, 0,0, 10,,a
+7,2, 0,0, 10,,a
+
+;saint
+[Begin Action 202]
+4,1, 0,0, -1
+
+;text
+[Begin Action 901]
+14,0, 0,0, 10,,a2
+14,0, 0,0, 10,,a1
+14,0, 0,0, 230
+14,1, 0,0, 250
+14,2, 0,0, 250
+14,3, 0,0, 250
+14,4, 0,0, 250
+;colpo
+14,5, 0,0, 250
+
+:-------------------------------------
+[Scene 2];nettuno
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 2
+layer0.offset = 0,0
+
+; Total time
+end.time = 120
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 2]
+9,1, 0,0, -1
+
+
+:-------------------------------------
+[Scene 3];nettuno 2p
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 3
+layer0.offset = 0,0
+
+;text
+layer9.anim = 903
+layer9.offset = 5,175
+layer9.starttime = 100
+
+
+; Total time
+end.time = 300
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 3]
+9,0, 0,0, -1
+
+;text
+[Begin Action 903]
+14,6, 0,0, 10,,a2
+14,6, 0,0, 10,,a1
+14,6, 0,0, -1
+
+:-------------------------------------
+[Scene 4];nettuno morte
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 44
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 150
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 44]
+10,0, 0,0, 10
+10,1, 0,0, 8
+10,0, 0,0, 6
+10,2, 0,0, 8
+
+:-------------------------------------
+[Scene 5];nettuno morte 2p
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 4
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 120
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 4]
+11,0, 0,0, -1
+
+:-------------------------------------
+[Scene 6];mondo 1
+; Fade
+fadein.time = 40
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 5
+layer0.offset = 0,0
+
+;Musica
+bgm = sound\athena.mp3                    
+bgm.loop = 0
+
+; Total time
+end.time = 120
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 5]
+5,0, 0,0, -1
+
+:-------------------------------------
+[Scene 7];mondo 2
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 6
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 120
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 6]
+5,1, 0,0, -1
+
+:-------------------------------------
+[Scene 8];mondo 3
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 7
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 120
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 7]
+5,2, 0,0, -1
+
+:-------------------------------------
+[Scene 9];mondo 4
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 8
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 150
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 8]
+5,3, 0,0, -1
+
+:-------------------------------------
+[Scene 10];tramonto
+; Fade
+fadein.time = 50
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 9
+layer0.offset = -80,-80
+
+;eroi
+layer1.anim = 300
+layer1.offset = 0,27
+
+;text
+layer9.anim = 909
+layer9.offset = 5,5
+layer9.starttime = 200
+
+; Total time
+end.time = 730
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 9]
+1,0, 0,0, 10
+1,1, 0,0, 10
+1,2, 0,0, 10
+1,3, 0,0, 10
+
+;eroi
+[Begin Action 300]
+2,0, 0,0, 10
+
+;sfondo
+[Begin Action 909]
+14,7, 0,0, 10,,a2
+14,7, 0,0, 10,,a1
+14,7, 0,0, 250
+14,8, 0,0, -1
+
+:-------------------------------------
+[Scene 11];anfora
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 400
+layer0.offset = 0,0
+
+;text
+layer9.anim = 910
+layer9.offset = 5,5
+layer9.starttime = 25
+
+; Total time
+end.time = 850
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 400]
+8,0, 0,0, -1
+
+;text
+[Begin Action 910]
+14,9, 0,0, 10,,a2
+14,9, 0,0, 10,,a1
+14,9, 0,0, 250
+14,9, 0,0, 10,,a1
+14,9, 0,0, 10,,a2
+14,99, 0,0, 200
+8,1, 0,0, 10,,a2
+8,1, 0,0, 10,,a1
+8,1, 0,0, -1
+
+:-------------------------------------
+[Scene 12];credits1
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;credits
+layer0.anim = 401
+layer0.offset = 0,0
+
+;Musica
+bgm = sound\battle.mp3                    
+bgm.loop = 0
+
+; Total time
+end.time = 200
+
+:-------------------------------------
+
+;credits
+[Begin Action 401]
+13,0, 0,0, -1
+
+:-------------------------------------
+[Scene 13];credits2
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 0,0,0
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;credits
+layer0.anim = 402
+layer0.offset = 0,0
+
+; Total time
+end.time = 200
+
+:-------------------------------------
+
+;credits
+[Begin Action 402]
+13,1, 0,0, -1

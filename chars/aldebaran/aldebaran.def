@@ -1,0 +1,21 @@
+[Info]
+name="Aldebaran"
+DisplayName="Aldebaran de Touro" 
+mugenversion =01,04,2000   
+author ="neo cali y gouketsu"
+helmet by = "hello"
+versiondate=23/09/2006
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd=aLDEBARAN.cmd
+cns=aldebaran.cns
+st=aldebaran.cns
+stcommon=aldebaran2.cns
+sprite=aldebaran1.sff
+anim=aldebaran.air
+sound=aldebaran.snd
+pal1=aldebaran.act
+pal2=aldebaranor.act
+
+

@@ -1,0 +1,25 @@
+; Player information
+[Info]
+name ="Hyoga de Acuario (Saga de Hades)"
+displayname ="Hyoga"
+mugenversion =01,04,2000
+author ="ShiryuD, primera version de SAGA"
+versiondate=10/09/2006
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd     =hyoga2.cmd  
+cns     =hyoga2.cns  
+st      =hyoga2.cns  
+stcommon =common1.cns    
+sprite  =hyoga.sff   
+anim    =hyoga2.air  
+sound   =hyogad.snd   
+;pal1    = Hyoga2.act 
+
+
+
+;Ausberto7@hotmail.com
+[Arcade]
+intro.storyboard=
+ending.storyboard=

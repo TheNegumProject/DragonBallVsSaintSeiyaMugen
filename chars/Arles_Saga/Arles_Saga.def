@@ -1,0 +1,28 @@
+;Arles - Saga 
+
+;Player informacion
+
+[Info]
+name = "Arles - Saga"             
+displayname = "Grande Mestre"        
+versiondate = 01,02,2005      
+mugenversion = 01,01,2002     
+author = "Tecla2000"                 
+pal.defaults = 1, 2,
+
+[Files]
+cmd      = Arles_Saga.cmd             
+cns      = Arles_Saga.cns              
+st       = Arles_Saga.cns            
+st2       = super.cns 
+st3       = special.cns 
+stcommon = Arles_Saga2.cns            
+sprite   = Arles_Saga.sff            
+anim     = Arles_Saga.air              
+sound    = Arles_Saga.snd              
+pal1     = Arles_EvilSaga.act          
+pal2     = Arles_Saga.act
+
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 

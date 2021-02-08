@@ -1,0 +1,56 @@
+[Info]
+
+name="MILO 4.0"
+DisplayName="Milo de Escorpiao"
+versiondate = 15,02,02 
+mugenversion = 11,29,2000   
+author = "Gerome -:-DJG DT-:- ....::::::: g.viavant@terre-net.fr :::::::.... " 
+
+
+                 
+                  ;Avec la participation 
+                               ;d'Aqualudo
+                  ;*-*-*-* Aqualudoganymede@aol.com *-*-*-*
+                   
+                               ;de Royrob69
+                      ;*-*-*-* Robroy@aol.com *-*-*-*
+
+               ;de Mü, de tout ceux qui ont posté un commentaire
+
+                              ;Et de tout SSGA     
+                    ;*-*-*-* http://ssga.ath.cx *-*-*-*
+;
+;          l---------/---------//---------\ l------\    
+;          l        /         //           \l       \
+;          l  l----/   l-----//   /---------l  l--\  \
+;          l  l        l     l   /          l  l   \  \
+;          l  l-----\  l------\  l  l-----\ l  l    \  \
+;          l         \         \ l  l      \l  l-----   \
+;          l-----l   l-----l   l l  l--\    \            \
+;                l   l     l   l l      \    \ l------\   \
+;           /----l   l/----l   l l-------\   l l       l  l
+;          /         l         l             l l       l  l
+;         1----------------------------------l-l       l--l  
+
+
+[Files]
+cmd=milo.cmd
+cns=milo.cns
+st=milo.cns
+stcommon=milo.st
+sprite=milo.sff
+anim=milo.air
+pal1=milo.act
+sound=milo.snd
+
+;-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

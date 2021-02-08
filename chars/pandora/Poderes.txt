@@ -1,0 +1,32 @@
+
+;-| Super|--------------------------------------------------------
+;---------------------------
+llamar a ikky: D, DF, F, b  power >= 3000
+;---------------------------
+llamar a Radamanthys: F, DF, D, DB, B, a power >= 3000
+;---------------------------
+;Cosmo carga: z
+;---------------------------
+Combo_1 : B, DB, D, DF, F, x
+;---------------------------
+Combo_2 : B, DB, D, DF, F, y
+;---------------------------
+Combo_3 : B, DB, D, DF, F, z
+;---------------------------
+Reflejo de sol 1 : F, DF, D, DB, B, a
+;---------------------------
+Reflejo de sol 2 : F, DF, D, DB, B, b
+;---------------------------
+Reflejo de sol 3 : F, DF, D, DB, B, c
+;---------------------------
+Reflejo de sol 3 : F, DF, D, DB, B, c
+;---------------------------
+Lanza de Pandora lenta : D, DB, B, x
+;---------------------------
+Lanza de Pandora rapida : D, DB, B, y  o tambien D, DB, B, z 
+
+
+By caballeropirata: 
+
+Conclusion el char: 95 %
+Falta: un ending con ikky y talvez un poder con los tres jueces

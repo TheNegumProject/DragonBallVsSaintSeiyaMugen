@@ -1,0 +1,25 @@
+------------------------------------------------------------------
+[Info]
+name="HADES, DIOS DE LA TIERRA DE LOS MUERTOS"
+DisplayName="HADES 2" 
+mugenversion = 01,04,2000   
+author = "Chen 11(ChenHyokoto)modif. * Ausberto" 
+
+[Files]
+cmd=hades.cmd
+cns=hades.cns
+st=hades.cns
+stcommon=hades2.cns
+sprite=hades.sff
+anim=hades.air
+sound=hades.snd
+pal1=hades.act
+ai=orochi_.ai
+ai2=routines.ai
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+; Definition file for Pandora
+; Contains all the filenames needed for the character
+;This char was inspired on Masami Kurumada Pandora Character
+
+; Player information
+[Info]
+name = "Pandora"
+displayname = "Pandora"
+versiondate = 09,22,2000    ;Version date of character
+mugenversion = 07,31,2000   ;Version of M.U.G.E.N character works on
+author = "Caballeropirata"         ;Character author name
+pal.defaults = 1,           ;Default palettes in order of preference
+
+; Files for the player
+[Files]
+cmd     = Pandora.cmd   ;Command set
+cns     = Pandora.cns   ;Constants
+st      = Pandora.cns   ;States
+st1      = specials.cns   ;Special moves States
+st2      = supers.cns   ;Super moves States
+st3      = p2.cns   ;P2 states
+st4      = Radamanthys.cns   ;striker Radamanthys
+st6      = dm_f.cns   ;DM F
+st7      = dm_g.cns   ;DM G
+st8      = dm_h.cns   ;DM H
+st9      = dm_i.cns   ;DM I
+stcommon = pandora2.cns     ;Common states
+sprite  = Pandora.sff   ;Sprite
+anim    = Pandora.air   ;Animation
+sound   = Pandora.snd   ;Sound
+pal1    = negro.act  ;
+
+

@@ -1,0 +1,41 @@
+;=======================================;
+;        Character Def File for:        ;
+;      Juuhachigou by Big Eli King      ;
+;     for MUGEN v. (version number)     ;
+;       Maker's Website HTTP here       ;
+;                                       ;
+;   Made with MUGEN Editing Ensemble    ;
+;     (http://ragnaroknemo.cjb.net)     ;
+;=======================================;
+
+[Info]
+name = "Juuhachigou"
+displayname = "Eighteen"
+versiondate = 
+mugenversion = 
+author = "Big Eli King"
+;pal.defaults = 
+
+[Files]
+cns = 18.cns
+cmd = 18.cmd
+stcommon = common1.cns
+sprite = 18.sff
+anim = 18.air
+st = 18.st
+st1 = hyper.st
+st2 = zcombo.st
+st3 = extra.st
+sound = 18.snd
+pal1 = 1.act    ;Anime Colors
+pal2 = 2.act    ;Red
+pal3 = 7.act    ;Arcade Default 
+pal4 = 4.act    ;Arcade Color 2  
+pal5 = 5.act    ;Arcade Color 3
+pal6 = 6.act    ;Arcade Color 4
+pal7 = 9.act    ;Angel Colors/Blue FX
+pal8 = 8.act    ;Iori Colorz/
+pal9 = 3.act    ;All Black 
+pal10 = 10.act  ;Shadow/Red FX
+pal11 = 11.act  ;Silver 18/Silver FX
+pal12 = 12.act  ;Gold 18/Gold 18

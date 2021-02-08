@@ -1,0 +1,31 @@
+/--------------------------\
+)    	Saint Seiya        (  
+)	 Mythologie        (
+)	   Mugen 	   (
+)                          (
+)  Tehar Magellan Tristane (
+\--------------------------/
+
+[Info]
+name="Ban de Leon"
+displayname="Ban du Lionnet"
+versionchars="beta"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+pal.defaults=1
+
+
+; Files for the player
+[Files]
+cmd=bancmd.cmd
+cns=bancns.cns
+st=bancns.cns
+stcommon=bancom.cns
+sprite=ban.sff
+anim=banair.air
+sound=ban.snd
+pal1=ban.act
+pal2=ban2.act
+
+[Arcade]
+intro.storyboard= banintro.def

@@ -1,0 +1,26 @@
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br
+
+[Info]
+name="Aphrodite - Spectre"
+displayname="AfroditeNGR"
+versiondate=10,25,2002
+mugenversion=11,29,2000
+author="Spectre Version by TonyADV"
+pal.defaults=1,2,3,4
+
+[Files]
+sprite=afroditaSpectre.sff
+sound=afrodita.snd
+anim=afroditaSpectre.air
+cmd=afroditaSpectre.cmd
+cns=afroditaSpectre.cns
+st=afroditaSpectre.cns
+stcommon=common1.cns
+pal1=AfroditaE.act
+pal3=surplix4.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

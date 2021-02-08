@@ -1,0 +1,28 @@
+[Info]
+name="Shura Espectro"
+DisplayName="Shura"    
+versiondate = 19,12,2004 ; final 29/08/2006   
+mugenversion = 14,04,2001   
+author =" Tecla2000, Gabriel, Caballeropirata, Devlin " 
+pal.defaults = 1
+
+;--------- los sprite Base de Shura pertenecen a Gabriel-----------------.
+;--------- varios sprites pertenecen a Caballeropirata-----------------.
+;--------- fue usada la programacion de Tecla2000 y algunos sprites de las magias-----------------.
+;--------- más algúnas modificaciones hechas por mi en el sff y en el air -----------------. 
+
+
+[Files]
+cmd = Shura_Espectro.cmd
+cns = Shura_Espectro.cns
+st = Shura_Espectro.cns
+stcommon = Shura_Espectro2.cns
+sprite = Shura_Espectro.sff
+anim = Shura_Espectro.air
+sound = Shura_Espectro.snd
+pal1 = Shura001.act 
+pal2 = Shura002.act 
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

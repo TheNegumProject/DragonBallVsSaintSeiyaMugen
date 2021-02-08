@@ -1,0 +1,60 @@
+[SceneDef]
+spr = cydending.sff
+author = "hades81"
+startscene = 0
+
+[Scene 0]
+fadein.time = 100
+fadein.col = 0,0,0
+fadeout.time = 100
+fadeout.col = 0,0,0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim =  0
+layer0.offset = 0,0
+layer1.anim =  1
+layer1.offset = 0,230
+layer2.anim =  2
+layer2.offset = 300,230
+layer3.anim =  3
+layer3.offset = 30,2
+layer3.starttime = 95
+bgm = stages\
+bgvolume = 255
+bgm.loop = 1
+end.time = 1500
+
+[Begin Action 0]
+0,0, 0,0, 20
+0,1, 0,0, 20
+0,2, 0,0, 20
+
+[Begin Action 1]
+1,0, 0,0, 20
+1,1, 0,0, 20
+
+[Begin Action 2]
+2,0, 0,0, 20
+2,1, 0,0, 20
+
+[Begin Action 3]
+5,0, 0,0, 10
+5,1, 0,0, 10
+5,2, 0,0, 10
+5,3, 0,0, 10
+5,4, 0,0, 10
+5,5, 0,0, 10
+5,6, 0,0, 10
+5,7, 0,0, 10
+5,8, 0,0, 10
+5,9, 0,0, 10
+5,10, 0,0, 10
+5,11, 0,0, 150
+5,12, 0,0, 150
+5,13, 0,0, 150
+5,14, 0,0, 150
+5,15, 0,0, 150
+5,16, 0,0, 150
+5,17, 0,0, 150
+5,18, 0,0, 150
+5,19, 0,0, -1

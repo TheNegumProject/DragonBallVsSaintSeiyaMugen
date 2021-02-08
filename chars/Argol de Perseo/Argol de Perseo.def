@@ -1,0 +1,23 @@
+[Info]
+name="Argol de perseo"
+DisplayName="Argol" 
+mugenversion =01,04,2000   
+author ="gouketsu and fenril ,silver team and tmich." 
+versiondate=23/09/2006
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd=argol.cmd
+cns=argol.cns
+st=argol.cns
+stcommon=argol2.cns
+sprite=argol.sff
+sound=argol.snd
+anim=argol.air
+pal1=perseo.act
+pal2=argol.act
+pal3=negro.act
+pal4=gris.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

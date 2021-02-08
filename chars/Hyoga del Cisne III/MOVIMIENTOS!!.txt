@@ -1,0 +1,14 @@
+
+Movimientos para hyoga con la tercer armadura
+
+
+Diamond Dust: B, DB, D, DF, F, a
+
+Aurora thunder attack: B, DB, D, DF, F, b
+
+Aurora Execution: B, DB, D, DF, F, z  (con vida menor a 1500)
+
+Gold Diamond Dust: B, DB, D, DF, F, c (con vida menor a 1500)
+
+;------------|SAGA_DE_GEMINIS|----|&|----|sS_Shaka_Ss|-------------------->
+

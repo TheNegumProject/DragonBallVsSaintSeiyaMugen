@@ -1,0 +1,52 @@
+
+
+;*****************************************************************************************
+;                                                                                        *                               *
+;Seiya de Pegasus  Autor  Grafica : Tecla2000 (base general de sprit Claudio Ricci(MIM)) *
+;                          Programacion : Tecla2000                                      *
+;                                                                                        *                               *
+;*****************************************************************************************
+
+; Player information
+
+[Info]
+
+name = "Seiya de Pegasus"      
+displayname = "Seiya de Pegasus" 
+versiondate =   25,03,2011 ; Inicios 18-05-2010, final 25-03-2011
+mugenversion = 18,01,2011
+author = "Tecla2000" 
+pal.defaults = 1,2,3,4,5,6
+
+;----------------------------------------------------------------------------------------
+;
+; Autor original del chars Claudio Ricci ( MIN ), 
+; REformado por varios despues ( TonyADV, David Bazar, tux y otros)
+; y vercion Final termina por Tecla2000 edicion de sprit y programacion.
+; 
+;----------------------------------------------------------------------------------------
+
+[Files]
+
+cmd      = Seiya_Pegaso.cmd
+cns      = Seiya_Pegaso.cns
+st       = Seiya_Pegaso.cns
+st1      = Seiya_Pegaso_Poderes.cns
+st2      = Seiya_Pegaso_speciales.cns
+stcommon = Seiya_Pegaso2.cns
+sprite   = Seiya_Pegaso.sff
+anim     = Seiya_Pegaso.air
+sound    = Seiya_Pegaso.snd
+
+pal1     = Seiya_Pegaso.act
+pal2     = Seiya_Pegaso2.act
+pal3     = Seiya_Pegaso3.act
+pal4     = Seiya_Pegaso4.act
+pal5     = Seiya_Pegaso5.act
+pal6     = Seiya_Pegaso6.act
+pal7     = Seiya_Pegaso7.act
+pal8     = Seiya_Pegaso8.act
+pal9     = Seiya_Pegaso9.act
+pal10    = Seiya_Dorado.act
+pal11    = Seiya_Manga.act
+pal12    = Seiya_Spectro.act

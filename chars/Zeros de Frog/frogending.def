@@ -1,0 +1,23 @@
+
+[SceneDef]	
+spr = kikiending.sff
+[Scene 1]  
+startscene = 1
+	
+fadein.time = 30		
+fadein.col = 0,0,0
+fadeout.time = 20
+clearcolor = 0,0,0		
+layerall.pos = 0,0		
+layer0.anim = 1			
+layer0.offset = 0,0
+bgm = sound\belier.mp3                           
+end.time = 1020
+
+
+[Begin Action 1]
+0,1, 0,0, 180
+0,2, 0,0, 180
+0,3, 0,0, 180
+0,10, 0,0, 250
+0,11, 0,0, 250

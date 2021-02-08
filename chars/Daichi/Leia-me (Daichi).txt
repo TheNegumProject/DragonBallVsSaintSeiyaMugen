@@ -1,0 +1,24 @@
+----------------------------------------------------------------------------------------------
+Informações do char:
+
+Nome: Daichi de Rapoza da Armadura da Terra
+Versão: Beta
+Autores: Link e Beja
+Animação: Link
+Programação: Beja
+SND: Não Realizado
+Data de Lançamento: 25/12/2004
+
+----------------------------------------------------------------------------------------------
+
+Qualquer publicação ou alteração nesse char você deve comunicar aos autores dele,mandando
+um email para mugencdz@hotmail.com. Caso queira saber mas informações sobre o char e outros
+projetos entre no site http://www.cdzmugen.blogger.com.br e confira.
+
+Equipe CDZMugen Br
+
+---------------------------------------------------------------------------------------------
+
+Golpes & Espeçiais:
+
+Mini Furacão 1 => ~D, DF, F, y

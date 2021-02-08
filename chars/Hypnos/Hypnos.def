@@ -1,0 +1,37 @@
+; Definition file for Hypnos and Thanatos
+; Contains all the filenames needed for the character
+;This char was inspired on Masami Kurumada Hypnos and Thanatos Character
+
+; Player information
+[Info]
+name ="Hypnos"             
+displayname ="Hypnos"        
+versiondate =6,12,2003      
+mugenversion =14,04,2001     
+author ="Caballeropirata"                 
+pal.defaults =1,2,3,4,5,6               
+
+; Files for the player
+[Files]
+cmd      =HyT.cmd             
+cns      =HyT.cns              
+st       =HyT.cns            
+stcommon =HyT2.cns            
+sprite   =HYT.sff            
+anim     =HYT.air              
+sound    =HyT.snd              
+pal1=HyT2.act
+
+
+st1=super.cns
+st2=special.cns
+st3=special.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;intro.storyboard= kanonintro.def
+;ending.storyboard= kanonending.def
+
+
+

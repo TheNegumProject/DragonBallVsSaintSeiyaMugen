@@ -1,0 +1,25 @@
+[Info]
+name ="Shiryu de Libra (Saga de Hades)"        
+displayname ="Shiryu"  
+versiondate =05,02,2006     
+mugenversion =11,29,2000    
+author ="ShiryuD"              
+pal.defaults =1     
+
+; Files for the player
+[Files]
+cmd      =shiryu.cmd             
+cns      =shiryu2.cns            
+st       =shiryu2.cns             
+stcommon =shiryu1.cns        
+sprite   =shiryu.sff           
+anim     =shiryu.air            
+sound    =shiryu.snd         
+pal1=shiryu.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+;primera versión de Gustavo Moraes [Saint_mugen], algunos sprites fueron añadidos por mi.
+;Ausberto7@hotmail.com

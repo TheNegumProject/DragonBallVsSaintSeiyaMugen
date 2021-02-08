@@ -1,0 +1,53 @@
+[Info]
+name="giganto de cyclopes"
+displayname="Giganto"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+author="kyesse the saint"
+pal.defaults=
+
+; Files for the player
+[Files]
+cmd=Giganto.cmd
+cns=Giganto.cns
+st=Giganto.cns
+stcommon=common1.cns
+sprite=Giganto.sff
+anim=Giganto.air
+sound=Giganto.snd
+pal1=Giganto.act
+pal2=
+pal3=
+pal4=
+pal5=
+pal6=
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+
+; Arcade mode
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br
+
+[Extra Info]
+Manufactory=
+Game=
+Style=
+AI=
+Race=
+Size=
+Strenght=
+Buttons=
+Combos=
+Boss=0
+SuperJump=0
+Levitate=0
+Secret=0

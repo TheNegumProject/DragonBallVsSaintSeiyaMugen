@@ -1,0 +1,31 @@
+;=======================================;
+;        Character Def File for:        ;
+;Jabu by Mugeneration & Rick Pk Liquid Snake;
+;     for MUGEN v. (version number)     ;
+;       Maker's Website HTTP here       ;
+;                                       ;
+;   Made with MUGEN Editing Ensemble    ;
+;     (http://ragnaroknemo.cjb.net)     ;
+;=======================================;
+
+[Info]
+name ="Jabu del unicornio"
+displayname ="Jabu del unicornio"
+versiondate = 
+mugenversion = 
+author ="Mugeneration"
+pal.defaults =1
+
+[Files]
+cns =jabu.cns
+cmd =jabu.cmd
+stcommon =common1.cns
+sprite =jabu.sff
+anim =jabu.air
+st =jabu.st
+sound =jabu.snd
+pal1=jabu.act
+pal2=jabu2.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

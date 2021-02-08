@@ -1,0 +1,18 @@
+[Info]
+name="Hyoga de Cisne"
+DisplayName="Hyoga" 
+mugenversion = 01,04,2000   
+author = "Naruto.sasuke"et pour le retouche de sprite"chevalierphenix" 
+
+[Files]
+cmd=hyoga.cmd
+cns=hyoga.cns
+st=hyoga.cns
+stcommon=hyoga2.cns
+sprite=hyoga.sff
+anim=hyoga.air
+pal1=hyo2.act
+sound=hyoga.snd
+
+[Arcade] 
+intro.storyboard = 

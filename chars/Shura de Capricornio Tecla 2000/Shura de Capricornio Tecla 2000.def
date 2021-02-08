@@ -1,0 +1,25 @@
+[Info]
+name="Shura de Capricornio"
+DisplayName="Shura de Capricornio"    
+versiondate = 19,12,2004 ; final 06/03/2005   
+mugenversion = 14,04,2001   
+author =" Tecla2000 " 
+pal.defaults = 1
+
+;--------- los sprite pertenecen a Gabriel, el autor de la primera version Beta -----------------. 
+
+
+[Files]
+cmd = Shura.cmd
+cns = Shura.cns
+st = Shura.cns
+stcommon = Shura2.cns
+sprite = Shura.sff
+anim = Shura.air
+sound = Shura.snd
+pal1 = Shura.act 
+
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

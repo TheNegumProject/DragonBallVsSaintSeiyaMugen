@@ -1,0 +1,33 @@
+/--------------------------\
+)    	Saint Seiya        (  
+)	 Mythologie        (
+)	   Mugen 	   (
+)                          (
+)  Tehar Magellan Tristane (
+\--------------------------/
+
+; Player information
+[Info]
+name="Gemini Saga"
+displayname="Saga des gemeaux"
+versiondate=6,12,2003
+
+pal.defaults = 1 
+; Files for the player
+[Files]
+cmd=saga.cmd
+cns=saga.cns
+st=saga.cns
+st2=super.cns 
+st3=special.cns 
+stcommon=saga2.cns
+sprite=saga.sff
+anim=saga.air
+sound=saga.snd
+pal1=gemini.act
+pal2=gemini.act
+
+
+
+[Arcade]
+intro.storyboard = gemeaux.def

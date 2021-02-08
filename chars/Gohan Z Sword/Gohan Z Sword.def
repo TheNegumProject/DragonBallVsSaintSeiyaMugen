@@ -1,0 +1,21 @@
+[Info]
+name="GohanZ"
+displayname="Gohan Z Sword"
+versiondate=
+mugenversion=
+author="Marcus MugenMundo"
+pal.defaults=1,2
+[Files]
+sprite=GohanZ.sff
+sound=GohanZ.snd
+anim=GohanZ.air
+cmd=GohanZ.cmd
+cns=GohanZ.cns
+st=GohanZ.cns
+stcommon=common1.cns
+pal1=1
+pal2=SSJ
+
+[Arcade]
+intro.storyboard=
+ending.storyboard= ..\data\final.def

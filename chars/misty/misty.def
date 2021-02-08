@@ -1,0 +1,30 @@
+; Definition file for Misty
+
+; Player information
+[Info]
+name="Lacerta Misty"        
+displayname="Misty"           
+versiondate = 21,01,2005         
+;mugenversion = Winmugen and dosmugen compatible        
+author = "Mû, McCready, & MetalJoke"       
+pal.defaults = 1,2,3,4,5,6
+
+; Files for the player
+[Files]
+cmd      = misty.cmd   ;Command set
+cns      = misty.cns   ;Constants
+st       = misty.cns   ;States
+stcommon = commonmu.cns;Common states
+sprite   = misty.sff   ;Sprite
+anim     = misty.air   ;Animation
+sound    = misty.snd   ;Sound
+pal1     = 1.act   ;palettes (can have up to 12)
+pal2     = 2.act
+pal3     = 3.act
+pal4     = 4.act
+pal5     = 5.act
+pal6     = 6.act
+
+; Arcade mode
+[Arcade]
+intro.storyboard = intro.def

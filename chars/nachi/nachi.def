@@ -1,0 +1,19 @@
+[Info]
+name="nachi"
+DisplayName="Nachi Loup Mineur"    
+versiondate = 06,27,2000    
+mugenversion = 11,29,2000   
+author ="Mû de Jamir (Original: Seiya)" 
+
+[Files]
+cmd=nachi.cmd
+cns=nachi.cns
+st=nachi.cns
+stcommon=nachi2.cns
+sprite=nachi.sff
+anim=nachi.air
+sound=nachi.snd
+pal1=nachi.act
+pal2=white.act
+pal3=black.act
+pal4=hidden.act

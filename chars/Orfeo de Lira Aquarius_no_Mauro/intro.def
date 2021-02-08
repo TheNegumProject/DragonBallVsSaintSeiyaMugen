@@ -1,0 +1,47 @@
+; Introduction cutscene for KFM's story.
+
+; This storyboard has multiple scenes.
+; Each scene uses two overlay anims, one for the picture, and
+; another for the text.
+; The fadein and fadeout parameters are used to fade one screen
+; to the next.
+
+[SceneDef]
+spr = intro.sff
+startscene = 0         ;Starting scene number (for debugging)
+
+;------------------------------------
+[Scene 0]
+; Fade
+fadein.time = 60       ;Time to take for fading in
+fadein.col = 255,255,255     ;Use 255,255,255 for white-fade
+fadeout.time = 15
+fadeout.col = 0,0,0
+; Screen color
+clearcolor = 0,0,0
+; Overlay Anims (from 0 to 9)
+layerall.pos = 0,0   ;Default position for all layers
+layer0.anim =  0       ;Anim action number
+layer0.offset = 65,0   ;Position offset
+layer0.starttime = 0   ;Time to start display
+
+; Music
+bgm = abel.mp3        ;Name of music file to play
+bgm.loop = 1
+; Total time
+end.time = 1000
+
+
+;Background image
+[Begin Action 0]
+0, 0, 0, 0, 100
+0, 4, 0, 0, 80
+0, 0, 0, 0, 80
+0, 4, 0, 0, 80
+0, 0, 0, 0, 80
+0, 4, 0, 0, 80
+0, 3, 0, 0, 15
+0, 2, 0, 0, 200
+0,5, 0, 0, -1
+
+

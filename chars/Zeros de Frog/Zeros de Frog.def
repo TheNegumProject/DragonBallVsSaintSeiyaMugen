@@ -1,0 +1,36 @@
+[Info]
+name="frog zeros"
+displayname="Zeros"
+author="kyesse the saint"
+versiondate=12/10/2004
+mugenversion=
+pal.defaults=
+
+[Files]
+cmd=frog.cmd
+cns=frog.cns
+st=frog.cns
+stcommon=common1.cns
+sprite=frog.sff
+anim=frog.air
+sound=frog.snd
+pal1=Zeros.act
+;pal2=kiki2.act
+;pal3=kiki3.act
+;pal4=kiki4.act
+;pal5=kiki5.act
+;pal6=kiki6.act
+;pal7=
+;pal8=
+;pal9=
+;pal10=
+;pal11=
+;pal12=
+
+[Arcade]
+intro.storyboard=frogintro.def
+ending.storyboard=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br

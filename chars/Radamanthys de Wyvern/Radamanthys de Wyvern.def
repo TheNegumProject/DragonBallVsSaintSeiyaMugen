@@ -1,0 +1,43 @@
+; Definition file for Radamanthys by Tux
+;--------------------------------------------------------------------------
+
+; Char basato su un Sprite fatto da Tripticon, quindi non è la versione originale
+; dell'autore in questione, ma è una versione completamente diversa del char basata
+; sullo stesso frame.
+
+; This char is based on a Sprite made by Tripticon, so it isn't his original version,
+; but a completely different version of the char based on the same frame.
+
+;Player information
+[Info]
+name="radamanthys"
+displayname="Radamanthys"
+versiondate=04,24,2006 (TO BE RESTYLED)
+mugenversion=06,14,2003 (WINMUGEN)
+author="TUX (Code) / TRIPTICON (First Sprite) / KANON (Sprites) / ZAHORI (Special Effects)"
+;Sprite Re-Definers: VEGETH1985, SAGAKANON, IKKI DI GEMINI, FRANK, MIMOSA
+;Thanks to JONES.WOLF for capturing screenshots from the anime and for being the Beta-Tester
+;Special Thanks to LEANDRO BEJA for managing the W.I.P.
+pal.defaults=1,2,3,4
+
+;Files for the player
+[Files]
+cmd=radamanthys.cmd
+cns=radamanthys.cns
+st=radamanthys.cns
+stcommon=radamanthysB.cns
+sprite=radamanthys.sff
+anim=radamanthys.air
+sound=radamanthys.snd
+pal1=001.act
+pal2=002.act
+pal3=003.act
+pal4=004.act
+
+;Files for the storyboard
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+
+

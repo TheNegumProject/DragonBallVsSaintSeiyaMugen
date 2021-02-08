@@ -1,0 +1,27 @@
+; Character information
+[Info]
+name    ="Metal Kooler"
+displayname ="Metal Cooler"
+versiondate=7/4/2008
+mugenversion=
+author=""
+pal.defaults=1,2
+
+
+; Files for the character
+[Files]
+cmd     =Meta-Kooler.cmd
+cns     =Meta-Kooler.cns
+st      =Meta-Kooler.cns
+stcommon =common1.cns
+sprite  =Meta-Kooler.sff
+anim    =Meta-Kooler.air
+sound   =
+pal1=Freez01.act
+pal2=Freez01.act
+
+; Arcade mode
+[Arcade]
+intro.storyboard =
+ending.storyboard =..\data\final.def
+

@@ -1,0 +1,762 @@
+
+[SceneDef]
+spr = seiyaintro.sff
+
+[Scene 1]
+fadein.time = 30
+fadein.col = 0,0,0
+fadeout.time = 10
+clearcolor = 0,0,0
+layerall.pos = 0,0  
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 19
+layer1.offset = 20,230
+layer2.anim = 1
+layer2.offset = 90,230
+bgm = Urushite.mp3                ;mettre la musique que vous voulez
+end.time = 200
+
+[Scene 2]
+fadein.time = 10
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 31
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+end.time = 12
+
+[Scene 3]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0  
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 32
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 42
+layer3.offset = 90,230
+layer3.starttime = 40
+end.time = 48
+
+[Scene 5]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0 
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 3
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+end.time = 76
+
+[Scene 6]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 33
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 183,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 7]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 34
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 203,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 8]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 35
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 233,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 9]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 36
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 263,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 10]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 37
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 293,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 11]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 38
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 323,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 12]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 39
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 353,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 13]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 40
+layer1.offset = 90,230
+layer2.anim = 7
+layer2.offset = 383,133
+layer3.anim = 19
+layer3.offset = 20,230
+end.time = 4
+
+[Scene 14]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 11
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 12
+layer3.offset = 90,230
+layer3.starttime = 4
+layer4.anim = 13
+layer4.offset = 90,230
+layer4.starttime = 4
+end.time = 28
+
+[Scene 15]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,200
+layer3.anim = 44
+layer3.offset = 90,200
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 16]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,170
+layer3.anim = 44
+layer3.offset = 90,170
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 17]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,140
+layer3.anim = 44
+layer3.offset = 90,140
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 18]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,110
+layer3.anim = 44
+layer3.offset = 90,110
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 19]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,80
+layer3.anim = 44
+layer3.offset = 90,80
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 20]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,50
+layer3.anim = 44
+layer3.offset = 90,50
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 21]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,20
+layer3.anim = 44
+layer3.offset = 90,20
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 22]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 10
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 45
+layer1.offset = 90,230
+layer2.anim = 46
+layer2.offset = 90,-10
+layer3.anim = 44
+layer3.offset = 90,-10
+layer4.anim = 19
+layer4.offset = 20,230
+end.time = 4
+
+[Scene 23]
+fadein.time = 10
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 47
+layer3.offset = 150,20
+layer4.anim = 49
+layer4.offset = 30,2
+layer5.anim = 50
+layer5.offset = 30,2
+layer5.starttime = 22
+end.time = 200
+
+[Scene 24]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 48
+layer3.offset = 150,20
+end.time = 20
+
+[Scene 25]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,-10
+end.time = 4
+
+[Scene 26]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,20
+end.time = 4
+
+[Scene 27]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,50
+end.time = 4
+
+[Scene 28]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,80
+end.time = 4
+
+[Scene 29]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,110
+end.time = 4
+
+[Scene 30]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,140
+end.time = 4
+
+[Scene 31]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,170
+end.time = 4
+
+[Scene 32]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 0
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,200
+end.time = 4
+
+[Scene 33]
+fadein.time = 0
+fadein.col = 0,0,0
+fadeout.time = 10
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 22
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 10
+layer3.offset = 200,230
+end.time = 4
+
+[Scene 34]
+fadein.time = 10
+fadein.col = 0,0,0
+fadeout.time = 60
+clearcolor = 0,0,0
+layerall.pos = 0,0
+layer0.anim = 2
+layer0.offset = 0,0
+layer1.anim = 21
+layer1.offset = 90,230
+layer2.anim = 19
+layer2.offset = 20,230
+layer3.anim = 16
+layer3.offset = 200,230
+layer4.anim = 49
+layer4.offset = 30,2
+layer5.anim = 51
+layer5.offset = 30,2
+layer5.sarttime = 22
+end.time = 500
+
+;seiya debout
+[Begin Action 1]
+0,0, 0,0, 4
+0,1, 0,0, 4
+0,2, 0,0, 4
+0,3, 0,0, 4
+0,4, 0,0, 4
+0,3, 0,0, 4
+0,2, 0,0, 4
+0,1, 0,0, 4
+
+;espace
+[Begin Action 2]
+2,0, 0,0, -1
+
+;sagittaire tire la fleche
+[Begin Action 3]
+3,0, 0,0, 60
+3,1, 0,0, 4
+3,2, 0,0, 4
+3,3, 0,0, 4
+3,4, 0,0, 4
+
+;flèche
+[Begin Action 7]
+8,0, 0,0, -1
+
+;armure sagittaire
+[Begin Action 10]
+12,0, 0,0, -1
+
+;seiya enleve sagittaire
+[Begin Action 11]
+13,0, 0,0, 4
+13,1, 0,0, 4
+13,2, 0,0, 4
+13,3, 0,0, 4
+13,2, 0,0, 4
+13,1, 0,0, 4
+13,2, 0,0, 4
+
+;armure sagittaire vole
+[Begin Action 12]
+14,0, 0,0, 4
+14,1, 0,0, 4
+14,2, 0,0, 4
+14,1, 0,0, 4
+14,2, 0,0, 4
+14,1, 0,0, 4
+
+;casque
+[Begin Action 13]
+15,0, 0,0, 4
+15,1, 0,0, 4
+15,0, 0,0, 4
+15,1, 0,0, 4
+15,0, 0,0, 4
+15,1, 0,0, 4
+
+
+;armure sagittaire concentre
+[Begin Action 16]
+20,0, 0,0, 4
+20,1, 0,0, 4
+20,2, 0,0, 4
+20,1, 0,0, 4
+
+;armure pegase vole
+[Begin Action 17]
+21,0, 0,0, 4
+21,1, 0,0, 4
+
+;seiya debout
+[Begin Action 18]
+1,0, 0,0, -1
+
+;marine 2
+[Begin Action 19]
+19,0, 0,0, 4
+19,1, 0,0, 4
+19,2, 0,0, 4
+19,1, 0,0, 4
+
+;armure pegase
+[Begin Action 20]
+10,0, 0,0, -1
+
+;seiya debout armure
+[Begin Action 21]
+24,0, 0,0, -1
+
+;seiya debout saori
+[Begin Action 22]
+23,0, 0,0, -1
+
+
+
+;seiya prepare enlever armure pegase
+[Begin Action 31]
+1,11, 0,0, 4
+1,12, 0,0, 4
+1,10, 0,0, 4
+
+;seiya enleve pegase
+[Begin Action 32]
+1,9, 0,0, 4
+1,8, 0,0, 4
+1,7, 0,0, 4
+1,6, 0,0, 4
+1,5, 0,0, 4
+1,4, 0,0, 4
+1,3, 0,0, 4
+1,2, 0,0, 4
+1,1, 0,0, 4
+1,0, 0,0, 12
+
+;sgittaire tire fleche 2
+[Begin Action 33]
+3,5, 0,0, -1
+
+;sgittaire tire fleche 3
+[Begin Action 34]
+3,6, 0,0, -1
+
+;sgittaire tire fleche 4
+[Begin Action 35]
+3,7, 0,0, -1
+
+;sgittaire tire fleche 4
+[Begin Action 36]
+3,8, 0,0, -1
+
+;sgittaire tire fleche 5
+[Begin Action 37]
+3,9, 0,0, -1
+
+;sgittaire tire fleche6
+[Begin Action 38]
+3,10, 0,0, -1
+
+;sgittaire tire fleche 7
+[Begin Action 39]
+3,11, 0,0, -1
+
+;sgittaire tire fleche 8
+[Begin Action 40]
+3,12, 0,0, -1
+
+;sagittaire vole 2
+[Begin Action 42]
+14,1, 0,0, 4
+14,0, 0,0, 4
+
+;casque 2
+[Begin Action 44]
+15,1, 0,0, -1
+
+;seiya regarde armure s'envoler
+[Begin Action 45]
+13,1, 0,0, -1
+
+;armure sagittaire s'envole
+[Begin Action 46]
+14,2, 0,0, -1
+
+;ayoros apparait
+[Begin Action 47]
+28,0, 0,0, 4
+28,1, 0,0, 4
+28,2, 0,0, 4
+28,3, 0,0, 4
+28,4, 0,0, 4
+28,5, 0,0,200
+
+;ayoros disparait
+[Begin Action 48]
+28,4, 0,0, 4
+28,3, 0,0, 4
+28,2, 0,0, 4
+28,1, 0,0, 4
+28,0, 0,0, 4
+
+;text box
+[Begin Action 49]
+29,0, 0,0, 2
+29,1, 0,0, 2
+29,2, 0,0, 2
+29,3, 0,0, 2
+29,4, 0,0, 2
+29,5, 0,0, 2
+29,6, 0,0, 2
+29,7, 0,0, 2
+29,8, 0,0, 2
+29,9, 0,0, 2
+29,10, 0,0, 2
+29,11, 0,0, -1
+
+;texte 1
+[Begin Action 50]
+30,4, 0,0, -1
+
+;texte 2
+[Begin Action 51]
+30,5, 0,0, -1

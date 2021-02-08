@@ -1,0 +1,38 @@
+
+[Info]
+name ="Aiolia"        
+displayname ="Leo Aiolia" 
+versiondate =10,12,2009      
+mugenversion =06,14,2003     
+author ="YAMAKICHI"          
+pal.defaults =1,5          
+
+[Files]
+cmd      =Aiolia.cmd
+cns      =Aiolia.cns
+st       =Aiolia.cns 
+stcommon =common1.cns
+sprite   =Aiolia.sff
+anim     =Aiolia.air
+sound    =Aiolia.snd
+pal1=aiolia1.act
+
+st1=Aiolia_n.cns
+st2=jump.cns
+st3=Aiolia_a.cns
+st4=Aiolia_s.cns
+st5=power.cns
+st6=away.cns
+
+;カラー
+;pal5     = aiolia5.act   ;
+;pal6     = aiolia6.act   ;
+
+[Arcade]
+;オープニング
+;intro.storyboard = intro.def
+;エンディング
+;ending.storyboard = ending.def
+
+intro.storyboard=
+ending.storyboard=

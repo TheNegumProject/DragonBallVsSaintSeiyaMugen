@@ -1,0 +1,32 @@
+
+[Info]
+name="Shion de Aries"
+displayname="Shion"
+versiondate=01,12,2004  ; Version Fianl 06,01,2005
+mugenversion=04,14,2001
+author = "Tecla2000"
+pal.defaults= 1,2,3
+;------------------------->autor-Sprites= " MU y Modificados por ikki de lion "<------------------------------------
+;------------------------->programacion base Chars de Spectro de Cancer y algunas modificaciones<-------------------
+;------------------------->Tres paletas son de Angelux Hades3, Hades2 y Shion-Oro1<---------------------------------
+;------------------------->En este Chars partisipo Sahjan Daemonicus con sprit y un poder, y por supuesto con sus
+;------------------------->sabios consejos de que debia cambiar en la primera beta que realize, Gracias<------------
+
+[Files]
+cmd=Shion.cmd
+cns=Shion.cns
+st=Shion.cns
+stcommon=Shion2.cns
+sprite=Shion.sff
+anim=Shion.air
+sound=Shion.snd
+pal1=Shion.act
+pal2=Shioncombo01.act
+pal3=Hades3.act
+pal5=Hades2.act
+pal6=Shioncombo02.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+

@@ -1,0 +1,19 @@
+; Character information
+[Info]
+name    = "Meta Kooler"
+displayname = "Metal Cooler"
+; Files for the character
+[Files]
+cmd     = Meta Kooler.cmd     ;Command set
+cns     = Meta Kooler.cns     ;Constants
+st      = Meta Kooler.cns     ;States
+stcommon = common1.cns   ;Common states
+sprite  = Meta Kooler.sff     ;Sprite
+anim    = Meta Kooler.air     ;Animation
+sound   = ;Meta Kooler.snd     ;Sound
+pal1    = Freez01.act     ;Palettes
+
+; Arcade mode
+[Arcade]
+intro.storyboard = 
+ending.storyboard = ;ending.def

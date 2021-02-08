@@ -1,0 +1,22 @@
+
+[Info]
+name="pegasus"
+DisplayName="Seiya de Pegaso"    
+versiondate = 06,27,2000    
+mugenversion = 11,29,2000   
+author = "Claudio Ricci(MIM)" 
+
+[Files]
+cmd=seiya.cmd
+cns=seiya.cns
+st=seiya.cns
+stcommon=seiya2.cns
+sprite=seiya.sff
+anim=seiya.air
+sound=seiya.snd
+
+
+
+
+
+

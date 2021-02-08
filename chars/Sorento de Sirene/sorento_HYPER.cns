@@ -1,0 +1,2975 @@
+;========================================================================
+;------------------------------------------------------------------------------------------------------------------------------
+;MUSIC
+[Statedef 2000]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3010
+juggle = 15
+
+[State 3020,poweradd]
+type = poweradd
+trigger1 = Time = 0
+trigger1 = var(20) <= 0
+value = -1000
+[State 3020,poweradd]
+type = poweradd
+trigger1 = Time = 0
+trigger1 = var(20) > 0
+trigger1 = prevstateno = [200,399]
+value = 0
+[State 3020,poweradd]
+type = poweradd
+trigger1 = Time = 0
+trigger1 = var(20) > 0
+trigger1 = prevstateno = [1000,1999]
+value = -1000
+
+[State 3000,playsnd]
+type = Playsnd
+trigger1 = Time = 0
+value = 3000,0
+
+[State 3000,playsnd]
+type = Playsnd
+trigger1 = Time = 0
+value = F15,0
+
+;-----------------------------------------------------------------------------------------------
+;small super 60, big ???
+[State 2000,SuperPause]
+type = SuperPause
+trigger1 = Time = 0
+time = 40
+anim = -1
+sound =  0,0
+pos = 0,0
+movetime = 20
+darken = 1
+unhittable = 1
+supermove = 1
+poweradd = 0
+[State 2000,SuperPause]
+type = Explod
+trigger1 = time = 0
+anim = F177
+sprpriority = 5
+postype = p1
+pos = 10,-80
+bindtime = 1
+pausemovetime = 40
+removetime = 40
+ignorehitpause = 0
+scale = 1,1
+vel = 0,0
+ownpal = 1
+supermove = 1
+
+[State 2000,SuperPause]
+type = Explod
+trigger1 = time = 0
+anim = F194
+sprpriority = 5
+postype = p1
+pos = 10,-80
+bindtime = 1
+pausemovetime = 52
+removetime = 52
+ignorehitpause = 1
+scale = 1,1
+vel = 0,0
+ownpal = 1
+supermove = 1
+
+[State 2000,SuperPause]
+type = Explod
+trigger1 = time = 0
+anim = F190
+sprpriority = -5
+postype = back
+pos = 0,0
+bindtime = 1
+pausemovetime = 40
+removetime = 40
+ignorehitpause = 0
+scale = 0.5 , 0.5
+vel = 0,0
+ownpal = 1
+supermove = 1
+;-----------------------------------------------------------------------------------------------
+
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;white dust
+type = Explod
+trigger1 = time = 1 
+ID = 3080
+anim = F216
+sprpriority = 5
+postype = p1
+pos = -10,0
+bindtime = 1
+pausemovetime = 0
+removetime = 61
+ignorehitpause = 0
+scale = 0.5 , 0.5
+vel = 0,0
+ownpal = 1
+;=============================================================
+
+[State 200,3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 2010
+ctrl = 0
+
+;HELPER
+[Statedef 30001]
+type = S
+physics = N
+movetype = A
+ctrl = 0
+anim = 30001
+
+[State 3010,help]	
+type = velset
+trigger1 = time >= 0
+x = 0.5
+
+[State 3010,help]	
+type = playerpush
+trigger1 = time >= 0
+value = 1
+
+[State 3010,help]	
+type = Nothitby
+trigger1 = time >= 0
+value = SCA
+
+[State 3010,help]	
+type = DestroySelf
+trigger1 = p2stateno = 2060			;3060
+trigger2 = time = 500
+trigger3 = p2stateno = 650			;cosmos explode
+;
+trigger4 = p2name = "sorento"
+trigger4 = p2stateno = 2000
+trigger5 = p2name = "sorento"
+trigger5 = p2stateno = 2010
+trigger6 = p2name = "sorento"
+trigger6 = p2stateno = 2030
+trigger7 = NumHelper(5000) = 1		;helper5000 is when p1 hitover
+;
+trigger8 = p2name = "sorento"
+trigger8 = p2stateno = 3000
+trigger9 = p2name = "sorento"
+trigger9 = p2stateno = 3010
+trigger10 = p2name = "sorento"
+trigger10 = p2stateno = 3030
+trigger11 = p2stateno = 3060			;3060
+
+;HELPER
+[Statedef 30002]
+type = S
+physics = N
+movetype = A
+ctrl = 0
+anim = 30001
+
+[State 3010,help]	
+type = DestroySelf
+trigger1 = time = 1
+
+[Statedef 2010]		;3010
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 2001
+juggle = 0
+
+;HELPER FOR PUSH P2
+[State 3010,help]	
+type = helper
+trigger1 = time = 0
+name = "push_p2"
+ID = 30001
+helpertype = normal
+pos = -20,0
+postype = p2
+keyctrl = 0
+ownpal = 0
+supermovetime = 0
+pausemovetime = 0
+stateno = 30001
+
+[State 3010,snd]	;channel 1 is attack music
+type = PlaySnd
+trigger1 = Time = 65
+channel = 11
+loop = 0
+value = 3000,1
+
+[State 210,3]		;BIG BG BEAUTY
+type = Explod
+trigger1 = time = 0
+ID = 2020			;3020
+anim = F217
+sprpriority = -6
+postype = left
+pos = 0, 0
+bindtime = -1
+pausemovetime = 1
+removetime = 650		;ID 3040 is 360
+ignorehitpause = 1
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 210,3]		;BIG BG BLACK
+type = Explod
+trigger1 = time = 0
+ID = 2020			;3020
+anim = F150
+sprpriority = -7
+postype = left
+pos = 0,0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 1,1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 1200,HitDef]
+type = Hitdef
+triggerall = P2statetype != L && statetype != A
+trigger1 = time = 0
+trigger2 = time = 20
+trigger3 = time = 40
+trigger4 = time = 70
+trigger5 = time = 86
+trigger6 = time = 106
+trigger7 = time = 126
+trigger8 = time = 139
+trigger9 = time = 156
+trigger10 = time = 175
+trigger11 = time = 193
+trigger12= time = 209
+trigger13 = time = 226
+trigger14 = time = 245
+trigger15 = time = 263
+trigger16 = time = 279
+trigger17 = time = 296
+trigger18 = time = 315
+trigger19 = time = 330
+trigger20 = time = 349
+trigger21 = time = 366
+trigger22 = time = 385
+trigger23 = time = 402
+trigger24 = time = 419
+trigger25 = time = 435
+trigger26 = time = 455
+trigger27 = time = 472
+trigger28 = time = 490
+trigger29 = time = 507
+trigger30 = time = 526
+trigger31 = time = 542
+trigger32 = time = 560
+trigger33 = time = 577
+trigger34 = time = 595
+trigger35 = time = 616
+trigger36 = time = 629
+attr = S, HT
+damage = 0,5
+getpower = 0
+givepower = 0
+hitflag = MAF			
+;If "+" added the hit only affects P2 in a gethit state.
+;If "-" added then the hit only affects P2 that are NOT in a gethit state.  
+guardflag = MA			; -1
+priority = 6,miss			;spector is hit, oliver is miss
+sparkno = 168
+guard.sparkno = 164
+sparkxy = 0,-70
+ground.velocity = 0
+guard.velocity = -4
+guard.hittime = 17
+ground.slidetime = 12
+guard.pausetime = 0,2
+pausetime = 0,10
+p2facing = 1
+p1stateno = 2040	;3040
+p2stateno = 2060	;3060
+;fall = 1
+fall.recover = 0
+ground.cornerpush.veloff = 2
+guard.cornerpush.veloff = 2
+
+[State 3000,3]		;playing music anim
+type = Explod
+trigger1 = time = 1
+ID = 2020		;3020
+anim = 3020
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = -1
+pausemovetime = 0
+removetime = 650	;840
+ignorehitpause = 0
+scale = 0.5, 0.5
+ownpal = 0
+
+[State 210,3]
+type = RemoveExplod
+trigger1 = stateno != 2010		; 3010
+trigger2 = stateno = 2040		;3040
+ID = 2020			;3020
+
+;SPECIAL EFFECT=============================================
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 1
+ID = 2020			;3020
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 625
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 12
+ID = 2020			;3020
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 650
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 3000,3]		;pink fire
+type = Explod
+trigger1 = time = 1 
+ID = 2020			;3020
+anim = F218			;3800
+sprpriority = -2
+postype = p1
+pos = 0,10
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+
+[State 3000,3]		;pink fire
+type = Explod
+trigger1= time = 40
+trigger2= time = 80
+trigger3= time = 120
+trigger4= time = 160
+trigger5= time = 200
+trigger6= time = 240
+trigger7= time = 280
+trigger8= time = 320
+trigger9= time = 360
+trigger10= time = 400
+trigger11= time = 440
+trigger12= time = 480
+trigger13= time = 520
+trigger14= time = 560
+trigger15= time = 580
+ID = 2020			;3020
+anim = F219			;3801
+sprpriority = -2
+postype = p1
+pos = 0,10
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 1 
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 70; 90
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 140;180
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 210;270
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 280;360
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 350;450
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 420;540
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 490;630
+ID = 2020			;3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;==================================================================
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 1
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 70;90
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 140;180
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 210;270
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time =280;360
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 350;450
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 420;540
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 490;630
+ID = 2020			;3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+
+;==========================================================
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 630
+ID = 2020			;3020
+anim = 30030
+sprpriority = 5
+postype = p1
+pos = 5,-75
+bindtime = 1
+pausemovetime = 0
+removetime = 25
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0
+accel =  0.5 , 0
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 630
+ID = 2020			;3020
+anim = 30130
+sprpriority = 5
+postype = p1
+pos = 5,-75
+bindtime = 1
+pausemovetime = 0
+removetime = 25
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0
+accel =  -0.5 , 0
+ownpal = 1
+
+[State 210,3]		;LAND FIRE
+type = Explod
+trigger1 = time = 630
+ID = 2020			;3020
+anim = F36	;123
+sprpriority = 5
+postype = p1
+pos = 0,30
+bindtime = 1
+pausemovetime = 0
+removetime = 22
+ignorehitpause = 0
+scale = 1,1
+vel =  0
+accel =  0
+ownpal = 1
+[State 210,3]		;LAND FIRE2
+type = Explod
+trigger1 = time = 640
+ID = 2020			;3020
+anim = F44
+sprpriority = 5
+postype = p1
+pos = 0,-60
+bindtime = 1
+pausemovetime = 0
+removetime = 21
+ignorehitpause = 0
+scale = 0.65,0.5
+vel =  0
+accel =  0
+ownpal = 1
+;==========================================================
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 590
+ID = 2020			;3020
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.1
+accel =  0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 610
+ID = 2020			;3020
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.1
+accel =  0.05 , -0.2
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 600
+ID = 2030			;3030
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.1
+accel =  0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 620
+ID = 2030			;3030
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.1
+accel =  0.05 , 0.2
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 590
+ID = 2030			;3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.1
+accel =  -0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 610
+ID = 2030			;3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.1
+accel =  -0.05 , -0.2
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 600
+ID = 2030			;3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.1
+accel =  -0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 620
+ID = 2030			;3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.1
+accel =  -0.05 , 0.2
+ownpal = 1
+
+;==================================================================
+[State 200,3]
+type = ChangeState
+trigger1 = time = 650		;840
+value = 3030
+ctrl = 0
+
+;music 01 finish
+[Statedef 3030]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3030
+juggle = 0
+
+[State 200,3]
+type = STOPSND
+trigger1 = 1
+channel = 11
+
+[State 200,3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;------------------------------------------------------------------------------------------------------------------------------
+;MUSIC 2 (when P2 gethited) SUCCESS!
+[Statedef 2040]	;3040
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3004
+juggle = 0
+
+[State 210,3]
+type = RemoveExplod
+trigger1 = 1
+ID = 2020			;3020
+
+[State 3040, stopsnd ]
+type = Stopsnd
+trigger1 = 1
+channel = 11
+
+[State 210,3]
+type = nothitby
+trigger1 = 1
+value = SCA
+
+[State 210,3]		;play music anim
+type = Explod
+trigger1 = time = 1
+ID = 2040		;3040
+anim = 3040
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 540
+ignorehitpause = 0
+scale = 0.5, 0.5
+ownpal = 0
+
+[State 210,3]		;BIG BG GIRL
+type = Explod
+trigger1 = time = 0
+ID = 2040		;3040
+anim = 3082
+sprpriority = -5
+postype = left
+pos = 0,0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 210,3]		;BIG BG
+type = Explod
+trigger1 = time = 0
+ID = 2040			;3040
+anim = F214
+sprpriority = -6
+postype = left
+pos = 0, 0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 210,3]		;BIG BG BLACK
+type = Explod
+trigger1 = time = 0
+ID = 2040			;3040
+anim = F150
+sprpriority = -7
+postype = left
+pos = 0,0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 1,1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+;SPECIAL EFFECT=============================================
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 325
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 12
+ID = 2040			;3040
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 350
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 3000,3]		;pink fire
+type = Explod
+trigger1 = time = 1 
+ID = 2040			;3040
+anim = F218			;3800
+sprpriority = -2
+postype = p1
+pos = 0,0
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+[State 3000,3]		;pink fire
+type = Explod
+trigger1= time = 40
+trigger2= time = 80
+trigger3= time = 120
+trigger4= time = 160
+trigger5= time = 200
+trigger6= time = 240
+trigger7= time = 280
+ID = 2040			;3040
+anim = F219			;3800
+sprpriority = -2
+postype = p1
+pos = 0,0
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+;==================================================================
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.1
+accel =  0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.05
+accel =  0.05 , -0.05
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.1
+accel =  0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.05
+accel =  0.05 , 0.05
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.1
+accel =  -0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.05
+accel =  -0.05 , -0.05
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.1
+accel =  -0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 2040			;3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.05
+accel =  -0.05 , 0.05
+ownpal = 1
+;==================================================================
+[State 3040,snd]		;channel 2 is movehit music
+type = PlaySnd
+trigger1 = Time = 1
+channel = 22
+loop = 0
+value = 3000,2
+
+[State 200,3]
+type = ChangeState
+trigger1 = time = 360
+value = 2050
+ctrl = 0
+
+[Statedef 2050]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3050
+juggle = 0
+
+[State 200,3]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+
+;------------------------------------------------------------------------------------------------------------------
+[Statedef 2060]
+type = S
+movetype = H
+physics = N
+velset = 0, 0
+ctrl = 0
+
+[State 210,3]
+type = PosFreeze
+trigger1 = time = 0
+value = 1
+[State 210,3]
+type = velset
+trigger1 = time > 1
+trigger1 = pos Y < 0
+y = 0.1
+
+[State 210,3]				;for sorento only ; june
+type = RemoveExplod
+;trigger1 = P2name = "sorento"
+trigger1 = stateno != 3020
+ID = 3020
+
+[State 3040, stopsnd ]			;if p2 have wav,stop it
+type = Stopsnd
+trigger1 = 1
+channel = 1
+
+[State 910, 0]
+type = ChangeAnim2
+Trigger1 = Time = 0 
+value = 3060
+
+;=======================================================
+[State 210,3]		;land fire follow P2
+type = Explod
+trigger1 = time = 1
+ID = 2040	;3040
+anim = F54
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 360
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+[State 210,3]		;GAL follow P2
+type = Explod
+trigger1 = time = 0
+ID = 2040	;3040
+anim = 3002
+sprpriority = 6
+postype = p1
+pos = 0,-80
+bindtime = 1
+pausemovetime = 0
+removetime = 360
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+ontop = 1
+;=======================================================
+[State 910, 0]
+type = ChangeAnim2
+Trigger1 = Time = 360		;540
+value = 3070
+
+[State 210,3]		;LAND FIRE	june
+type = Explod
+trigger1 = time = 360
+ID = 2030	;3030
+anim = F36
+sprpriority = 4
+postype = p1
+pos = 5,20
+bindtime = 1
+pausemovetime = 0
+removetime = 22
+ignorehitpause = 0
+scale = 1,1
+vel =  0
+accel =  0
+ownpal = 1
+
+[State 911, 1]			;june, play snd (help) when hearing music
+type = playsnd
+Trigger1 = time = 5
+Trigger2 = time = 60
+Trigger3 = time = 150
+Trigger4 = time = 180
+Trigger5 = time = 250
+Trigger6 = time = 300
+value = 3,0
+
+[State 911, 1]			;june, play snd (help) when hearing music
+type = playsnd
+Trigger1 = time = 360		
+value = 11,0			;die
+
+[State 911, 1]
+type = velset
+Trigger1 = time >= 360		;540
+x = -1
+y = -12
+[State 911, 1]
+type = velset
+Trigger1 = time >= 365		;545
+x = -1
+y = -8
+[State 911, 1]
+type = velset
+Trigger1 = time >= 370		;550
+y = -6
+[State 911, 1]
+type = velset
+Trigger1 = time >= 375		;555
+y = -2
+[State 911, 1]
+type = velset
+Trigger1 = time >= 385		;565
+x = -1
+y = -0.5
+[State 911, 1]
+type = velset
+Trigger1 = time >= 395		;575
+x = -2
+y = 0
+[State 911, 1]
+type = velset
+Trigger1 = time >= 400		;580
+y = 3
+[State 911, 1]
+type = velset
+Trigger1 = time >= 405		;585
+x = -4
+y = 6
+[State 911, 1]
+type = velset
+Trigger1 = time >=410		;590
+y = 12
+
+[State 910, 0]
+type = ChangeAnim2
+Trigger1 = Time = 380		;560
+value = 3071
+
+[State 1335,lifeadd]
+type = lifeadd
+trigger1 = time >= 381
+trigger1 = Vel Y > 0 && Pos Y >= 0
+value = -400
+
+[State 1335,SelfState]
+type = SelfState
+trigger1 = time >= 381
+trigger1 = Vel Y > 0 && Pos Y >= 0
+value = 5100
+
+;========================================================================
+;------------------------------------------------------------------------------------------------------------------------------
+;MUSIC
+[Statedef 3000]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3010
+juggle = 15
+
+[State 3020,poweradd]
+type = poweradd
+trigger1 = Time = 0
+trigger1 = var(20) <= 0
+value = -2000
+[State 3020,poweradd]
+type = poweradd
+trigger1 = Time = 0
+trigger1 = var(20) > 0
+trigger1 = prevstateno = [200,399]
+value = -1000
+[State 3020,poweradd]
+type = poweradd
+trigger1 = Time = 0
+trigger1 = var(20) > 0
+trigger1 = prevstateno = [1000,1999]
+value = -2000
+
+[State 3000,playsnd]
+type = Playsnd
+trigger1 = Time = 0
+value = 3000,0
+
+[State 3000,playsnd]
+type = Playsnd
+trigger1 = Time = 0
+value = F15,0
+
+;-----------------------------------------------------------------------------------------------
+;small super 60, big ???
+[State 2000,SuperPause]
+type = SuperPause
+trigger1 = Time = 0
+time = 60
+anim = -1
+sound =  0,0
+pos = 0,0
+movetime = 20
+darken = 1
+unhittable = 1
+supermove = 1
+poweradd = 0
+[State 2000,SuperPause]
+type = Explod
+trigger1 = time = 0
+anim = F192
+sprpriority = 5
+postype = p1
+pos = 10,-80
+bindtime = 1
+pausemovetime = 58
+removetime = 58
+ignorehitpause = 0
+scale = 1,1
+vel = 0,0
+ownpal = 1
+supermove = 1
+
+[State 2000,SuperPause]
+type = Explod
+trigger1 = time = 0
+anim = F194
+sprpriority = 5
+postype = p1
+pos = 10,-80
+bindtime = 1
+pausemovetime = 52
+removetime = 52
+ignorehitpause = 1
+scale = 1,1
+vel = 0,0
+ownpal = 1
+supermove = 1
+
+[State 2000,SuperPause]
+type = Explod
+trigger1 = time = 0
+anim = F190
+sprpriority = -5
+postype = back
+pos = 0,0
+bindtime = 1
+pausemovetime = 60
+removetime = 60
+ignorehitpause = 0
+scale = 0.5 , 0.5
+vel = 0,0
+ownpal = 1
+supermove = 1
+;-----------------------------------------------------------------------------------------------
+
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;white dust
+type = Explod
+trigger1 = time = 1 
+ID = 3080
+anim = F216
+sprpriority = 5
+postype = p1
+pos = -10,0
+bindtime = 1
+pausemovetime = 0
+removetime = 61
+ignorehitpause = 0
+scale = 0.5 , 0.5
+vel = 0,0
+ownpal = 1
+;-----------------------------------------------------------------------------------------------
+
+[State 200,3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 3010
+ctrl = 0
+
+;=============================================================
+;-----------------------------------------------------------------------------------------------
+;HELPER STATE
+;HELPER
+[Statedef 30011]
+type = S
+physics = N
+movetype = A
+ctrl = 0
+anim = 30001
+
+[State 3010,help]	
+type = velset
+trigger1 = time >= 0
+x = 0.5
+
+[State 3010,help]	
+type = playerpush
+trigger1 = time >= 0
+value = 1
+
+[State 3010,help]	
+type = Nothitby
+trigger1 = time >= 0
+value = SCA
+
+[State 3010,help]	
+type = DestroySelf
+trigger1 = p2stateno = 3060
+trigger2 = time = 500
+;
+trigger3 = p2name = "sorento"
+trigger3 = p2stateno = 3000
+trigger4 = p2name = "sorento"
+trigger4 = p2stateno = 3010
+trigger5 = p2name = "sorento"
+trigger5 = p2stateno = 3030
+trigger6 = p2name = "sorento"
+trigger7 = NumHelper(5000) = 1		;helper5000 is when p1 hitover
+ 
+[Statedef 3010]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3001
+juggle = 0
+
+[State 1200, Projectile]
+type = Projectile
+trigger1 = animelem = 1
+projanim = 3011
+ProjID = 3011
+attr = S, HP
+damage   = 1,0
+animtype = high
+guardflag = MA
+hitflag = P		;MAF
+;
+offset = 40,0
+velocity = 0,0
+sparkno = 171
+guard.sparkno = 164
+pausetime = 4,4
+hitsound = F5,1
+guardsound = F 6,1
+ground.type = High
+ground.slidetime = 1
+ground.hittime  = 1
+ground.velocity = -1
+air.animtype = Back
+guard.velocity = -1
+guard.ctrltime = 0
+air.fall = 0
+fall.recover = 0
+projscale = 0.5,0.5
+projremove = 1
+projremovetime = 640
+projhits = 5
+projmisstime = 0
+projpriority = 4		;3
+projsprpriority = 3
+postype = p1
+supermovetime = 0
+
+[State 1200, Projectile]
+type = Projectile
+trigger1 = animelem = 2
+projanim = 3011
+ProjID = 3011
+attr = S, HP
+damage   = 1,0
+animtype = high
+guardflag = MA
+hitflag = P		;MAF
+;
+offset = 30, 0
+velocity = 0,0
+sparkno = 171
+guard.sparkno = 164
+pausetime = 4,4
+hitsound = F5,1
+guardsound = F 6,1
+ground.type = High
+ground.slidetime = 1
+ground.hittime  = 1
+ground.velocity = -1
+air.animtype = Back
+guard.velocity = -1
+guard.ctrltime = 0
+air.fall = 0
+fall.recover = 0
+projscale = 0.5,0.5
+projremove = 1
+projremovetime = 640
+projhits = 5
+projmisstime = 0
+projpriority = 4		;3
+projsprpriority = 3
+postype = p1
+supermovetime = 0
+
+[State 1200, Projectile]
+type = Projectile
+trigger1 = animelem = 3
+projanim = 3011
+ProjID = 3011
+attr = S, HP
+damage   = 1,0
+animtype = high
+guardflag = MA
+hitflag = P		;MAF
+;
+offset = 20, 0
+velocity = 0,0
+sparkno = 171
+guard.sparkno = 164
+pausetime = 4,4
+hitsound = F5,1
+guardsound = F 6,1
+ground.type = High
+ground.slidetime = 1
+ground.hittime  = 1
+ground.velocity = -1
+air.animtype = Back
+guard.velocity = -1
+guard.ctrltime = 0
+air.fall = 0
+fall.recover = 0
+projscale = 0.5,0.5
+projremove = 1
+projremovetime = 640
+projhits = 5
+projmisstime = 0
+projpriority = 4		;3
+projsprpriority = 3
+postype = p1
+supermovetime = 0
+
+[State 1200, Projectile]
+type = Projectile
+trigger1 = animelem = 4
+projanim = 3011
+ProjID = 3011
+attr = S, HP
+damage   = 1,0
+animtype = high
+guardflag = MA
+hitflag = P		;MAF
+;
+offset =10, 0
+velocity = 0,0
+sparkno = 171
+guard.sparkno = 164
+pausetime = 4,4
+hitsound = F5,1
+guardsound = F 6,1
+ground.type = High
+ground.slidetime = 1
+ground.hittime  = 1
+ground.velocity = -1
+air.animtype = Back
+guard.velocity = -1
+guard.ctrltime = 0
+air.fall = 0
+fall.recover = 0
+projscale = 0.5,0.5
+projremove = 1
+projremovetime = 630
+projhits = 5
+projmisstime = 0
+projpriority = 4		;3
+projsprpriority = 3
+postype = p1
+supermovetime = 0
+
+[State 1200, Projectile]
+type = Projectile
+trigger1 = animelem = 5
+projanim = 3011
+ProjID = 3011
+attr = S, HP
+damage   = 1,0
+animtype = high
+guardflag = MA
+hitflag = P		;MAF
+;
+offset = 0,0
+velocity = 0,0
+sparkno = 171
+guard.sparkno = 164
+pausetime = 4,4
+hitsound = F5,1
+guardsound = F 6,1
+ground.type = High
+ground.slidetime = 1
+ground.hittime  = 1
+ground.velocity = -1
+air.animtype = Back
+guard.velocity = -1
+guard.ctrltime = 0
+air.fall = 0
+fall.recover = 0
+projscale = 0.5,0.5
+projremove = 1
+projremovetime = 620
+projhits = 5
+projmisstime = 0
+projpriority = 4		;3
+projsprpriority = 3
+postype = p1
+supermovetime = 0
+
+[State 1200, Projectile]
+type = Projectile
+trigger1 = animelem = 6
+projanim = 3011
+ProjID = 3011
+attr = S, HP
+damage   = 1,0
+animtype = high
+guardflag = MA
+hitflag = P		;MAF
+;
+offset = 40,0
+velocity = 0,0
+sparkno = 171
+guard.sparkno = 164
+pausetime = 4,4
+hitsound = F5,1
+guardsound = F 6,1
+ground.type = High
+ground.slidetime = 1
+ground.hittime  = 1
+ground.velocity = -1
+air.animtype = Back
+guard.velocity = -1
+guard.ctrltime = 0
+air.fall = 0
+fall.recover = 0
+projscale = 0.5,0.5
+projremove = 1
+projremovetime = 600
+projhits = 5
+projmisstime = 0
+projpriority = 4		;3
+projsprpriority = 3
+postype = p1
+supermovetime = 0
+
+
+;HELPER FOR PUSH P2
+[State 3010,help]	
+type = helper
+trigger1 = time = 0
+name = "push_p2"
+ID = 30011
+helpertype = normal
+pos = -20,0
+postype = p2
+keyctrl = 0
+ownpal = 0
+supermovetime = 0
+pausemovetime = 0
+stateno = 30011
+
+[State 3010,snd]	;channel 1 is attack music
+type = PlaySnd
+trigger1 = Time = 65
+channel = 1
+loop = 0
+value = 3000,1
+
+[State 210,3]		;BIG BG BEAUTY
+type = Explod
+trigger1 = time = 0
+ID = 3020
+anim = F217
+sprpriority = -6
+postype = left
+pos = 0, 0
+bindtime = -1
+pausemovetime = 1
+removetime = 650		;ID 3040 is 360
+ignorehitpause = 1
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 210,3]		;BIG BG BLACK
+type = Explod
+trigger1 = time = 0
+ID = 3020
+anim = F150
+sprpriority = -7
+postype = left
+pos = 0,0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 1,1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 1200,HitDef]
+type = Hitdef
+triggerall = P2statetype != L && statetype != A
+trigger1 = time = 0
+trigger2 = time = 20
+trigger3 = time = 40
+trigger4 = time = 70
+trigger5 = time = 86
+trigger6 = time = 106
+trigger7 = time = 126
+trigger8 = time = 139
+trigger9 = time = 156
+trigger10 = time = 175
+trigger11 = time = 193
+trigger12= time = 209
+trigger13 = time = 226
+trigger14 = time = 245
+trigger15 = time = 263
+trigger16 = time = 279
+trigger17 = time = 296
+trigger18 = time = 315
+trigger19 = time = 330
+trigger20 = time = 349
+trigger21 = time = 366
+trigger22 = time = 385
+trigger23 = time = 402
+trigger24 = time = 419
+trigger25 = time = 435
+trigger26 = time = 455
+trigger27 = time = 472
+trigger28 = time = 490
+trigger29 = time = 507
+trigger30 = time = 526
+trigger31 = time = 542
+trigger32 = time = 560
+trigger33 = time = 577
+trigger34 = time = 595
+trigger35 = time = 616
+trigger36 = time = 629
+attr = S, HT
+damage = 0,5
+getpower = 0
+givepower = 0
+hitflag = MAF			
+;If "+" added the hit only affects P2 in a gethit state.
+;If "-" added then the hit only affects P2 that are NOT in a gethit state.  
+guardflag = MA			; -1
+priority = 7,miss			;spector is hit, oliver is miss
+sparkno = 168
+guard.sparkno = 164
+sparkxy = 0,-70
+hitsound = 7,2
+guardsound = 6,1
+ground.velocity = 0
+guard.velocity = -4
+guard.hittime = 17
+ground.slidetime = 12
+guard.pausetime = 0,2
+pausetime = 0,10
+p2facing = 1
+p1stateno = 3040
+p2stateno = 3060
+;fall = 1
+fall.recover = 0
+ground.cornerpush.veloff = 2
+guard.cornerpush.veloff = 2
+
+[State 3000,3]		;playing music anim
+type = Explod
+trigger1 = time = 1
+ID = 3020
+anim = 3020
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = -1
+pausemovetime = 0
+removetime = 650	;840
+ignorehitpause = 0
+scale = 0.5, 0.5
+ownpal = 0
+
+[State 210,3]
+type = RemoveExplod
+trigger1 = stateno != 3010
+trigger2 = stateno = 3040
+ID = 3020
+
+;SPECIAL EFFECT=============================================
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 1
+ID = 3020
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 625
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 12
+ID = 3020
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 650
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 3000,3]		;pink fire
+type = Explod
+trigger1 = time = 1 
+ID = 3020
+anim = F218			;3800
+sprpriority = -2
+postype = p1
+pos = 0,10
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+
+[State 3000,3]		;pink fire
+type = Explod
+trigger1= time = 40
+trigger2= time = 80
+trigger3= time = 120
+trigger4= time = 160
+trigger5= time = 200
+trigger6= time = 240
+trigger7= time = 280
+trigger8= time = 320
+trigger9= time = 360
+trigger10= time = 400
+trigger11= time = 440
+trigger12= time = 480
+trigger13= time = 520
+trigger14= time = 560
+trigger15= time = 580
+ID = 3020
+anim = F219			;3801
+sprpriority = -2
+postype = p1
+pos = 0,10
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 1 
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 70; 90
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 140;180
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 210;270
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 280;360
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 350;450
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 420;540
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 490;630
+ID = 3020
+anim = 3005
+sprpriority = 5
+postype = p1
+pos = 0,65
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,-1.5
+ownpal = 1
+;==================================================================
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 1
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 70;90
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 140;180
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 210;270
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time =280;360
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 350;450
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 420;540
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+;SPECIAL EFFECT=============================================
+[State 3000,3]		;gals
+type = Explod
+trigger1 = time = 490;630
+ID = 3020
+anim = 3006
+sprpriority = 5
+postype = p1
+pos = 0, -200
+bindtime = 1
+pausemovetime = 0
+removetime = 840
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel = 0,1.5
+ownpal = 1
+
+;==========================================================
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 630
+ID = 3020
+anim = 30030
+sprpriority = 5
+postype = p1
+pos = 5,-75
+bindtime = 1
+pausemovetime = 0
+removetime = 25
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0
+accel =  0.5 , 0
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 630
+ID = 3020
+anim = 30130
+sprpriority = 5
+postype = p1
+pos = 5,-75
+bindtime = 1
+pausemovetime = 0
+removetime = 25
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0
+accel =  -0.5 , 0
+ownpal = 1
+
+[State 210,3]		;LAND FIRE
+type = Explod
+trigger1 = time = 630
+ID = 3020
+anim = F36	;123
+sprpriority = 5
+postype = p1
+pos = 0,30
+bindtime = 1
+pausemovetime = 0
+removetime = 22
+ignorehitpause = 0
+scale = 1,1
+vel =  0
+accel =  0
+ownpal = 1
+[State 210,3]		;LAND FIRE2
+type = Explod
+trigger1 = time = 640
+ID = 3020
+anim = F44
+sprpriority = 5
+postype = p1
+pos = 0,-60
+bindtime = 1
+pausemovetime = 0
+removetime = 21
+ignorehitpause = 0
+scale = 0.65,0.5
+vel =  0
+accel =  0
+ownpal = 1
+;==========================================================
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 590
+ID = 3020
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.1
+accel =  0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 610
+ID = 3020
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.1
+accel =  0.05 , -0.2
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 600
+ID = 3030
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.1
+accel =  0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 620
+ID = 3030
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -10,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.1
+accel =  0.05 , 0.2
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 590
+ID = 3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.1
+accel =  -0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 610
+ID = 3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.1
+accel =  -0.05 , -0.2
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 600
+ID = 3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.1
+accel =  -0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 620
+ID = 3030
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -10,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.1
+accel =  -0.05 , 0.2
+ownpal = 1
+
+;==================================================================
+[State 200,3]
+type = ChangeState
+trigger1 = time = 650		;840
+value = 3031
+ctrl = 0
+
+;music 01 finish
+[Statedef 3031]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3030
+juggle = 0
+
+[State 200,3]
+type = STOPSND
+trigger1 = 1
+channel = 1
+
+[State 200,3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;------------------------------------------------------------------------------------------------------------------------------
+;MUSIC 2 (when P2 gethited) SUCCESS!
+[Statedef 3040]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3004
+juggle = 0
+
+[State 210,3]
+type = RemoveExplod
+trigger1 = 1
+ID = 3020
+
+[State 3040, stopsnd ]
+type = Stopsnd
+trigger1 = 1
+channel = 1
+
+[State 210,3]
+type = nothitby
+trigger1 = 1
+value = SCA
+
+[State 210,3]		;play music anim
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3040
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 540
+ignorehitpause = 0
+scale = 0.5, 0.5
+ownpal = 0
+
+[State 210,3]		;BIG BG GIRL
+type = Explod
+trigger1 = time = 0
+ID = 3040
+anim = 3082
+sprpriority = -5
+postype = left
+pos = 0,0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 210,3]		;BIG BG
+type = Explod
+trigger1 = time = 0
+ID = 3040
+anim = F214
+sprpriority = -6
+postype = left
+pos = 0, 0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 210,3]		;BIG BG BLACK
+type = Explod
+trigger1 = time = 0
+ID = 3040
+anim = F150
+sprpriority = -7
+postype = left
+pos = 0,0
+bindtime = -1
+pausemovetime = 1
+removetime = 650	;ID 3040 is 360
+ignorehitpause = 1
+scale = 1,1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+;SPECIAL EFFECT=============================================
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 325
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+[State 210,3]		;land fire follow P1
+type = Explod
+trigger1 = time = 12
+ID = 3040
+anim = F53
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 350
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+
+[State 3000,3]		;pink fire
+type = Explod
+trigger1 = time = 1 
+ID = 3040
+anim = F218			;3800
+sprpriority = -2
+postype = p1
+pos = 0,0
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+[State 3000,3]		;pink fire
+type = Explod
+trigger1= time = 40
+trigger2= time = 80
+trigger3= time = 120
+trigger4= time = 160
+trigger5= time = 200
+trigger6= time = 240
+trigger7= time = 280
+ID = 3040
+anim = F219			;3800
+sprpriority = -2
+postype = p1
+pos = 0,0
+bindtime = -1
+pausemovetime = 0
+removetime = 60
+ignorehitpause = 0
+scale = 1, 1
+vel = 0, 0
+ownpal = 1
+;==================================================================
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.1
+accel =  0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, -0.05
+accel =  0.05 , -0.05
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.1
+accel =  0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3003 is fly right >>>>
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3003
+sprpriority = -2
+postype = p1
+pos = -5,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  1, 0.05
+accel =  0.05 , 0.05
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-50
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.1
+accel =  -0.05 , -0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-30
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, -0.05
+accel =  -0.05 , -0.05
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-140
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.1
+accel =  -0.05 , 0.15
+ownpal = 1
+[State 210,3]		;GAL	3013 is fly left <<<<
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = 3013
+sprpriority = -2
+postype = p1
+pos = -5,-100
+bindtime = 1
+pausemovetime = 0
+removetime = 200
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  -1, 0.05
+accel =  -0.05 , 0.05
+ownpal = 1
+;==================================================================
+[State 3040,snd]		;channel 2 is movehit music
+type = PlaySnd
+trigger1 = Time = 1
+channel = 2
+loop = 0
+value = 3000,2
+
+[State 200,3]
+type = ChangeState
+trigger1 = time = 360
+value = 3050
+ctrl = 0
+
+[Statedef 3050]
+type = S
+physics = S
+movetype = A
+ctrl = 0
+velset = 0
+anim = 3050
+juggle = 0
+
+[State 200,3]
+type = ChangeState
+trigger1 = animtime = 0
+value = 0
+ctrl = 1
+
+;------------------------------------------------------------------------------------------------------------------
+[Statedef 3060]
+type = S
+movetype = H
+physics = N
+velset = 0, 0
+ctrl = 0
+
+[State 210,3]
+type = PosFreeze
+trigger1 = time = 0
+value = 1
+[State 210,3]
+type = velset
+trigger1 = time > 1
+trigger1 = pos Y < 0
+y = 0.1
+
+[State 210,3]				;for sorento only ; june
+type = RemoveExplod
+;trigger1 = P2name = "sorento"
+trigger1 = stateno != 3020
+ID = 3020
+
+[State 3040, stopsnd ]			;if p2 have wav,stop it
+type = Stopsnd
+trigger1 = 1
+channel = 1
+
+[State 910, 0]
+type = ChangeAnim2
+Trigger1 = Time = 0 
+value = 3060
+
+;=======================================================
+[State 210,3]		;land fire follow P2
+type = Explod
+trigger1 = time = 1
+ID = 3040
+anim = F54
+sprpriority = 4
+postype = p1
+pos = 0,0
+bindtime = 1
+pausemovetime = 0
+removetime = 360
+ignorehitpause = 0
+scale = 1, 1
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+[State 210,3]		;GAL follow P2
+type = Explod
+trigger1 = time = 0
+ID = 3040
+anim = 3002
+sprpriority = 6
+postype = p1
+pos = 0,-80
+bindtime = 1
+pausemovetime = 0
+removetime = 360
+ignorehitpause = 0
+scale = 0.5, 0.5
+vel =  0, 0
+accel =   0, 0
+ownpal = 1
+ontop = 1
+;=======================================================
+[State 910, 0]
+type = ChangeAnim2
+Trigger1 = Time = 360		;540
+value = 3070
+
+[State 210,3]		;LAND FIRE	june
+type = Explod
+trigger1 = time = 360
+ID = 3030
+anim = F36
+sprpriority = 4
+postype = p1
+pos = 5,20
+bindtime = 1
+pausemovetime = 0
+removetime = 22
+ignorehitpause = 0
+scale = 1,1
+vel =  0
+accel =  0
+ownpal = 1
+
+[State 911, 1]			;june, play snd (help) when hearing music
+type = playsnd
+Trigger1 = time = 5
+Trigger2 = time = 60
+Trigger3 = time = 150
+Trigger4 = time = 180
+Trigger5 = time = 250
+Trigger6 = time = 300
+value = 3,0
+
+[State 911, 1]			;june, play snd (help) when hearing music
+type = playsnd
+Trigger1 = time = 360		
+value = 11,0			;die
+
+[State 911, 1]
+type = velset
+Trigger1 = time >= 360		;540
+x = -1
+y = -12
+[State 911, 1]
+type = velset
+Trigger1 = time >= 365		;545
+x = -1
+y = -8
+[State 911, 1]
+type = velset
+Trigger1 = time >= 370		;550
+y = -6
+[State 911, 1]
+type = velset
+Trigger1 = time >= 375		;555
+y = -2
+[State 911, 1]
+type = velset
+Trigger1 = time >= 385		;565
+x = -1
+y = -0.5
+[State 911, 1]
+type = velset
+Trigger1 = time >= 395		;575
+x = -2
+y = 0
+[State 911, 1]
+type = velset
+Trigger1 = time >= 400		;580
+y = 3
+[State 911, 1]
+type = velset
+Trigger1 = time >= 405		;585
+x = -4
+y = 6
+[State 911, 1]
+type = velset
+Trigger1 = time >=410		;590
+y = 12
+
+[State 910, 0]
+type = ChangeAnim2
+Trigger1 = Time = 380		;560
+value = 3071
+
+[State 1335,lifeadd]
+type = lifeadd
+trigger1 = time >= 381
+trigger1 = Vel Y > 0 && Pos Y >= 0
+value = -400
+
+[State 1335,SelfState]
+type = SelfState
+trigger1 = time >= 381
+trigger1 = Vel Y > 0 && Pos Y >= 0
+value = 5100
+
+

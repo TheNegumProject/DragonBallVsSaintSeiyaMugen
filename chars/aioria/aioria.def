@@ -1,0 +1,29 @@
+[Info]
+name="Aioria de Leo"
+DisplayName="Aiolia de Leao"    
+versiondate = 06,27,2000    
+mugenversion = 11,29,2000   
+author = "FLAVIO FAGOTI PELIM"
+pal.defaults = 1,3,2,4,5
+
+[Files]
+cmd=aioria.cmd
+cns=aioria.cns
+st=aioria.cns
+stcommon=aioria2.cns
+sprite=aioria.sff
+anim=aioria.air
+sound=aioria.snd
+pal1=aioria.act
+pal2=LEO.act
+pal3=LEO2.act
+pal4=aioria.act
+pal5=LEO.act
+pal6=LEO2.act
+pal7=aioria.act
+pal8=LEO.act
+
+
+
+
+

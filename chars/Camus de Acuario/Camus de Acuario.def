@@ -1,0 +1,22 @@
+[Info]
+Name="Camus du Verseau"
+DisplayName="Camus"
+VersionDate=7,09,2002
+MugenVersion=11,29,2000
+Author="Aqualudo""modif. par Arcadia" 
+Pal.Defaults=
+
+[Files]
+cmd=camus.cmd
+cns=camus.cns
+st=camus.cns
+stcommon=camus2.cns
+sprite=camus.sff
+anim=camus.air
+sound=camus.snd
+pal1=CamusS.act
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

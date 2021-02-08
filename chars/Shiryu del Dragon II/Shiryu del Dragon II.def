@@ -1,0 +1,22 @@
+[Info]
+name="Shiryu 2nd Cloth"
+DisplayName="Shiryu"
+charversion= 100%Beta2003 
+mugenversion = 01,04,2000   
+author = "original Shiryu1:Chrystian Cattaneo(cheitta)/ Shiryu2 SFF by Mü!/Shura spec. by ARIES.A"
+Lastmodifs = "NeoDarkHuby - Jan.2003"
+
+[Files]
+cmd=shiryuII.cmd
+cns=shiryuII.cns
+st=shiryuII.cns
+st2=shiryuII3.cns
+stcommon=shiryuII2.cns
+sprite=shiryuII.sff
+anim=shiryuII.air
+sound=shiryu.snd
+pal.defaults = 1,2,3 
+pal1=shiryuhades.act
+pal2=shiryuII.act
+pal3=hidden.act
+

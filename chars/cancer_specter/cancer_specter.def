@@ -1,0 +1,26 @@
+
+[Info]
+name="Specter Cancer"
+displayname="Cancer Espectro Hades"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+author="Macross59 && KAKAROTO The Nightmare"
+;------------------------->author-Sprites="ElRoSSo"<--------------------------------------------------
+pal.defaults=1
+
+[Files]
+cmd=cancer.cmd
+cns=cancer.cns
+st=cancer.cns
+stcommon=cancer2.cns
+sprite=cancer.sff
+anim=cancer.air
+sound=cancer.snd
+pal1=tio.act ;cosmos violet 
+pal2=tio2.act ;cosmos or
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+

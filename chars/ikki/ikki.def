@@ -1,0 +1,26 @@
+
+[Info]
+name="Ikki"
+DisplayName="Ikki de Fenix"    
+versiondate = 17,12,2001    
+mugenversion = 14,04,2001   
+author = "unofficial *saga*"
+
+[Files]
+cmd=ikki.cmd
+cns=ikki.cns
+st=ikki.cns
+stcommon=ikki2.cns
+sprite=ikki.sff
+anim=ikki.air
+sound=ikki.snd
+pal1=Phenix.act
+pal2=Phenixblack.act
+pal3=phenixshun.act
+pal4=phenixshiryu.act
+pal5=phenixhidden.act
+
+
+
+
+

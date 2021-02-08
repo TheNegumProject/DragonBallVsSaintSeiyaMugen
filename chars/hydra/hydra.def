@@ -1,0 +1,31 @@
+/--------------------------\
+)    	Saint Seiya        (  
+)	 Mythologie        (
+)	   Mugen 	   (
+)                          (
+)  Tehar Magellan Tristane (
+\--------------------------/
+
+
+[Info]
+name="Hydra"
+DisplayName="Ichi de l'Hydre"    
+versiondate = 11/01/03    
+mugenversion = 04,14,2001   
+
+[Files]
+cmd=ichi.cmd
+cns=ichi.cns
+st=ichi.cns
+stcommon=ichi2.cns
+sprite=ichi.sff
+anim=ichi.air
+;sound=ichi.snd
+pal1=ichi.act
+
+[Arcade]
+intro.storyboard = introhydra.def
+
+
+
+

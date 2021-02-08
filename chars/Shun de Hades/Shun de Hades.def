@@ -1,0 +1,33 @@
+     ____________________________________________
+;   |                                            |   ;
+;  ||Hades                                       ||  ;
+; |||Charcreado por Angel Enrique Aceves Menendez||| ;
+;||||Programacion de:Dark Nekrobat               ||||;
+; |||                                            ||| ;
+;  ||                                            ||  ;
+;   |____________________________________________|   ;
+
+[Info]
+name ="Hades"
+displayname ="Shun-Hades"
+versiondate =00,00,2003
+mugenversion =04,01,2001
+author ="Angel Aceves"
+pal.defaults =1,2,3,2,1,2,4
+
+; Arquivos do Char
+[Files]
+cmd     =hades.cmd
+cns     =hades.cns
+st      =hades.cns
+stcommon =common1.cns
+sprite  =hades.sff
+anim    =hades.air
+sound   =hades.snd
+pal1=Hades.act
+pal2=Hades.act
+pal3=Hades.act
+pal4=Hades.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

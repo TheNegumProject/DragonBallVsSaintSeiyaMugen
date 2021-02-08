@@ -1,0 +1,29 @@
+; Mu de Jamir
+
+; Player information
+[Info]
+name ="MU de Aries"          
+displayname ="Mu de Aries"  
+versiondate =21,03,2005      
+mugenversion =01,01,2002     
+author ="Tecla2000"               
+pal.defaults =1,2             
+
+;----------------- autor original de los sprit y la programacion base del Chars " Mu " . yo solo le reedite 
+algo de la programacion y le agregue poderes.------------------------------;
+
+
+; Files for the player
+[Files]
+cmd      =mu.cmd
+cns      =mu.cns
+st       =mu.cns
+stcommon =mu2.cns
+sprite   =mu.sff
+anim     =mu.air
+sound    =mu.snd 
+pal1=mu.act
+pal2=mu2.act
+
+
+

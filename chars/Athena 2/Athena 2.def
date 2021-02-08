@@ -1,0 +1,52 @@
+
+
+;**************************************************************************
+;                                                                         *
+;     Athena   Autor   Grafica : Shunchain y Programacion : Tecla2000     *
+;                                                                         *
+;**************************************************************************
+
+
+; Player information
+
+[Info]
+
+name = "Athena"      
+displayname = "Saori - Athena" 
+versiondate =   20,01,2010
+mugenversion = 14,06,2003
+author = "Grafica : Shunchain y Programacion : Tecla2000" 
+pal.defaults = 1,2,3,4,5,6,7,8,9,10,11,12
+
+
+[Files]
+
+cmd       = Athena.cmd
+cns       = Athena.cns
+st        = Athena.cns
+st1       = Athena_Poderes.cns
+st2       = Athena_speciales.cns
+stcommon  = Athena2.cns
+sprite    = Athena.sff
+anim      = Athena.air
+sound     = Athena.snd
+
+pal1      = Athena1.act
+pal2      = Athena11.act
+pal3      = Athena12.act
+pal4      = Athena2.act
+pal5      = Athena3.act
+pal6      = Athena4.act
+pal7      = Athena5.act
+pal8      = Athena6.act
+pal9      = Athena7.act
+pal10     = Athena8.act
+pal11     = Athena9.act
+pal12     = Athena10.act
+
+
+
+[Arcade]
+;intro.storyboard=intro.def
+;ending.storyboard=ending.def
+

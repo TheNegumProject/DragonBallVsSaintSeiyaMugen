@@ -1,0 +1,38 @@
+Char Original--> Orfeo de Lira (Version Eris) de Tony ADV
+
+Char Modificado --> Orfeo de Lira (Version Hades) por Aquarius_no_Mauro, bajo la supervición de VirgoC.
+
+Modificaciones:
+
+- Nueva paleta (de VirgoC)
+- Cambio en los archivos de sonido, ya no es más la voz en italiano del Orfeo de Eris.
+- Intro para el modo arcade.
+- Edición de los ataques.
+- Nueva Pose.
+
+
+HP = 1400
+Attk = 190 
+Def = 170 
+Cosmo = 3000 (3 niveles)
+
+Ataques:
+
+Death Trip Serenade= B, D, F, c  (Power >= 2500)
+
+Stringer Nocturne = B, D, F, z  (Power >= 1500)
+
+Stringer Fine = B, D, F, y (Power >= 3000 ; Life < 500)
+
+Onda1 = B, D, F, x
+Onda2 = B, D, F, a
+
+ComboPatada1 = D, F, y
+ComboPatada2 = D, F, z
+
+ComboPuño1 = D, F, b
+ComboPuño2 = D, F, c
+
+Cosmo = b + c
+
+Taunt-Pose = Start

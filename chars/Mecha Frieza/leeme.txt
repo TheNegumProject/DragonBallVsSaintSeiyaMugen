@@ -1,0 +1,165 @@
+Character Name: Metal Freeza
+Version: close to final
+Mugen Version: 00.11.29 or higher
+Current status: 90% complete 
+-------------------------------------------------
+Creator: Tincho (XistO)  (Echo a base del personaje de "Disciple X")
+
+=-=-=-=-=-=-=-=-
+controls
+=-=-=-=-=-=-=-=-
+My Freeza uses these buttons:
+A - weak kick
+b - medium kick
+c - strong kick
+x - Weak punch
+y - medium punch
+z - strong kick
+
+D,U - super jump
+
+F,F, dash fowards
+
+B,B, dash back
+
+Guard push - x+y or a+b while blocking
+
+Alpha counter - D, DF, F, a or D, DB, B, x while blocking and have more than 500 power.
+
+Teleport - b+y can be done while flying.
+
+Fly - z+c - can be done in air.
+
+Variable super move menu - Start+A, When powerlevel bar is at level 3. (More on that below!)
+=-=--=-=--=-=--=-=-=-=-=-
+specials:
+=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Energy stream - D,DF,F x, or y, or z
+Freeza makes energy rise in 3 different spots.
+X - close
+Y - mid
+Z - far
+comboability - 3/5
+can be done while flying
+
+Evil energy beam - D,DB,B, x or y
+Freeza shoots a massive energy beam.
+x - high
+y - low
+comboability - 3/5
+can be done in air
+can be done while flying
+
+Energy elbow - D, DF, F, a
+Freeza does a two part dash elbow attack.
+comboability - 4/5
+
+Tele-attack - D, DF, F, b
+freeza dashes foward.
+Pressing these buttons during dash will:
+A - initiates vanish attack
+B - Cancels Dash
+Getting close to P2 also initiats attack.
+comboability - 2/5
+
+Levitate - D, DF, F, c
+Freeza telekinetically grabs opponent.
+Pressing these buttons while p2 is lifted will:
+A - launch opponent into the sky
+b - smash your opponent repeatedly against the wall
+c - blow up your opponent
+comboability - 4/5
+
+Blast bomb - D, DB, B, z
+Freeza shoots a ball into the sky.
+The ball comes back down later on in a random location.
+comboability - 2/5
+
+Starlight Beam -D, DB, B, a
+Freeza shoots a beam that does damage depending on your 
+power level.
+Holding A will allow you to hold the attack. 
+comboability - 4/5
+=-=-=-=-=-=-=-=-=-==-=-
+supers
+=-=-=-=-=-=-=-=-=-=-=-=
+Savage torture - D,DF,F x+y level 1
+Freeza dashes foward. If he connects, he will drag his opponent into the corner
+and torture him.
+Goes through all attacks
+Goes through all projectiles
+comboability - 4/5
+
+Ki blade - D,DF,F a+b level 1
+Freeza shoots a Beam. If the beam connects, it does multiple hits.
+The purple energy field will harm freeza's opponent.
+comboability - 3/5
+
+Energy release - D,DB,B x+y level 1
+Freeza releases His energy in the form of balls. The balls return later
+And surround freeza. Pressing start will Make the balls home in on the opponent.
+The purple energy field will harm freeza's opponent.
+comboability - 4/5
+
+Hyper elbow attack - D,DB,B a+b level 1
+Freeza dashes foward. If it hits, he'll do multiple hits, ending in a flashy
+delay attack.
+comboability - 4/5
+
+Final meteo attack - D,DF,F y+z level 1
+Shinobi slashes lightining. 
+Can be charged by holding the y button.
+one of the 5 ninjitsus
+comboability - 3/5
+
+Flash battle: Disciple x style - D,DF,F, x+y level 1 Air only
+My version of the popular flash battle.
+comboability - 4/5
+
+The overwhelmer - D,DF,F a+b level 1 Air only
+Freeza shoots a fire ball that stuns the opponent.
+The recoil might cause freeza to fall.
+comboability - 4/5
+
+Cresent Slash - D,DB,B x+y level 1 Air only
+Freeza slashes a Powerful cresent slash that cuts mountains in half.
+Can hit laying opponents.
+comboability - 4/5
+----------------------------
+Desperation attacks:
+----------------------------
+Total annihilation - D,DF,F,D,DF,F, x life less than 400 and level 3 or greater
+Freeza punches the opponent. If it connects, he will proceed to blow up the planet.
+Must be done up close to connect.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Power Bar experience system
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+New to freeza is my power bar exerience system. To increase it,
+Combo your opponent, Or power-up(x+a). The bar has 3 levels, and has a big effect on
+how you play freeza. With each level, You unlock new attacks, raise your attack power,
+and experience different changes in overall character play. The bar goes by three colors:
+
+Green - Level one
+Yellow - Level Two
+Red - Level Three
+
+The level your on decides your strength and most of all, decides your variable
+super move. More on that below.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Variable supermoves
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+These are the moves you can use depending on your powerbar level. They have
+different effects and powers and can decide the match. They are activated by pressing
+D, DF, F, b+c power = 1000. If your powerlevel bar is at level 3, you can activate a special
+menu by pressing start+a. The menu will allow you to choose the move you want.
+
+Level 1 - Krazy Destructo disk - A disk that flys around screen and cuts through opponents.
+Be careful, it hits both opponents and freeza! Very hard to avoid(For both players)
+
+Level 2 - Sky barrage - Freeza hops into the air and shoots multiple fireballs at his opponent.
+Can hit opponents while they are down.
+
+Level 3 - Void Shockwave - Freeza shoots a ball of energy. He can Slow down his opponent by 
+pressing any button while the energy ball is on screen.

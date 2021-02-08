@@ -1,0 +1,38 @@
+;--------------------------------------------------------------------------
+;                     Shaka De
+;                      Virgo
+;--------------------------------------------------------------------------
+
+[Info]
+name="Shaka de virgo"
+DisplayName="Shaka de Virgem"
+charversion= 25-04-2005 
+mugenversion =01,01,2002   
+author ="Tecla2000"
+pal.defaults=1,2,3,4
+versiondate=11/07/2006
+
+; Los sprit pertenecen a gouketsu, y la programacion base del chars es Shiryu2.
+
+[Files]
+cmd=Shaka.cmd
+cns=Shaka.cns
+st=Shaka.cns
+stcommon=Shaka2.cns
+sprite=Shaka.sff
+anim=Shaka.air
+sound=Shaka.snd
+pal1=shaka_oro.act
+pal2=shaka_oro2.act
+pal3=shaka_oro1.act
+pal4=shaka_oro3.act
+st1=Shaka3.cns
+st2=Shaka3.cns
+
+
+;pal2=Shaka_Spectro1.act
+;pal1=Shaka_Spectro.act
+
+[Arcade] 
+intro.storyboard = 
+ending.storyboard =

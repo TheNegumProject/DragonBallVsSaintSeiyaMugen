@@ -1,0 +1,33 @@
+;---------------------------------------
+;---------------------------------------
+:Tisifone Definition File by TonyADV
+;---------------------------------------
+;---------------------------------------
+
+[Info]
+name    = "Tisifone"
+displayname = "Shaina de Cobra"
+versiondate = 02,11,2004
+mugenversion = 04,14,2001
+author = "TONY ADV & Kingseiya"
+pal.defaults = 1  
+;pal.defaults = 0,1,2,3,4,5,6 
+; Files for the Player
+[Files]
+cmd     = tisifone.cmd
+cns     = tisifone.cns	
+st      = tisifone.cns	
+stcommon = tisifoneB.cns	
+sprite  = tisifone.sff		
+anim    = tisifone.air		
+sound   = tisifone.snd		
+;pal1    = 001.act  	;Hades Color
+pal2    = 002.act  	;Hades Color2
+;pal3    = 003.act  	;Dark color
+;pal4    = 004.act  	;Dark color2
+;pal5    = 005.act  	;Black Saint Color
+;pal6    = 006.act  	;Castalia color
+
+[Arcade]
+intro.storyboard =  ;introend\tisifoneintro.def
+ending.storyboard = ;introend\tisifoneending.def

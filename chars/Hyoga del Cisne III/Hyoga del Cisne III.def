@@ -1,0 +1,21 @@
+[Info]
+name="Hyoga del Cisne 3ra armadura"
+DisplayName="Hyoga" 
+mugenversion =14,04,2002   
+author ="SAGA_DE_GEMINIS ---- & ---- sS_Shaka_Ss" 
+versiondate=09/09/2006
+pal.defaults=1
+
+[Files]
+cmd=hyoga.cmd
+cns=hyoga.cns
+st=hyoga.cns
+stcommon=hyoga2.cns
+sprite=hyoga.sff
+anim=hyoga.air
+sound=hyoga.snd
+pal1=hyo2.act
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

@@ -1,0 +1,21 @@
+;CESARBALLESTER@HOTMAIL.COM AYUDEN SI SABEN PROGRAMAR,DIBUJAR ESPECIALMENTE
+[Info]
+name="Alcor de Zeta"
+DisplayName="Bud"    
+versiondate =15,01,2005    
+mugenversion =11,29,2000   
+author ="HADES81 TOME LOS SPRITES DE XZBLUE/CABALLERO CELESTIAL LIMPIO Y MEJORE ALGO PERO FALTA" 
+pal.defaults =1
+
+[Files]
+cmd=mizard.cmd
+cns=mizard.cns
+st=mizard.cns
+stcommon=mizard2.cns
+sprite=mizard.sff
+anim=mizard.air
+sound=cyd.snd
+pal1=bud.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

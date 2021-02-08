@@ -1,0 +1,29 @@
+; Freeza By The Disciple x
+
+[Info]
+name    ="Disciple's Freeza"
+displayname ="Mecha Frieza"
+author ="The Disciple x"
+mugenversion =4.14
+;versiondate=01/07/2007
+pal.defaults=1,2,3,4,5
+versiondate=12/22/2010
+
+; Files for the character
+[Files]
+cmd     =freeza.cmd
+cns     =freeza.cns
+st      =freeza.cns
+stcommon =common1.cns
+sprite  =freeza.sff
+anim    =freeza.air
+sound   =freeza.snd
+
+;st1=AI.cns
+st2=AI.cns
+pal1=freezar.act
+pal2=freeza.act
+st1=AI.cns
+[Arcade]
+intro.storyboard=
+ending.storyboard=..\data\final.def

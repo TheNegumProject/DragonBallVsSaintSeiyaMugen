@@ -1,0 +1,29 @@
+INFOS :
+Alors salut tout le monde  si vous lisez ce .txt c que vous avez ma version de toll qui d'apres certaine personne n'est pas legale etant donne le fait que les sprites utilises ne sont pas de moi.
+mais je voudrais que vous compreniez que seul 4 sprites de toll sont sorti (allez verifier) pas plus les attaques, sauts , simples coups... sont faits par moi avec du couper, coller (c d'ailleur pourquoi ils ne sont pas tres beau).
+mais bon voila je voudrais que vous soyez indulgent avec mon chars car je n'avez que 4 sprites pour le faire alors voila le principale c d'avoir quasi reussi (car ce n'est qu'une beta) et maintenant on peut jouer avec toll de gamma au lieu de l'attendre encore pendant 3 a 4 ans voila.
+LES ATTAQUES :
+les attaques sont tres simples elles sont au nombres de 3 et un coup special.
+les attaques se font de la sorte :
+2 fois 1/4 de tours vers l'avant plus coup de point faible(c un coup de point avec charge(plus puissant)
+2 fois 1/4 de tours vers l'avant plus coup de point moyen(c un uppercut assez puissant)
+2 fois 1/4 de tours vers l'anant plus coup de pied faible(peut se faire en l'air aussi(c une sorte de shoryuken a la ryu et ken de street fighters(pas mal...)
+la special se fait :
+2 fois 1/4 de tours vers l'avant plus coup de point fort(envoi d'un rayon d'energie c l'attaque que toll a utilise contre seiyar(le point du titan)
+
+Voila les attaques ne sont pas tres nombreuses mais bon c'est une beta apres tout.
+A signaler : il n'y a qu'un coup en l'air( qui se reppete pour tous les boutons) et idem pour les coups par terre car :
+			-CE N'EST QU'UNE BETA
+			-LES COUPS NE SONT PAS FACILES A FAIRE AVEC SEULEMENT 4 SPRITES ALORS PATIENTE.
+
+DERNIER POINT : 
+-si cette beta tombe entre les mains du concepteur des sprites de base qu'il me le fasse savoir a tmich@caramail.com
+je m'en excuse d'avances.
+-pour finir ce leger discourt je cherche un developpeur qui voudrais bien me faire le .snd de ce chars car moi je ne sais pas les faire voila a+ tt le monde et eclatter vous bien.
+
+
+
+PS : ils y a une intro (tollintro.def et tollintro.sff)
+ça s'utilise en game start c une sorte de petite video ditte ce que vous en pensez( ça compense le .snd)desole:)
+
+laissez moi vos impression svp a tmich@caramail.com

@@ -1,0 +1,20 @@
+[Info]
+name="aioros"
+DisplayName="Aiolos de Sagitario"    
+versiondate =31,12,2003    
+mugenversion =31,12,2003   
+author ="tmich"
+"Modif Flach Arcadia"
+pal.defaults =
+
+[Files]
+cmd=aioros.cmd
+cns=aioros.cns
+st=aioros.cns
+stcommon=aioros2.cns
+sprite=aioros3.sff
+anim=aioros.air
+sound=aioros.snd
+pal1=aioros.act
+pal2=aiorosor.act
+

@@ -1,0 +1,18 @@
+[Info]
+name="Zarbon by Master"
+displayname="Zarbom"
+versiondate=
+mugenversion=
+author="MasterPegasus"
+pal.defaults=
+[Files]
+sprite=zarbon.sff
+anim=zarbon.air
+cmd=zarbon.cmd
+cns=zarbon.cns
+st=zarbon.cns
+stcommon=common1.cns
+sound=zarbon.snd
+[Arcade]
+intro.storyboard=
+ending.storyboard=

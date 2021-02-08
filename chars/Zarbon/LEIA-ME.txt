@@ -1,0 +1,140 @@
+//////////////////////////////////////
+(Zarbon by Dragons Mugen team)//////////////////////////////////////
+
+Zarbon
+Leia-me em Português
+//////////////////////////////////////Dados do char//////////////////////////////////////
+
+Nome :Zarbom
+Anime(desenho) : DBZ
+Versão : 3.0(Quase final)
+Completo : 95%
+Data de Lançamento : 22/11/08
+personagem - editado
+
+//////////////////////////////////////Zarbon//////////////////////////////////////
+
+Raça : desconhecida
+Familiares: desconhecidos
+Amigos: Dodoria
+Olhos : Amarelos
+Cabelo : Verdes
+Séries : Dbz freeza
+Diciplina: Boa postura
+
+//////////////////////////////////////História//////////////////////////////////////
+
+Zarbon Apareceu no dbz em namekuzei,ele andava ao lado de Freeza e Dodoria.Depois da morte de Dodoria
+Zarbon foi ordenado a matar Vegeta,mas ele levou uma surra até ele se transformar e aí foi ele que deu 
+uma surra no Vegeta que ficou perto da morte mas não morreu.Vegeta depois se recuperou e fugiu,Zarbon 
+foi atrás dele e eles lutaram mas desta vez nem a transformação dele adiantou aí vegeta o matou facilmente.
+
+//////////////////////////////////////Programas utilizado//////////////////////////////////////
+
+.fighter factory
+.Corew Draw
+.Paint
+
+//////////////////////////////////////Bugs Talvez tenha alguns(tem nenhum)//////////////////////////////////////
+
+Têm bugs que eu vou corrigir na versão final,como quando ele solta um elegant cannon perto do canto ele fica travado
+________________________________________________________________________________
+
+//////////////////////////////////////novidade//////////////////////////////////////
+
+Finalmente eu consegui montar o meu modo de combo aéreo que se resume em vc jogar o oponente para um dos cantos da tela e se teletransportar para soltar uma sequência ou jogar ele para outro lado,lembrando que é um pouco apelativo só que muito divertido.
+Aí vai os comandos:
+
+/////////////////MODO AÈREO///////////////////
+
+"b" parado (joga o oponente para o alto,possibilitando vc se teletransportar e aplicar um golpe)
+
+"a" no ar após o teletransporte (joga o oponente para frente assim vc pode se teletransportar e aplicar mais um golpe)
+
+"b" no ar (zarbon aplica uma sequência que joga o oponente para frente possibilitando vc se teletransportar rapidamente e aplicar mais uma sequência ou jogar o oponente para um dos cantos da tela)
+
+"x" no ar (esse é um golpe finalizador ja que zarbon joga o oponente para o chão,mas se vc estiver em uma boa altura e for rapido no teletransporte da para jogar o oponente para cima e aplicar mais golpes aéreos)
+
+"y" no ar (joga o oponente para cima possibilitando vc se teletransportar e aplicar um golpe)
+
+lembrando eu me inspirei no dbz legends do ps1 quem ja jogou sabe como o jogo é.
+
+ 
+//////////////////////////////////////MODOS DE JOGO//////////////////////////////////////
+
+Modo normal
+Modo normal com aura
+
+//////////////////////////////////////O QUE TERÁ//////////////////////////////////////
+
+Mais nada eu acho, se alguém me der idéias e 
+eu tiver tempo de fazer eu vejo se ele terá atualizações.Desculpem se ñ está como vcs imaginaram mas é que eu tenho falta de tempo
+e ñ deu pra fazer tudo o que eu queria
+
+//////////////////////////////////////O QUE TEM//////////////////////////////////////
+2 Hipers
+5 supers
+2 Sistemas de combo
+1 poses de vitória
+1 intro
+Carregamento de ki 
+teleporte
+voo
+1 Paleta
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,===Golpes ===,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+2 Hiper=====Explosão e Furia de Zarbom
+4 Supers====Elegant Cannon,Magias,Star Blast, 
+Star Breaker e Poder com Aura
+
+,,,,,,,,,,,,,,,,,,,,,Comandos,,,,,,,,,,,,,,,,
+
+HIPERS 
+
+EXPLOSÃO: (esse ataque zarbon cria um pequeno circulo em volta de seu corpo que ele esplode com sua energia ,esse ataque tira bastante life e é um de meus preferidos)
+
+COMANDO: D,DF,F,D,DF,F,y
+
+FURIA DE ZARBON: (nesse ataque zarbon corre bate no oponente joga-o para cima se teletransporta bate mais um pouco e finaliza com um elegant cannon)
+
+COMANDO: D, DB, B, F ,x
+
+SUPERS
+
+ELEGANT CANNON: (esse super, é um recordista de e-mails,já que eu recebi muitos e-mails de criticas e sugestões sobre esse ataque que eu deixei como eu achei melhor.Nesse ataque zarbon se posiciona de uma forma elegante e solta uma rajada de energia amarela)
+
+COMANDO: D, DB, B, F ,a
+
+STAR BLAST :(esse ataque consiste em disparar uma forte rajada de KI vermelha com uma das mãos, foi usada contra Vegeta)
+
+COMANDO: D, DB, B, F ,b
+
+STAR BREAKER:(este é o meu ataque preferido ñ sei porque mas eu gosto,esse ataque só é feito no ar,zarbon carrega com uma das mãos uma bolinha de energia azul que depois ele a solta contra o adversário e causa muito dano)
+
+COMANDO: B ,F , c (no ar)
+
+MAGIAS : (esse é o ataque que eu menos me dediquei já que fiquei sem muitas idéias para incrementar nele.Zarbon solta várias magias contra o adversário)
+
+COMANDO: B, F, y
+
+PODER COM AURA : (um tipo de aumento de ki bem util e zarbon fica com uma aura)
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,(((((( AGRADECIMENTOS))))),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Ao Dragonsmugen que me convidou a entrar na equipe ao meu primo que me deu a idéia de modo de combo aéreo e a todos que me ajudaram e baixaram o zarbon)
+
+Autor:Master(Dragons Mugen team)E-mail:Master_pegasu@hotmail.com (é master_pegaSU,mesmo eim)
+Sprites: Master Pegasus
+Programação: Master Pegasus
+Sons: Master Pegasus
+
+__________________________________________________________________ ______________________________
+
+Dragons Mugens
+<Victor>
+<Master Pégasus>
+<Pit Wolf>
+<k-to> 
+<veitor> 
+<taylor> 
+<coração bandido>

@@ -1,0 +1,1794 @@
+;---------------------------------------------------------------------------
+;DM H  (QCB*2 +Punch) start
+[Statedef 3700]
+type    = S
+movetype= I
+physics = S
+juggle  = 7
+poweradd= 90
+velset = 0,0
+anim = 3700
+ctrl = 0
+
+[State 3700, 0]
+type = explod
+trigger1 = AnimElem = 1,=1
+anim = 7030
+pos = -15,-80
+postype = p1
+sprpriority = 3
+supermove = 1
+bindtime = 1
+
+[State 3700, 1]
+type = PowerAdd
+trigger1 = animelem = 3
+value = -1000
+
+[State 3700, 2]
+type = SuperPause
+trigger1 = animelem = 1,=1
+pos = -15, -80
+anim = 31
+;movetime = 30
+
+[State 3700, 3]
+type = PlaySnd
+trigger1 = animelem = 1,=1
+value = s4, 22
+
+[State 3700, 4]
+type = AfterImage
+trigger1 = Time = 1
+time = 2
+
+[State 3700, 5]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3700, 6]
+type = EnvColor
+trigger1 = animelem = 1
+value = 245,245,245
+time = 2
+
+[State 3700, 7a]
+type = PlaySnd
+trigger1 = animelem = 1
+value = s7, 6
+
+[State 3700, 7b]
+type = PlaySnd
+trigger1 = animelem = 3
+value = s7, 24
+
+[State 3700, 8]
+type = ReversalDef
+trigger1 = AnimElem = 1
+numhits = 0
+reversal.attr = SCA, NA, SA, HA
+pausetime = 18,35
+sparkxy = -20,-60
+hitsound = s4,7
+sparkno = S8002
+guard.sparkno = S8002
+p1stateno = 3701
+p2facing = 1
+;p2stateno = 3702
+
+[State 3700, 9]
+type = changestate
+trigger1 = animtime = 0 
+value = 3799
+ctrl = 0
+
+
+;---------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P1 taking target
+[Statedef 3701]
+type    = S
+movetype= A
+physics = S
+poweradd= 90
+velset = 0,0
+anim = 3701
+ctrl = 0
+facep2 = 1
+
+[State 3701, 0]
+type = AfterImageTime
+trigger1 = Time = [0,500]
+time = 2
+
+[State 3701, 0]
+type = PlaySnd
+trigger1 = time = 0
+value = s7, 21
+
+[State 3701, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s4, 2
+
+[State 3701, 2]
+type = varset
+trigger1 = time = 0
+v = 2
+value = 1
+
+[State 3701, 3]
+type = HitDef
+Trigger1 = animelem = 3
+attr = S, HT
+getpower  = 30
+givepower = 10
+hitflag = MAF
+priority = 4, Miss    
+;sparkno = 1
+;pausetime = 7,10
+sparkxy = -10,-70
+;hitsound   = s4,16
+p2facing = 1
+snap = 30, 0
+p1stateno = 3702
+p2stateno = 3703
+ground.velocity = -2,-8
+air.velocity = -2,-8
+fall = 1
+fall.recover = 0
+fall.damage = 2
+
+[State 3701, 4]
+type = changestate
+trigger1 = animtime = 0 
+value = 0
+ctrl = 1 
+
+;--------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P1 running
+[Statedef 3702]
+type    = S
+movetype= A
+physics = N
+poweradd= 90
+velset = 0,0
+anim = 3702
+ctrl = 0
+facep2 = 1
+
+[State 3702, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3702, 0]
+type = Width
+trigger1 = time >= 0
+player = 80,20
+
+[State 3702, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3702, 0]
+type = PlaySnd
+trigger1 = time = 0
+value = s8, 7
+volume = 99
+
+[State 3702, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s7, 20
+volume = 99
+
+[State 3702, 2]
+type = MakeDust
+trigger1 = AnimElem = 3,>=0
+pos = -30,-2
+spacing = 4
+
+[State 3702, 3]
+type = Velset
+trigger1 = AnimElem = 2,=2
+x = 7
+
+[State 3702, 4]
+type = SprPriority
+trigger1 = Time >= 0
+value = -1
+
+[State 3702, 5]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3702, 6]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 70, -80
+
+[State 3702, 7]
+type = TargetBind
+trigger1 = AnimElem = 2, >= 0 && AnimElem = 3, < 0
+pos = 15, -80
+
+[State 3702, 8]
+type = TargetBind
+trigger1 = AnimElem = 3, >= 0
+pos = -10, -82
+
+[State 3702, 9]
+type = targetstate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3705
+ctrl = 0
+
+[State 3702, 10]
+type = changestate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3704
+ctrl = 0
+
+
+
+
+
+
+;---------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P2 hold by P1 while running
+[Statedef 3703]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3703, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3703, 0]
+type = Width
+trigger1 = time >= 0
+player = 90,20
+
+[State 3703, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3703
+
+[State 3703, 2]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[State 3703, 3]
+type = null;changestate
+trigger1 = BackEdgeDist < 65 && time >=8
+value = 3705
+ctrl = 0
+
+[State 3703, 3]
+type = null;selfstate
+trigger1 = BackEdgeDist < 65 && time >=8
+value = 5030
+
+
+
+;---------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P2 hold by P1 in the corner
+[Statedef 3705]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3705, 0]
+type = PosFreeze
+trigger1 = time >= 5
+
+[State 3705, 1]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3705, 2]
+type =  PosSet
+trigger1 = Animtime = 0
+y = -10
+
+[State 3705, 3]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3705
+
+[State 3705, 4]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[State 3705, 5]
+type = Velset
+trigger1 = animtime = 0
+x = -5
+y = -6
+
+
+
+;---------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P2 hold by P1 while running 2
+[Statedef 3707]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3707, 0]
+type = turn
+trigger1 = time = 0
+
+[State 3707, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3707, 0]
+type = Width
+trigger1 = time >= 0
+player = 90,20
+
+[State 3707, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3707
+
+[State 3707, 2]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+;---------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P2 hold by P1 in the corner 2
+[Statedef 3709]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3709, 0]
+type = PosFreeze
+trigger1 = time >= 5
+
+[State 3709, 1]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3709, 2]
+type =  PosSet
+trigger1 = Animtime = 0
+y = -10
+
+[State 3709, 3]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3709
+
+[State 3709, 4]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[State 3709, 5]
+type = Velset
+trigger1 = animtime = 0
+x = -6
+y = -7
+
+[State 3709, 6]
+type = selfstate
+trigger1 = animtime = 0
+value = 5030
+
+;--------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P1 reach corner
+[Statedef 3704]
+type    = S
+movetype= A
+physics = S
+poweradd= 90
+;velset = 0,0
+anim = 3704
+ctrl = 0
+
+[State 3704, 0]
+type = EnvColor
+trigger1 = animelem = 2
+value = 245,245,245
+time = 1
+
+[State 3704, 0]
+type = Velmul
+trigger1 = time >= 0
+x = 0.25
+
+[State 3704, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3704, 0]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3704, 1]
+type = PlaySnd
+trigger1 = animelem = 2
+value = s4, 30
+volume = 150
+
+[State 3704, 2]
+type = EnvShake
+trigger1 = animelem = 2
+time = 18
+ampl = 9
+freq = 90
+phase = 9
+
+[State 3704, 3]
+type = MakeDust
+trigger1 = AnimElem = 1,>0 && AnimElem = 3, < 0
+pos = -30,-2
+spacing = 4
+
+[State 3704, 4]
+type = null;Velset
+trigger1 = AnimElem = 3,[0,3]
+x = -7
+
+[State 3704, 5]
+type = SprPriority
+trigger1 = Time >= 0
+value = -1
+
+[State 3704, 6]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3704, 7]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 15, -80
+
+[State 3704, 8]
+type = TargetBind
+trigger1 = AnimElem = 2, >= 0 && AnimElem = 3, < 0
+pos = 57, -80
+
+[State 3704, 8]
+type = TargetBind
+trigger1 = AnimElem = 3, >= 0 && AnimElem = 4, < 0
+pos = 53, -76
+
+[State 3704, 8]
+type = TargetBind
+trigger1 = AnimElem = 4, >= 0 && AnimElem = 5, < 0
+pos = 49, -72
+
+[State 3704, 8]
+type = TargetBind
+trigger1 = AnimElem = 5, >= 0 && AnimElem = 6, < 0
+pos = 45, -68
+
+[State 3704, 8]
+type = TargetBind
+trigger1 = AnimElem = 6, >= 0
+pos = 10, -74
+
+[State 3704, 9]
+type = TargetLifeAdd
+trigger1 = animelem = 2
+absolute = 1
+kill = 0
+value = -120
+
+[State 3704, 10]
+type = Explod
+trigger1 = animelem = 2
+persistent = 0
+anim = 8012
+id = 8012
+pos = 57,-80
+postype = P1
+bindtime = 1
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+
+[State 3704, 11]
+type = Posadd
+trigger1 = animelem = 6
+x = 17
+
+[State 3704, 12]
+type = targetstate
+trigger1 = animtime = 0
+value = 3707
+ctrl = 0
+
+[State 3704, 13]
+type = changestate
+trigger1 = animtime = 0
+value = 3706
+ctrl = 0
+
+
+;--------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P1 turning to the other side & running 2
+[Statedef 3706]
+type    = S
+movetype= A
+physics = N
+poweradd= 90
+velset = 0,0
+anim = 3706
+ctrl = 0
+facep2 = 1
+
+[State 3706, 0]
+type = turn
+trigger1 = time = 0
+
+[State 3706, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3706, 0]
+type = Width
+trigger1 = time >= 0
+player = 80,20
+
+[State 3706, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3706, 0]
+type = PlaySnd
+trigger1 = time = 0
+value = s8, 7
+volume = 99
+
+[State 3706, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s7, 19
+volume = 99
+
+[State 3706, 2]
+type = MakeDust
+trigger1 = AnimElem = 1,>=0
+pos = -30,-2
+spacing = 4
+
+[State 3706, 3]
+type = Velset
+trigger1 = AnimElem = 1,=2
+x = 6
+
+[State 3706, 3]
+type = Veladd
+trigger1 = AnimElem = 1,>2
+x = 0.08
+
+[State 3706, 4]
+type = SprPriority
+trigger1 = Time >= 0
+value = 1
+
+[State 3706, 5]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3706, 6]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 28, -80
+
+[State 3706, 7]
+type = TargetBind
+trigger1 = AnimElem = 2, >= 0; && AnimElem = 3, < 0
+pos = 15, -80
+
+[State 3706, 9]
+type = targetstate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3709
+ctrl = 0
+
+[State 3706, 10]
+type = changestate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3708
+ctrl = 0
+
+
+;--------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) P1 reach corner 2
+[Statedef 3708]
+type    = S
+movetype= A
+physics = S
+poweradd= 90
+;velset = 0,0
+anim = 3708
+ctrl = 0
+
+[State 3708, 0]
+type = EnvColor
+trigger1 = animelem = 2
+value = 245,245,245
+time = 1
+
+[State 3708, 0]
+type = Velmul
+trigger1 = time >= 0
+x = 0.20
+
+[State 3708, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3708, 0]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3708, 1]
+type = PlaySnd
+trigger1 = animelem = 2
+value = s4, 30
+volume = 150
+
+[State 3708, 2]
+type = EnvShake
+trigger1 = animelem = 2
+time = 20
+ampl = 10
+freq = 90
+phase = 9
+
+[State 3708, 2]
+type = PlaySnd
+trigger1 = animelem = 2
+value = s7, 23
+volume = 99
+
+[State 3708, 3]
+type = MakeDust
+trigger1 = AnimElem = 1,>0
+pos = -30,-2
+spacing = 4
+
+[State 3708, 5]
+type = SprPriority
+trigger1 = Time >= 0
+value = -1
+
+[State 3708, 6]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3708, 7]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 15, -80
+
+[State 3708, 8]
+type = TargetBind
+trigger1 = AnimElem = 2, = 0 ;&& AnimElem = 3, < 0
+pos = 57, -80
+
+[State 3708, 9]
+type = TargetLifeAdd
+trigger1 = animelem = 2
+kill = 0
+absolute = 1
+value = -125
+
+[State 3708, 10]
+type = Explod
+trigger1 = animelem = 2
+persistent = 0
+anim = 8012
+id = 8012
+pos = 57,-80
+postype = P1
+bindtime = 1
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+
+[State 3708, 11]
+type = null;targetstate
+trigger1 = animtime = 0
+value = 3707
+ctrl = 0
+
+[State 3708, 12]
+type = changestate
+trigger1 = animtime = 0
+value = 3710
+ctrl = 0
+
+
+;----------------------------------------------------------------
+; DM H  (QCB*2 +Punch) hop back
+[Statedef 3710]
+type    = A
+movetype= A
+physics = N
+poweradd= 90
+velset = 0,0
+anim = 3710
+ctrl = 0
+
+[State 3710, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3710, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s4, 1
+volume = 150
+
+[State 3710, 2]
+type = Velset
+trigger1 = AnimElem = 1
+x = -6
+y = -6.5
+
+[State 3710, 3]
+type = Veladd
+trigger1 = time > 0
+y = 0.4
+
+[State 3710, 4]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3710, 5]
+type = changestate
+trigger1 = Pos Y >= 0
+trigger1 = Vel Y > 0
+value = 52
+ctrl = 0
+
+
+
+;==============================================================================================================================================================================================
+;==============================================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;---------------------------------------------------------------------------
+;DM H y  (QCB*2 +Punch) start
+[Statedef 3750]
+type    = S
+movetype= I
+physics = S
+juggle  = 7
+poweradd= 90
+velset = 0,0
+anim = 3700
+ctrl = 0
+
+[State 3750, 0]
+type = explod
+trigger1 = AnimElem = 1,=1
+anim = 7030
+pos = -15,-80
+postype = p1
+sprpriority = 3
+supermove = 1
+bindtime = 1
+
+[State 3750, 1]
+type = PowerAdd
+trigger1 = animelem = 3
+value = -2000
+
+[State 3750, 2]
+type = SuperPause
+trigger1 = animelem = 1,=1
+pos = -15, -80
+anim = 31
+;movetime = 30
+
+[State 3750, 3]
+type = PlaySnd
+trigger1 = animelem = 1,=1
+value = s4, 22
+
+[State 3750, 4]
+type = AfterImage
+trigger1 = Time = 1
+time = 2
+PalBright   =   0,  0,  0
+PalContrast = 120,120,220
+PalAdd      =  0,0,0 ;29, 29, 29
+PalMul      = .77,.77,.77
+trans = add
+
+[State 3750, 5]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3750, 6]
+type = EnvColor
+trigger1 = animelem = 1
+value = 245,245,245
+time = 2
+
+[State 3750, 7a]
+type = PlaySnd
+trigger1 = animelem = 1
+value = s7, 6
+
+[State 3750, 7b]
+type = PlaySnd
+trigger1 = animelem = 3
+value = s7, 24
+
+[State 3750, 8]
+type = ReversalDef
+trigger1 = AnimElem = 1
+numhits = 0
+reversal.attr = SCA, NA, SA, HA, NT, ST, HT
+pausetime = 18,35
+sparkxy = -20,-60
+hitsound = s4,7
+sparkno = S8002
+guard.sparkno = S8002
+p1stateno = 3751
+p2facing = 1
+;p2stateno = 3752
+
+[State 3750, 9]
+type = changestate
+trigger1 = animtime = 0 
+value = 3799
+ctrl = 0
+
+
+;---------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P1 taking target
+[Statedef 3751]
+type    = S
+movetype= A
+physics = S
+poweradd= 90
+velset = 0,0
+anim = 3701
+ctrl = 0
+facep2 = 1
+
+[State 3751, 0]
+type = AfterImageTime
+trigger1 = Time = [0,500]
+time = 2
+
+[State 3751, 0]
+type = PlaySnd
+trigger1 = time = 0
+value = s7, 21
+
+[State 3751, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s4, 2
+
+[State 3751, 2]
+type = varset
+trigger1 = time = 0
+v = 2
+value = 1
+
+[State 3751, 3]
+type = HitDef
+Trigger1 = animelem = 3
+attr = S, HT
+getpower  = 30
+givepower = 10
+hitflag = MAF
+priority = 4, Miss    
+;sparkno = 1
+;pausetime = 7,10
+sparkxy = -10,-70
+;hitsound   = s4,16
+p2facing = 1
+snap = 30, 0
+p1stateno = 3752
+p2stateno = 3753
+ground.velocity = -2,-8
+air.velocity = -2,-8
+fall = 1
+fall.recover = 0
+fall.damage = 2
+
+[State 3751, 4]
+type = changestate
+trigger1 = animtime = 0 
+value = 0
+ctrl = 1 
+
+;--------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P1 running
+[Statedef 3752]
+type    = S
+movetype= A
+physics = N
+poweradd= 90
+velset = 0,0
+anim = 3702
+ctrl = 0
+facep2 = 1
+
+[State 3752, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3752, 0]
+type = Width
+trigger1 = time >= 0
+player = 80,20
+
+[State 3752, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3752, 0]
+type = PlaySnd
+trigger1 = time = 0
+value = s8, 7
+volume = 99
+
+[State 3752, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s7, 20
+volume = 99
+
+[State 3752, 2]
+type = MakeDust
+trigger1 = AnimElem = 3,>=0
+pos = -30,-2
+spacing = 4
+
+[State 3752, 3]
+type = Velset
+trigger1 = AnimElem = 2,=2
+x = 7
+
+[State 3752, 4]
+type = SprPriority
+trigger1 = Time >= 0
+value = -1
+
+[State 3752, 5]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3752, 6]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 70, -80
+
+[State 3752, 7]
+type = TargetBind
+trigger1 = AnimElem = 2, >= 0 && AnimElem = 3, < 0
+pos = 15, -80
+
+[State 3752, 8]
+type = TargetBind
+trigger1 = AnimElem = 3, >= 0
+pos = -10, -82
+
+[State 3752, 9]
+type = targetstate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3755
+ctrl = 0
+
+[State 3752, 10]
+type = changestate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3754
+ctrl = 0
+
+
+
+
+
+
+;---------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P2 hold by P1 while running
+[Statedef 3753]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3753, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3753, 0]
+type = Width
+trigger1 = time >= 0
+player = 90,20
+
+[State 3753, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3703
+
+[State 3753, 2]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[State 3753, 3]
+type = null;changestate
+trigger1 = BackEdgeDist < 65 && time >=8
+value = 3755
+ctrl = 0
+
+[State 3753, 3]
+type = null;selfstate
+trigger1 = BackEdgeDist < 65 && time >=8
+value = 5030
+
+
+
+;---------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P2 hold by P1 in the corner
+[Statedef 3755]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3755, 0]
+type = PosFreeze
+trigger1 = time >= 5
+
+[State 3755, 1]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3755, 2]
+type =  PosSet
+trigger1 = Animtime = 0
+y = -10
+
+[State 3755, 3]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3705
+
+[State 3755, 4]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[State 3755, 5]
+type = Velset
+trigger1 = animtime = 0
+x = -5
+y = -6
+
+
+
+;---------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P2 hold by P1 while running 2
+[Statedef 3757]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3757, 0]
+type = turn
+trigger1 = time = 0
+
+[State 3757, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3757, 0]
+type = Width
+trigger1 = time >= 0
+player = 90,20
+
+[State 3757, 1]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3707
+
+[State 3757, 2]
+type = NotHitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+;---------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P2 hold by P1 in the corner 2
+[Statedef 3759]
+type    = A
+movetype= H
+physics = N
+poweradd= 90
+velset = 0,0
+ctrl = 0
+
+[State 3759, 0]
+type = PosFreeze
+trigger1 = time >= 5
+
+[State 3759, 1]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3759, 2]
+type =  PosSet
+trigger1 = Animtime = 0
+y = -10
+
+[State 3759, 3]
+type = ChangeAnim2
+trigger1 = Time = 0
+value = 3709
+
+[State 3759, 4]
+type = HitBy
+trigger1 = Time >= 0
+value = SCA
+time = 1
+
+[State 3759, 5]
+type = Velset
+trigger1 = animtime = 0
+x = -6
+y = -7
+
+[State 3759, 6]
+type = selfstate
+trigger1 = animtime = 0
+value = 5030
+
+;--------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P1 reach corner
+[Statedef 3754]
+type    = S
+movetype= A
+physics = S
+poweradd= 90
+;velset = 0,0
+anim = 3704
+ctrl = 0
+
+[State 3754, 0]
+type = EnvColor
+trigger1 = animelem = 2
+value = 245,245,245
+time = 1
+
+[State 3754, 5]
+type = Velmul
+trigger1 = time >= 0
+x = 0.25
+
+[State 3754, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3754, 0]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3754, 1]
+type = PlaySnd
+trigger1 = animelem = 2
+value = s4, 30
+volume = 150
+
+[State 3754, 2]
+type = EnvShake
+trigger1 = animelem = 2
+time = 18
+ampl = 9
+freq = 90
+phase = 9
+
+[State 3754, 3]
+type = MakeDust
+trigger1 = AnimElem = 1,>0 && AnimElem = 3, < 0
+pos = -30,-2
+spacing = 4
+
+[State 3754, 4]
+type = null;Velset
+trigger1 = AnimElem = 3,[0,3]
+x = -7
+
+[State 3754, 5]
+type = SprPriority
+trigger1 = Time >= 0
+value = -1
+
+[State 3754, 6]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3754, 7]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 15, -80
+
+[State 3754, 8]
+type = TargetBind
+trigger1 = AnimElem = 2, >= 0 && AnimElem = 3, < 0
+pos = 57, -80
+
+[State 3754, 8]
+type = TargetBind
+trigger1 = AnimElem = 3, >= 0 && AnimElem = 4, < 0
+pos = 53, -76
+
+[State 3754, 8]
+type = TargetBind
+trigger1 = AnimElem = 4, >= 0 && AnimElem = 5, < 0
+pos = 49, -72
+
+[State 3754, 8]
+type = TargetBind
+trigger1 = AnimElem = 5, >= 0 && AnimElem = 6, < 0
+pos = 45, -68
+
+[State 3754, 8]
+type = TargetBind
+trigger1 = AnimElem = 6, >= 0
+pos = 10, -74
+
+[State 3754, 9]
+type = TargetLifeAdd
+trigger1 = animelem = 2
+kill = 0
+absolute = 1
+value = -120
+
+[State 3754, 10]
+type = Explod
+trigger1 = animelem = 2
+persistent = 0
+anim = 8012
+id = 8012
+pos = 57,-80
+postype = P1
+bindtime = 1
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+
+[State 3754, 11]
+type = Posadd
+trigger1 = animelem = 6
+x = 17
+
+[State 3754, 12]
+type = targetstate
+trigger1 = animtime = 0
+value = 3757
+ctrl = 0
+
+[State 3754, 13]
+type = changestate
+trigger1 = animtime = 0
+value = 3756
+ctrl = 0
+
+
+;--------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P1 turning to the other side & running 2
+[Statedef 3756]
+type    = S
+movetype= A
+physics = N
+poweradd= 90
+velset = 0,0
+anim = 3706
+ctrl = 0
+facep2 = 1
+
+[State 3756, 0]
+type = Explod
+trigger1 = AnimElem = 2, >= 0 && random >= 550
+persistent = 3
+anim = 7010
+id = 7010
+pos = 20,-80
+postype = P1
+bindtime = 1
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+
+[State 3756, 0]
+type = turn
+trigger1 = time = 0
+
+[State 3756, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3756, 0]
+type = Width
+trigger1 = time >= 0
+player = 80,20
+
+[State 3756, 0]
+type = ScreenBound
+trigger1 = time >= 120
+value = 0
+movecamera = 0
+
+[State 3756, 0]
+type = PlaySnd
+trigger1 = time = 0
+value = s8, 7
+volume = 99
+
+[State 3756, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s7, 19
+volume = 99
+
+[State 3756, 2]
+type = MakeDust
+trigger1 = AnimElem = 1,>=0
+pos = -30,-2
+spacing = 4
+
+[State 3756, 3]
+type = Velset
+trigger1 = AnimElem = 1,=2
+x = 6
+
+[State 3756, 3]
+type = Veladd
+trigger1 = AnimElem = 1,>2
+x = 0.08
+
+[State 3756, 4]
+type = SprPriority
+trigger1 = Time >= 0
+value = 1
+
+[State 3756, 5]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3756, 6]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 28, -80
+
+[State 3756, 7]
+type = TargetBind
+trigger1 = AnimElem = 2, >= 0; && AnimElem = 3, < 0
+pos = 15, -80
+
+[State 3756, 5]
+type = null;VarSet
+trigger1 = FrontEdgeDist < 61 && time >=8
+v = 1
+value = Vel X
+
+[State 3756, 9]
+type = targetstate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3759
+ctrl = 0
+
+[State 3756, 10]
+type = changestate
+trigger1 = FrontEdgeDist < 60 && time >=8
+value = 3758
+ctrl = 0
+
+
+;--------------------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) P1 reach corner 2
+[Statedef 3758]
+type    = S
+movetype= A
+physics = S
+poweradd= 90
+;velset = 0,0
+anim = 3708
+ctrl = 0
+
+[State 3758, 0]
+type = EnvColor
+trigger1 = animelem = 2
+value = 245,245,245
+time = 1
+
+[State 3758, random x]
+type = VarRandom
+trigger1 = animelem = 1,>=0
+v = 1
+range = -25,35
+
+[State 3758, random y]
+type = VarRandom
+trigger1 = animelem = 1,>=0
+v = 2
+range = -25,15
+
+[State 3758, random hit sound]
+type = VarRandom
+trigger1 = animelem = 1,>=0
+v = 3
+range = 2,4
+
+[State 3758, 1]
+type = PlaySnd
+trigger1 = animelem = 2,>=0
+persistent = 6
+value = s8, var(3)
+volume = 50
+
+[State 3758, 0]
+type = Explod
+trigger1 = projhit7061 = 1
+anim = 7140
+id = 7140
+pos = 20,-80
+postype = P2
+bindtime = 20
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+random = 40, 50
+
+[State 3758, 0]
+type = Explod
+trigger1 = projhit7061 = 1
+anim = 7140
+id = 7140
+pos = -20,-10
+postype = P2
+bindtime = 20
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+random = 40, 50
+
+[State 3758, 0]
+type = Explod
+trigger1 = projhit7061 = 1
+anim = 7140
+id = 7140
+pos = 0,-10
+postype = P2
+bindtime = 20
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+random = 40, 50
+
+;Storm
+[State 3758, 6]
+type = Projectile
+trigger1 = animelem = 2,>=0 && Random <= 800
+persistent = 1
+projanim = 7061
+projid = 7061
+projhits = 10
+projmisstime = 3
+projremovetime = 27
+projremove = 0
+projhitanim = 7042
+projpriority = 10
+projshadow = -1
+postype = P2
+offset = var(1),-var(2)
+velocity = 0,0
+attr = S, HP
+damage   = 5,1
+animtype = medium
+guardflag = MA
+hitflag = MAFDP
+pausetime = 0,12
+;hitsound   = S8,var(3)
+sparkxy = var(1),-60-var(2)
+guardsound = S4,7
+ground.type = high
+ground.slidetime = 25
+ground.hittime  = 25
+ground.velocity = -6
+air.animtype = Back
+air.velocity = -3,-6
+air.fall = 1
+down.velocity = -3,-6
+down.hittime = 30
+down.bounce = 0
+palfx.time = 1
+palfx.add = 220, 230,240
+fall = 1
+fall.recover = 0
+
+[State 3758, 0]
+type = Velmul
+trigger1 = time >= 0
+x = 0.20
+
+[State 3758, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3758, 0]
+type = ScreenBound
+trigger1 = 1
+value = 0
+movecamera = 0
+
+[State 3758, 1]
+type = PlaySnd
+trigger1 = animelem = 2
+value = s4, 30
+volume = 150
+
+[State 3758, 2]
+type = EnvShake
+trigger1 = animelem = 2
+time = 20
+ampl = 10
+freq = 90
+phase = 9
+
+[State 3758, 2]
+type = PlaySnd
+trigger1 = animelem = 2
+value = s7, 23
+volume = 99
+
+[State 3758, 3]
+type = MakeDust
+trigger1 = AnimElem = 1,>0
+pos = -30,-2
+spacing = 4
+
+[State 3758, 5]
+type = SprPriority
+trigger1 = Time >= 0
+value = -1
+
+[State 3758, 6]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3758, 7]
+type = TargetBind
+trigger1 = AnimElem = 1, >= 0 && AnimElem = 2, < 0
+pos = 15, -80
+
+[State 3758, 8]
+type = TargetBind
+trigger1 = AnimElem = 2, = 0
+pos = 57, -80
+
+[State 3758, 9]
+type = TargetLifeAdd
+trigger1 = animelem = 2
+kill = 0
+absolute = 1
+value = -125
+
+[State 3758, 10]
+type = Explod
+trigger1 = animelem = 2
+persistent = 0
+anim = 8012
+id = 8012
+pos = 57,-80
+postype = P1
+bindtime = 1
+removetime = -2
+supermove = 1
+sprpriority = 2
+ownpal = 1
+
+[State 3758, 11]
+type = null;targetstate
+trigger1 = animtime = 0
+value = 3757
+ctrl = 0
+
+[State 3758, 12]
+type = changestate
+trigger1 = animtime = 0
+value = 3760
+ctrl = 0
+
+
+;----------------------------------------------------------------
+; DM H y  (QCB*2 +Punch) hop back
+[Statedef 3760]
+type    = A
+movetype= A
+physics = N
+poweradd= 90
+velset = 0,0
+anim = 3710
+ctrl = 0
+
+[State 3760, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3760, 1]
+type = PlaySnd
+trigger1 = time = 0
+value = s4, 1
+volume = 150
+
+[State 3760, 2]
+type = Velset
+trigger1 = AnimElem = 1
+x = -7;- (var(1))/3
+y = -7.5;- (var(1))/3
+
+[State 3760, 3]
+type = Veladd
+trigger1 = time > 0
+y = 0.4
+
+[State 3760, 4]
+type = PlayerPush
+trigger1 = Time >= 0
+value = 0
+
+[State 3760, 5]
+type = changestate
+trigger1 = Pos Y >= 0
+trigger1 = Vel Y > 0
+value = 52
+ctrl = 0
+
+
+
+
+;---------------------------------------------------------------------------
+; DM H  (QCB*2 +Punch) miss
+[Statedef 3799]
+type    = S
+movetype= I
+physics = S
+poweradd= 20
+velset = 0,0
+anim = 3799
+ctrl = 0
+
+[State 3799, 0]
+type = AfterImageTime
+trigger1 = Time = [1,500]
+time = 2
+
+[State 3799, 1]
+type = PlaySnd
+trigger1 = animelem = 1
+value = s4, 1
+
+[State 3799, 2]
+type = PlaySnd
+trigger1 = animelem = 1
+value = s7, 25
+
+[State 3799, 3]
+type = changestate
+trigger1 = animtime = 0 
+value = 0
+ctrl = 1 
+

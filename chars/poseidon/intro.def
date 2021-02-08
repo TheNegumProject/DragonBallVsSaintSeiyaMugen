@@ -1,0 +1,795 @@
+:----------------------------------------------------
+Intro for Athena Versiom Poseidon Project By TonyADV
+:----------------------------------------------------
+
+[SceneDef]
+spr = intro.sff
+;----------------------------------
+[Scene 1];Fondo marino
+; Fade
+fadein.time = 30
+fadein.col = 0,0,0
+fadeout.time = 15
+fadeout.col = 255,255,255
+clearcolor = 0,0,0
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 0
+layer0.offset = 0,0
+
+;text
+layer1.anim = 900
+layer1.offset = 110,185
+layer1.starttime = 50
+
+;Musica
+bgm = ;sound/JulianSolo.mp3                    
+bgm.loop = 0
+
+; Total time
+end.time = 200
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 0]
+0,1, 0,0, -1
+
+;text
+[Begin Action 900]
+3,0, 0,0, 10,,a2
+3,0, 0,0, 10,,a1
+3,0, 0,0, -1
+
+:-------------------------------------
+
+[Scene 2];Tempio
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 1
+layer0.offset = 0,0
+
+; Total time
+end.time = 100
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 1]
+0,2, 0,0, -1
+
+:-------------------------------------
+
+[Scene 3];Stanza
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 2
+layer0.offset = 0,0
+
+; Total time
+end.time = 100
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 2]
+0,3, 0,0, -1
+
+:-------------------------------------
+
+[Scene 4];Isabel
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 3
+layer0.offset = 0,0
+
+;text
+layer1.anim = 901
+layer1.offset = 5,5
+layer1.starttime = 25
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 3]
+0,4, 0,0, -1
+
+;text
+[Begin Action 901]
+3,1, 0,0, 10,,a2
+3,1, 0,0, 10,,a1
+3,1, 0,0, -1
+
+:-------------------------------------
+
+[Scene 5];Isabel letto
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 4
+layer0.offset = 0,0
+
+;text
+layer1.anim = 902
+layer1.offset = 5,5
+layer1.starttime = 25
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 4]
+0,5, 0,0, -1
+
+;text
+[Begin Action 902]
+3,2, 0,0, 10,,a2
+3,2, 0,0, 10,,a1
+3,2, 0,0, -1
+
+:-------------------------------------
+
+[Scene 6];bacio di julian
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 5
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 70
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 5]
+0,7, 0,0, -1
+
+:-------------------------------------
+
+[Scene 7];bacio di julian 2p
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 6
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 125
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 6]
+0,8, 0,0, -1
+
+:-------------------------------------
+
+[Scene 8];Isabel letto 2p
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 8
+layer0.offset = 0,0
+
+;text
+layer1.anim = 903
+layer1.offset = 5,5
+layer1.starttime = 25
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 8]
+0,5, 0,0, -1
+
+;text
+[Begin Action 903]
+3,3, 0,0, 10,,a2
+3,3, 0,0, 10,,a1
+3,3, 0,0, -1
+
+:-------------------------------------
+
+[Scene 9];julian
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 9
+layer0.offset = 0,0
+
+;text
+layer1.anim = 904
+layer1.offset = 5,175
+layer1.starttime = 25
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 9]
+0,9, 0,0, -1
+
+;text
+[Begin Action 904]
+3,4, 0,0, 10,,a2
+3,4, 0,0, 10,,a1
+3,4, 0,0, -1
+
+
+:-------------------------------------
+
+[Scene 10];scale
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 10
+layer0.offset = 0,0
+
+;text
+layer1.anim = 905
+layer1.offset = 5,175
+layer1.starttime = 100
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 10]
+0,10, 0,0, -1
+
+;text
+[Begin Action 905]
+3,5, 0,0, 10,,a2
+3,5, 0,0, 10,,a1
+3,5, 0,0, -1
+
+:-------------------------------------
+[Scene 11];julian vs isabel
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 11
+layer0.offset = 0,0
+
+;passegiata
+layer1.anim = 100
+layer1.offset = 0,2
+
+;isabel
+layer2.anim = 200
+layer2.offset = 25,-5
+
+;julian
+layer3.anim = 201
+layer3.offset = 50,-7
+
+;text
+layer9.anim = 906
+layer9.offset = 5,5
+layer9.starttime = 25
+
+; Total time
+end.time = 1000
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 11]
+0,2, 0,0, -1
+
+;passegiata
+[Begin Action 100]
+2,0, 0,0, -1
+
+;isabel
+[Begin Action 200]
+1,0, 0,0, -1
+
+;julian
+[Begin Action 201]
+1,1, 0,0, -1
+
+;text
+[Begin Action 906]
+3,6, 0,0, 10,,a2
+3,6, 0,0, 10,,a1
+3,6, 0,0, 250
+3,7, 0,0, 250
+3,8, 0,0, 250
+3,9, 0,0, -1
+
+:-------------------------------------
+[Scene 12];scena pioggia1
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 12
+layer0.offset = 0,0
+
+;text
+layer9.anim = 907
+layer9.offset = 5,5
+layer9.starttime = 50
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 12]
+0,11, 0,0, -1
+
+;text
+[Begin Action 907]
+3,10, 0,0, 10,,a2
+3,10, 0,0, 10,,a1
+3,10, 0,0, -1
+:-------------------------------------
+:-------------------------------------
+[Scene 13];scena pioggia2
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 13
+layer0.offset = 0,0
+
+;text
+layer9.anim = 908
+layer9.offset = 5,5
+layer9.starttime = 25
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 13]
+0,12, 0,0, -1
+
+;text
+[Begin Action 908]
+3,11, 0,0, 10,,a2
+3,11, 0,0, 10,,a1
+3,11, 0,0, -1
+:-------------------------------------
+:-------------------------------------
+[Scene 14];scena pioggia3
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 14
+layer0.offset = 0,0
+
+;text
+layer9.anim = 909
+layer9.offset = 5,5
+layer9.starttime = 25
+
+; Total time
+end.time = 250
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 14]
+0,13, 0,0, -1
+
+;text
+[Begin Action 909]
+3,12, 0,0, 10,,a2
+3,12, 0,0, 10,,a1
+3,12, 0,0, -1
+:-------------------------------------
+:-------------------------------------
+[Scene 15];julian vs isabel 2p
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 11
+layer0.offset = 0,0
+
+;passegiata
+layer1.anim = 100
+layer1.offset = 0,2
+
+;isabel
+layer2.anim = 200
+layer2.offset = 25,-5
+
+;julian
+layer3.anim = 201
+layer3.offset = 50,-7
+
+;text
+layer9.anim = 910
+layer9.offset = 5,5
+layer9.starttime = 25
+
+; Total time
+end.time = 1800
+
+
+:-------------------------------------
+;text
+[Begin Action 910]
+3,13, 0,0, 10,,a2
+3,13, 0,0, 10,,a1
+3,13, 0,0, 250
+3,14, 0,0, 250
+3,15, 0,0, 250
+3,16, 0,0, 250
+3,17, 0,0, 250
+3,18, 0,0, 250
+3,25, 0,0, -1
+:-------------------------------------
+:-------------------------------------
+[Scene 16];colonne sette mari
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 16
+layer0.offset = 0,0
+
+;text
+layer9.anim = 911
+layer9.offset = 5,5
+layer9.starttime = 50
+
+; Total time
+end.time = 830
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 16]
+0,14, 0,0, -1
+
+;text
+[Begin Action 911]
+3,21, 0,0, 10,,a2
+3,21, 0,0, 10,,a1
+3,21, 0,0, 260
+3,22, 0,0, 250
+3,23, 0,0, -1
+:-------------------------------------
+:-------------------------------------
+[Scene 17];colonna portante
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 17
+layer0.offset = 0,0
+
+;text
+layer9.anim = 912
+layer9.offset = 5,5
+layer9.starttime = 160
+
+; Total time
+end.time = 680
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 17]
+0,16, 0,400, 3
+0,16, 0,390, 3
+0,16, 0,380, 3
+0,16, 0,370, 3
+0,16, 0,360, 3
+0,16, 0,350, 3
+0,16, 0,340, 3
+0,16, 0,330, 3
+0,16, 0,320, 3
+0,16, 0,310, 3
+0,16, 0,300, 3
+0,16, 0,290, 3
+0,16, 0,280, 3
+0,16, 0,270, 3
+0,16, 0,260, 3
+0,16, 0,250, 3
+0,16, 0,240, 3
+0,16, 0,230, 3
+0,16, 0,220, 3
+0,16, 0,210, 3
+0,16, 0,200, 3
+0,16, 0,190, 3
+0,16, 0,180, 3
+0,16, 0,170, 3
+0,16, 0,160, 3
+0,16, 0,150, 3
+0,16, 0,140, 3
+0,16, 0,130, 3
+0,16, 0,120, 3
+0,16, 0,110, 3
+0,16, 0,100, 3
+0,16, 0,90, 3
+0,16, 0,80, 3
+0,16, 0,70, 3
+0,16, 0,60, 3
+0,16, 0,50, 3
+0,16, 0,40, 3
+0,16, 0,30, 3
+0,16, 0,20, 3
+0,16, 0,10, 3
+0,16, 0,0, -1
+
+;text
+[Begin Action 912]
+3,19, 0,0, 10,,a2
+3,19, 0,0, 10,,a1
+3,19, 0,0, 250
+3,20, 0,0, -1
+:-------------------------------------
+
+:-------------------------------------
+[Scene 18];colonna portante scena acqua 1
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 18
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 150
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 18]
+0,17, 0,0, -1
+
+:-------------------------------------
+:-------------------------------------
+[Scene 19];colonna portante scena acqua 2
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 19
+layer0.offset = 0,0
+
+; Total time
+end.time = 150
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 19]
+0,18, 0,0, -1
+
+:-------------------------------------
+:-------------------------------------
+[Scene 20];colonna portante isabel
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 20
+layer0.offset = 0,0
+
+;text
+layer9.anim = 915
+layer9.offset = 5,5
+layer9.starttime = 30
+
+; Total time
+end.time = 1280
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 20]
+0,19, 0,0, -1
+
+;text
+[Begin Action 915]
+3,24, 0,0, 10,,a2
+3,24, 0,0, 10,,a1
+3,24, 0,0, 250
+3,26, 0,0, 250
+3,27, 0,0, 250
+3,28, 0,0, 250
+3,29, 0,0, -1
+:-------------------------------------
+:-------------------------------------
+[Scene 21];isabel vs julian face
+; Fade
+fadein.time = 15
+fadein.col = 255,255,255
+fadeout.time = 15
+fadeout.col = 255,255,255
+
+; Overlay Anims (from 0 to 5)
+layerall.pos = 0,0  
+
+;sfondo
+layer0.anim = 21
+layer0.offset = 0,0
+
+
+; Total time
+end.time = 200
+
+
+:-------------------------------------
+
+;sfondo
+[Begin Action 21]
+0,20, 0,0, -1
+
+:-------------------------------------
+

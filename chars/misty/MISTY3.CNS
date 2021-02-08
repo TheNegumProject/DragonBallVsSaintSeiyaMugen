@@ -1,0 +1,416 @@
+
+;---------------------------------------------
+
+[statedef 1113]
+type    = S
+movetype = A
+physics = S
+juggle  = 5
+poweradd= 100
+ctrl = 0
+velset = 0,0
+anim = 1113
+sprpriority = 2
+
+[State 1113,remanescence ]
+type = AfterImage
+trigger1 = time = 0
+time = 2
+length = 20
+palcolor = 1
+palinvertall = 1
+timegap = 1
+framegap = 4
+trans = add
+
+[State 1113,remanescence2 ]
+type = AfterImageTime
+trigger1 = time < 40
+time = 2
+ignorehitpause = 1
+
+[State 1113, 1]
+type = PlaySnd
+trigger1 = Time = 2
+value = 1003, 0
+
+[State 1113, hit]
+type = HitDef
+trigger1 = Animelem = 5
+attr = S, SA
+animtype  = hard
+damage    = 180
+guardflag = MA
+pausetime = 12,20
+sparkno = 1
+sparkxy = -10,-60
+hitsound   = S200,0
+guardsound = S200,1
+ground.type = high
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = -6
+air.velocity = -2.2,-3.2
+fall = 1
+
+[State 1113, 2]
+type = veladd
+trigger1 = AnimElem = 3
+trigger2 = AnimElem = 4
+trigger3 = AnimElem = 5
+x = 10
+
+[State 1113, Width]
+type = Width
+trigger1 = (AnimElemTime (2) >= 0) && (AnimElemTime (6) < 0)
+value = 20,0
+
+[State 1113, poussiere]
+type = MakeDust
+trigger1 = animelem = 5
+pos = -15,3
+pos2 = -22,-3
+spacing = 2
+
+
+[State 1113, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------
+
+[statedef 1111]
+type    = S
+movetype = A
+physics = S
+juggle  = 5
+poweradd= 100
+ctrl = 0
+velset = 0,0
+anim = 1111
+sprpriority = 2
+
+[State 1111,remanescence ]
+type = AfterImage
+trigger1 = time = 0
+time = 2
+length = 20
+palcolor = 1
+palinvertall = 1
+timegap = 1
+framegap = 4
+trans = add
+
+[State 1111,remanescence2 ]
+type = AfterImageTime
+trigger1 = time < 40
+time = 2
+ignorehitpause = 1
+
+[State 1111, 1]
+type = PlaySnd
+trigger1 = Time = 2
+value = 1003, 0
+
+[State 1111, hit]
+type = HitDef
+trigger1 = animelem = 2
+attr = S, SA
+priority = 5
+animtype  = hard
+damage    = 120
+guardflag = H
+pausetime = 12,20
+sparkno = 1
+sparkxy = -10,-60
+hitsound   = S200,0
+guardsound = S200,1
+ground.type = high
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = -6
+air.velocity = -2.2,-3.2
+fall = 0
+
+[State 1111, slide]
+type = velAdd
+trigger1 = AnimElem = 1
+trigger2 = AnimElem = 2
+trigger3 = AnimElem = 3
+x = 5
+
+
+[State 1111, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------
+
+;-------------------------------------------
+
+[statedef 1112]
+type    = A
+movetype = A
+physics = A
+juggle  = 5
+poweradd= 100
+ctrl = 0
+velset = 0,0
+anim = 1112
+sprpriority = 2
+
+[State 1112,remanescence ]
+type = AfterImage
+trigger1 = time = 0
+time = 2
+length = 20
+palcolor = 1
+palinvertall = 1
+timegap = 1
+framegap = 4
+trans = add
+
+[State 1112,remanescence2 ]
+type = AfterImageTime
+trigger1 = time < 40
+time = 2
+ignorehitpause = 1
+
+[State 1112, 1]
+type = PlaySnd
+trigger1 = Time = 2
+value = 1003, 0
+
+[State 11121, hit]
+type = HitDef
+trigger1 = animelem = 2
+attr = S, SA
+priority = 5
+animtype  = hard
+damage    = 120
+guardflag = H
+pausetime = 12,20
+sparkno = 1
+sparkxy = -10,-60
+hitsound   = S200,0
+guardsound = S200,1
+ground.type = high
+ground.slidetime = 12
+ground.hittime  = 15
+ground.velocity = -6
+air.velocity = -2.2,-3.2
+fall = 0
+
+[State 1112, slide]
+type = velAdd
+trigger1 = AnimElem = 1
+trigger2 = AnimElem = 2
+trigger3 = AnimElem = 3
+x = 2
+
+[State 1112, slide2]
+type = velAdd
+trigger1 = AnimElem = 1
+Y = -4
+
+[State 1112, 4]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+;-------------------------------------------
+
+
+
+
+;tourbillon du Lezard
+[Statedef 2000]
+type = S
+movetype = A
+physics = S
+anim = 2000
+juggle = 25
+velset = 0
+ctrl = 0
+poweradd = -3000
+
+[State 2000, pain]
+type = lifeadd
+trigger1 = animelem = 29
+trigger2 = animelem = 31
+value = -150
+kill = 0
+absolute = 1
+
+[state 2000, superpause]
+type = superpause
+trigger1 = animelem = 4
+pos = 90, -100
+time = 75
+
+[State 2000,fond ]
+type = Explod
+trigger1 = animelem = 4
+anim = 8006
+supermove = 1
+supermovetime = 75
+postype = left
+pos = 0,0
+sprpriority = -1
+ownpal = 1
+removeongethit = 1
+bindtime = -1
+
+[State 2000,fond2 ]
+type = Explod
+trigger1 = animelem = 5
+anim = 8010
+supermove = 1
+supermovetime = 75
+postype = front
+pos = 0,0
+sprpriority = 2
+ownpal = 1
+removeongethit = 1
+bindtime = -1
+
+[State 2000,ex ]
+type = Explod
+trigger1 = time = 0
+anim = F101
+pos = 0,-90
+sprpriority = 8
+ownpal = 1
+removeongethit = 1
+
+[State 2000, kiai]
+type = PlaySnd
+trigger1 = AnimElem = 1
+value = 8888,0
+
+[State 2000, 2]
+type = PlaySnd
+trigger1 = time = 18
+value = 0,37
+
+[State 2000, 2]
+type = PlaySnd
+trigger1 = time = 23
+value = 0,29
+
+
+[State 2000, 1]
+type = Projectile
+trigger1 = time = [26,126]
+trigger1 = timemod = 2,0
+attr = S, HP
+projscale = 0.7, 0.7
+ignorehitpause = 1
+ID = 8000
+projanim = 8000
+projhitanim = 8000
+offset = 75,-100
+velocity = 16
+damage = 10,1
+projhits = 5
+animtype = Hard
+guardflag = MA
+pausetime = 0,0
+sparkno = -1
+guard.sparkno = -1
+guardsound = S200,1
+ground.type = High
+ground.slidetime = 14
+ground.hittime  = 16
+ground.velocity = -3
+guard.velocity = -2
+air.velocity = -2.5
+getpower = 0,0
+
+[State 2000, 1]
+type = Projectile
+trigger1 = time = [26,126]
+trigger1 = timemod = 2,0
+attr = S, HP
+projscale = 0.7, 0.7
+ignorehitpause = 1
+ID = 8001
+projanim = 8001
+projhitanim = 8001
+offset = 75,-100
+velocity = 16
+damage = 10,1
+projhits = 3
+animtype = Hard
+guardflag = MA
+pausetime = 0,0
+sparkno = -1
+sparkxy = 0,-60
+guard.sparkno = -1
+guardsound = S200,1
+ground.type = Low
+ground.slidetime = 14
+ground.hittime  = 16
+ground.velocity = -9,-7
+guard.velocity = -2
+air.velocity = -2.5,-5
+fall = 1
+fall.recover = 0
+getpower = 0,0
+
+[State 2000,fakespark ]
+type = Explod
+trigger1 = projhit(8000) = 1
+trigger1 = time = [26,126]
+anim = F3
+pos = 20,00
+postype = p2
+;vel = 0,0
+;accel = 0,0
+random = 60,60
+removetime = -2
+;supermove = 0
+;pausemovetime = 0
+scale = 0.5,0.5
+sprpriority = 6
+ontop = 1
+ownpal = 1
+ignorehitpause = 1
+
+[State 2000,fakespark ]
+type = Explod
+trigger1 = projguarded(8001) = 1
+trigger1 = time = [26,126]
+anim = F40
+pos = 0,-20
+postype = p2
+;vel = 0,0
+;accel = 0,0
+random = 60,60
+removetime = -2
+;supermove = 0
+;pausemovetime = 0
+sprpriority = 6
+ontop = 1
+ownpal = 1
+ignorehitpause = 1
+
+
+[State 2000 , 3]
+type = ChangeState
+trigger1 = AnimTime = 0
+value = 0
+ctrl = 1
+
+[State 220, poussiere]
+type = MakeDust
+trigger1 = Time = [26,126]
+pos = 150,3
+pos2 = 200,-3
+spacing = 2
+;--------------------------------------------------

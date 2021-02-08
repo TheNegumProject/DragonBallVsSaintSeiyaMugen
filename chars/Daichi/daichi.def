@@ -1,0 +1,25 @@
+;Daichi by Hiei SSJ e Link.
+
+; Player information
+[Info]
+name= "Daichi da Armadura da Terra"
+displayname= "Daichi da Armadura da Terra"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+author= "Link and Beja"
+pal.defaults= 1,2,3,4
+
+; Files for the player
+[Files]
+cmd=daichi.cmd
+cns=daichi.cns
+st=daichi.cns
+stcommon=common1.cns
+sprite=daichi.sff
+anim=daichi.air
+sound=daichi.snd
+pal1=daichi.act
+
+[Arcade]
+intro.storyboard= acierintro.def
+ending.storyboard=

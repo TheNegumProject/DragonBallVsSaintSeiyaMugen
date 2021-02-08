@@ -1,0 +1,23 @@
+[Info]
+name="Kiki serie1"
+displayname="Kiki de Appendix"
+author="Kingseiya"
+
+[Files]
+cmd=kiki.cmd     
+cns=kiki.cns     
+st=kiki.cns
+stcommon=common1.cns   
+sprite=kiki.sff      
+anim=kiki.air      
+sound=kiki.snd
+pal1=kiki.act             
+pal2=kiki2.act   
+pal3=kiki3.act             
+pal4=kiki4.act 
+pal5=kiki5.act             
+pal6=kiki6.act 
+
+[Arcade]
+intro.storyboard=kikiintro.def
+ending.storyboard=kikiending.def

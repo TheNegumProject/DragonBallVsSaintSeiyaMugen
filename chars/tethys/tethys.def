@@ -1,0 +1,28 @@
+[Info]
+name="Tethys della sirena by Kingseiya"
+displayname="Tethys"
+versiondate=17/02/00
+mugenversion=
+author="Kingseiya" ; Kingseiya (crystal74@tin.it)
+pal.defaults=1,2,3,4,5,6
+
+[Files]
+cmd=tethys.cmd
+cns=tethys.cns
+st=tethys_st.cns
+st1=tethys_st1.cns   ;States
+st2=tethys_st2.cns   ;States
+stcommon=common1.cns
+sprite=tethys.sff
+anim=tethys.air
+sound=tethys.snd
+pal1=tethys.act
+pal2=black.act
+pal3=gold.act
+pal4=rose.act
+pal5=blu.act
+pal6=green.act
+
+[Arcade]
+intro.storyboard = tethysintro.def
+ending.storyboard = tethysending.def

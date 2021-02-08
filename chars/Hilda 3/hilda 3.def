@@ -1,0 +1,23 @@
+[Info]
+name="Hilda de Polaris"
+DisplayName="Polaris Hilda"
+author="!!!!!!!!!!!!!Secret char!!!!!!!!!!!!!!"
+pal.defaults=1,2
+versiondate=12/09/04
+mugenversion=
+
+[Files]
+cmd=hilda.cmd
+cns=hilda.cns
+st=hilda.cns
+stcommon=hilda2.cns
+sprite=hilda.sff
+anim=hilda.air
+sound=hilda.snd
+pal1=hilda.act
+
+
+;Editado por ShiryuD y mejorado por Jose Marquez Meza (Arequipa-Peru 7/11/08)
+[Arcade]
+intro.storyboard=
+ending.storyboard=

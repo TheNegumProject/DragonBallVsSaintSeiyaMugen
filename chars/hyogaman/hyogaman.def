@@ -1,0 +1,19 @@
+
+[Info]
+name="Hyoga de Cisne"
+DisplayName="Hyoga de Cisne" 
+mugenversion = 01,04,2000   
+author = "Flavio Fagoti Pelim" 
+
+[Files]
+cmd=hyogaman.cmd
+cns=hyogaman.cns
+st=hyogaman.cns
+stcommon=hyogaman2.cns
+sprite=hyogaman.sff
+anim=hyogaman.air
+sound=hyogaman.snd
+pal1=hyogaman.act
+pal2=hyogaman.act
+pal3=hyogaman.act
+pal4=hyogaman.act

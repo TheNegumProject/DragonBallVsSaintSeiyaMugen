@@ -1,0 +1,48 @@
+[Info]
+
+name="SEIYA DIVIN, VERSION FINALE"
+DisplayName="Seiya"
+versiondate = 17,11,2002
+mugenversion = 11,29,2000   
+author = "PEGASUSEB seb704@hotmail.com" 
+                
+;Avec l'aide de CHEN11 http://www.team11.fr.st
+;l'aide du Maître des Glaçons AQUALUDO http://ssga.ath.cx
+                            
+;Et le soutien du meilleur site sur Saint Seiya Mugen     
+; www.clan-cdz.fr.st
+;
+;  l ========l  l l               l l         l l       l l      l ========l  l =======l    l ======= l
+;  l =======l   l l              l l l        l l       l l      l =======l   l ======= l   l ======= l
+;  l l          l l             l l  l l      l l==     l l      l l          l l      l l          ==
+;  l l          l l             l l  l l      l l ==    l l      l l          l l      l l         == 
+;  l l          l l            l l    l l     l l  ==   l l  ==  l l          l l      l l       == 
+;  l l          l l            l l    l l     l l   ==  l l  ==  l l          l l      l l     ==
+;  l l          l l           l l===== l l    l l    == l l      l l          l l      l l    ==
+;  l l          l l           l l      l l    l l     ==l l      l l          l l      l l   ==
+;  l =======l   l =======l   l l         l l  l l       l l      l =======l   l ======= l   l ======= l
+;  l ========l  l ========l  l l         l l  l l       l l      l ========l  l =======l    l ======= l
+
+
+[Files]
+cmd=seiyadivin.cmd
+cns=seiyadivin.cns
+st=seiyadivin.cns
+stcommon=seiyadivin2.cns
+sprite=seiyadivin.sff
+anim=seiyadivin.air
+pal1=Seiya.act
+pal2=seiyadivin.act
+pal3=specter.act
+pal4=pegasus.act
+pal5=dragon.act
+pal6=andromeda.act
+sound=seiya.snd
+
+;-------------------------------------------------------------------------------------------
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+[Info]
+name="Dohko de Libra"
+DisplayName="Dohko de Libra"
+mugenversion=14,04,2004
+author="Tecla2000"
+versiondate=07/01/05
+pal.defaults=1, 2, 3
+
+;----- Los Sprite los saque de un beta realizado por "Powerchane", utilize la programacion del Chars 
+;----- de Dohoko viejo de "gouketsu" mas algunas modificaciones.
+
+[Files]
+cmd=dohko.cmd
+cns=dohko.cns
+st=dohko.cns
+stcommon=dohko2.cns
+sprite=dohko.sff
+sound=dohko.snd
+anim=dohko.air
+pal2=dohko2.act
+pal3=dohko1.act
+pal1=Dohkoo.act
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard=

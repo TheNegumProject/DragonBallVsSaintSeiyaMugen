@@ -1,0 +1,30 @@
+; Player information
+[Info]
+name="Spectro_Saga"
+displayname="Saga"
+versiondate=15,12,2004
+mugenversion=14,04,2001
+author="Tecla2000"
+pal.defaults=1,2
+
+;-------------------- los sprit son de "Feed" y la programacion base que tome es la del evil saga, que es un clon
+de la programacion de Kanon dragon del Mar de "Tony ADV" y algunas modificaciones ------------------------------- 
+
+; Files for the player
+[Files]
+cmd=saga.cmd
+cns=saga.cns
+st=saga.cns
+stcommon=saga2.cns
+sprite=saga.sff
+anim=saga.air
+sound=saga.snd
+pal1=saga.act
+st1=super.cns
+st2=special.cns
+st3=special.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+

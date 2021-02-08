@@ -1,0 +1,45 @@
+; Definition file for Garuda
+; Contains all the filenames needed for the character
+;This char was inspired on Masami Kurumada Garuda Character
+; Player information
+[Info]
+name="Aiacos de Garuda"
+displayname="Aiacos"
+versiondate=07,22,2002
+mugenversion=11,29,2000
+author="Caballeropirata"
+Editado por caballeropirata
+pal.defaults=1,2,3
+
+; Files for the player
+[Files]
+cmd=aiacos.cmd
+cns=aiacos.cns
+st=aiacos.cns
+stcommon=aiacos2.cns
+sprite=aiacos.sff
+anim=aiacos.air
+sound=aiacos.snd
+pal1=aiacos.act
+pal2=aiacos.act
+pal3=aiacos.act
+pal4=
+pal5=
+pal6=
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+
+

@@ -1,0 +1,46 @@
+---------------------------------------------------------------------
+vercion beta por mey_z (Bêta à 4% avec 14 sprites)
+---------------------------------------------------------------------
+[Info]
+name="lucifer"
+DisplayName="Lucifer"
+mugenversion=01,04,2000
+author="Chen 11(ChenHyokoto)"
+versiondate=13/02/2005
+pal.defaults=1,2,3,4,5
+
+[Files]
+cmd=lucifer.cmd
+cns=lucifer.cns
+st=lucifer.cns
+stcommon=lucifer2.cns
+sprite=lucifer2.sff
+anim=lucifer.air
+sound=lucifer.snd
+pal1=lucifer.act
+pal2=lucifer.act
+pal3=
+pal4=
+pal5=
+pal6=
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+
+[MEY_Z]
+Home Page=http://www.geocities.com/mey_sol2002
+E-mail=meyveliz@gmail.com
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+[Info]
+name="Shun de Virgo"
+displayname="Shun"
+versiondate=07,22,2002
+mugenversion=11,29,2000
+author="Ausberto Huanca Vila"
+pal.defaults=1,2,3,4
+
+[Files]
+cmd=shun2.cmd
+cns=shun2.cns
+st=shun2.cns
+stcommon=shun22.cns
+sprite=shun2.sff
+anim=shun2.air
+sound=shun.snd
+pal1=shunv.act
+
+;[Ausberto]
+;E-mail=Ausberto7@hotmail.com
+
+;[Arcade]
+;intro.storyboard=
+;ending.storyboard=
+
+
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=

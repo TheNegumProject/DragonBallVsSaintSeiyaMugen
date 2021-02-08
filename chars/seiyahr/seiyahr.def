@@ -1,0 +1,36 @@
+[Info]
+name="Seiya"
+displayname="Seiya"
+versiondate=13/11/85
+mugenversion=06,14,2003
+author="yisus"
+pal.defaults=1,2,3,4,5,6
+[Files]
+sprite=seiya.sff
+sound=sound.snd
+anim=seiya.air
+cmd=seiya.cmd
+cns=seiya.cns
+st=seiya.cns
+stcommon=common1.cns
+pal1=1.act
+pal2=2.act
+pal3=3.act
+pal4=4.act
+pal5=5.act
+pal6=6.act
+st1=normal.cns
+st2=special.cns
+st3=supers.cns
+st4=helpers.cns
+st5=
+;pal2=2.act
+;pal3=3.act
+;pal4=4.act
+;pal5=
+
+
+[Arcade]
+
+intro.storyboard =seiyaintro.def
+ending.storyboard =seiyaending.def

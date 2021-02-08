@@ -1,0 +1,27 @@
+; Definition file for Kfm
+; Contains all the filenames needed for the best character ever made
+;(Yeah that's right, we used kfm work files, so what?!?! =Þ)
+
+; Player information
+[Info]
+name ="Afrodite de Peixes"               
+displayname ="Afrodite de Peixes"              
+versiondate =13,01,2005            
+mugenversion =14,04,2001            
+author ="Tecla2000"      
+pal.defaults = 
+
+; Files for the player
+[Files]
+cmd      =Afrodita.cmd
+cns      =Afrodita.cns
+st       =Afrodita.cns
+stcommon =common1.cns
+sprite   =Afrodita.sff
+anim     =Afrodita.air
+sound    =Afrodita.snd
+pal1=oro.act
+pal2=oro1.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

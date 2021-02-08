@@ -1,0 +1,23 @@
+
+; Player information
+
+[Info]
+name = "marin de aguila"              ;Name of character
+displayname = "Marine"           ;Name of character to display
+versiondate = 07,31,2000           ;Version date of character
+mugenversion = 07,31,2000          ;Version of M.U.G.E.N character works on
+author = "angelux"
+pal.defaults = 1,2             ;Default palettes in order of preference
+
+; Files for the player
+[Files]
+cmd     = marin.cmd   ;Command set
+cns     = marin.cns   ;Constants
+st      = marin.cns   ;States
+stcommon = common1.cns ;Common states
+sprite  = marin.sff   ;Sprite
+anim    = marin.air   ;Animation
+sound   = marin.snd
+pal1= marine.act
+pal2= MASHINA.ACT
+pal.defaults = marine.act

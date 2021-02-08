@@ -1,0 +1,20 @@
+[Info]
+name = "toll de gamma"        
+displayname = "Tholl" 
+versiondate = 04,14,2001    
+mugenversion = 04,14,2001  
+author = "tmich the sagittarius, snd por ShiryuD"         
+pal.defaults =  
+
+; Files for the player
+[Files]
+cmd     = toll.cmd   ;Command set
+cns     = toll.cns   ;Constants
+st      = toll.cns   ;States
+stcommon = common1.cns ;Common states
+sprite  = toll.sff   ;Sprite
+anim    = toll.air   ;Animation
+sound   = toll.snd ;Sound
+pal1=tholl.act
+
+

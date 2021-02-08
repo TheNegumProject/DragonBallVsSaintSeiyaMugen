@@ -1,0 +1,36 @@
+======================================================================================
+
+SUPER SAIYAN SON GOKU AI
+
+by Murder License Wakamoto
+
+======================================================================================
+
+the AI difficulty level can be changed between 1 through 11
+
+Level 1 through 10 adjusts how often the AI guards.
+Level 11 begains to react super efficiently.
+(Default is Level 8)
+
+To change the difficulty, open the CMD file with notepad,
+
+[Statedef -1]
+
+[State -1, AI]
+type = VarSet
+triggerall = !var(59)
+triggerall = RoundState = 2
+trigger1 = Command = "AI0"
+trigger2 = Command = "AI1"
+trigger3 = Command = "AI2"
+　　　　(略)
+trigger50 = Command = "AI49"
+trigger51 = Command = "AI50"
+trigger52 = numhelper(10000)
+trigger52 = helper(10000),var(59)
+var(59) = 6
+	  ↑
+　　And change this number to any difficulty you like
+
+======================================================================================
+

@@ -1,0 +1,38 @@
+[Info]
+Name="Minos"
+DisplayName="Minos"
+MugenVersion=01,04,2000
+Author="Felipe Lopera"
+VersionDate=
+Pal.Defaults=
+
+[Files]
+cmd=minos.cmd
+cns=minos.cns
+st=minos.cns
+stcommon=minos2.cns
+sprite=minos.sff
+anim=minos.air
+sound=minos.snd
+pal1=minos.act
+pal2=
+pal3=
+pal4=
+pal5=
+pal6=
+pal7=
+pal8=
+pal9=
+pal10=
+pal11=
+pal12=
+
+[Criado no Z-CharCAD]
+Home Page=http://www.geocities.com/zmugen
+E-mail=zmugen@yahoo.com.br
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+
+

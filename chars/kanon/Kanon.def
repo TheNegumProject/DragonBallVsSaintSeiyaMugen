@@ -1,0 +1,35 @@
+; Definition file for Kanon - Dragone del Mare
+; Author: Tony ADV
+; Thanks to KingSeiya for some Kanon sprites
+; Thanks to Tux for the improvements of some moves
+; Thanks to Sarednab for some Kanon sounds
+
+; Player information
+[Info]
+name ="Kanon"             
+displayname ="Kanon dragon marino"        
+versiondate =6,12,2003      
+mugenversion =14,04,2001     
+author ="TonyADV"                 
+pal.defaults =1,2,3,4,5,6               
+
+; Files for the player
+[Files]
+cmd      =kanon.cmd             
+cns      =kanon.cns              
+st       =kanon.cns            
+st3       =special.cns 
+stcommon =kanon2.cns            
+sprite   =kanon.sff            
+anim     =kanon.air              
+sound    =kanon.snd              
+pal1=kanon1.act
+pal2=kanon2.act
+st1=super.cns
+st2=special.cns
+
+[Arcade]
+intro.storyboard=
+ending.storyboard=
+;intro.storyboard= kanonintro.def
+;ending.storyboard= kanonending.def

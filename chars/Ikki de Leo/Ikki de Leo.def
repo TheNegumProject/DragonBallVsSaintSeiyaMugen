@@ -1,0 +1,21 @@
+[Info]
+name="Ikki de leo"
+DisplayName="Ikki"    
+versiondate =06,27,2000    
+mugenversion =11,29,2000   
+author ="Angel Enrique Aceves Menendez."
+pal.defaults =1
+
+[Files]
+cmd=aioria.cmd
+cns=aioria.cns
+st=aioria.cns
+stcommon=aioria2.cns
+sprite=ikki.sff
+anim=aioria.air
+sound=ikki.snd
+pal2=ikki2.act
+pal1=ikki.act
+[Arcade]
+intro.storyboard=
+ending.storyboard=

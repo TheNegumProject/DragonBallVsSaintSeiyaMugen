@@ -1,0 +1,26 @@
+[Info]
+name = "poseidon"        
+displayname = "Julian Solo Poseidon" 
+versiondate = 04,14,2001    
+mugenversion = 04,14,2001  
+author = "xzblue"         
+pal.defaults =  
+
+; Files for the player
+[Files]
+cmd     = poseidon.cmd   ;Command set
+cns     = poseidon.cns   ;Constants
+st      = poseidon.cns   ;States
+stcommon = common1.cns ;Common states
+sprite  = poseidon.sff   ;Sprite
+anim    = poseidon.air   ;Animation
+sound   = poseidon.snd   ;Sound
+pal1=001.act
+
+; Arcade mode
+[Arcade]
+intro.storyboard=intro.def
+ending.storyboard=ending.def
+
+
+

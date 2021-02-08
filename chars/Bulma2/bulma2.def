@@ -1,0 +1,15 @@
+; Character information
+Bulma by -Cloud Strife FF7H
+         -FF7 Heaven
+[Info]
+name    = "Bulma"     ;<-- Replace with a real name
+;displayname = "Bulma" ;<-- Replace with name to display
+
+; Files for the character
+[Files]
+cmd     = Bulma.cmd     ;Command set
+cns     = Bulma.cns     ;Constants
+st      = Bulma.cns     ;States
+stcommon = common1.cns   ;Common states
+sprite  = Bulma.sff     ;Sprite
+anim    = Bulma.air     ;Animation

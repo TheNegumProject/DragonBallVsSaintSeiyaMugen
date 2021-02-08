@@ -1,0 +1,24 @@
+[info]
+name ="Apolo"        
+displayname ="Apollo" 
+author ="Zero_Col"         
+pal.defaults =1
+versiondate=26-03-2008
+mugenversion=
+
+[files]
+cmd     =oberom.cmd   
+cns     =oberom.cns   
+st      =oberom.cns   
+stcommon =common1.cns 
+sprite  =oberom.sff   
+anim    =oberom.air   
+sound   =oberom.snd  
+pal1=newcaptainmarvel.act
+
+
+[arcade]
+
+
+intro.storyboard=
+ending.storyboard=

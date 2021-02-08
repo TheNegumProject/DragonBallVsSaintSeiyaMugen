@@ -1,0 +1,25 @@
+; Definition file for Kung Fu Man
+; Contains all the filenames needed for the character
+
+; Player information
+[Info]
+name="Isaac de Kraken"
+displayname="Isaac"
+versiondate=04,14,2001
+mugenversion=04,14,2001
+author="Kain and Beja"
+pal.defaults=6,3,4,2
+
+[Files]
+cmd=isaac.cmd
+cns=isaac.cns
+st=isaac.cns
+stcommon=isaac2.cns
+sprite=isaac.sff
+anim=isaac.air
+sound=isaac.snd
+pal1=isaak.act
+
+[Arcade]
+intro.storyboard=Isaakintro.def
+ending.storyboard=

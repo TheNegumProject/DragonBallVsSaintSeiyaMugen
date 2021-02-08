@@ -1,0 +1,20 @@
+[Info]
+name="Blackpegasus"
+DisplayName="Pegaso Negro"    
+versiondate = 06,27,2000    
+mugenversion = 11,29,2000   
+author = "Seiyar_"
+Update = "Macross59 & Shaka 11" et Aqualudo!!!!!!"
+
+[Files]
+cmd=pegasenoir.cmd
+cns=pegasenoir.cns
+st=pegasenoir.cns
+stcommon=seiya2.cns
+sprite=PegaseNoir.sff
+anim=pegasenoir.air
+sound=pegasenoir.snd
+pal1=pegazonegroclasic.act
+
+
+

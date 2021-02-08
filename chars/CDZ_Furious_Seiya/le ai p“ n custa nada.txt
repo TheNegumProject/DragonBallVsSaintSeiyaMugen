@@ -1,0 +1,108 @@
+seiya character
+---------------------
+
+  M.U.G.E.N       (c) 2002 Elecbyte
+                  www.elecbyte.com
+
+
+fala ai galera blz? 
+
+bem esse char é o seiya um personagem do anime cavaleiros do zodiaco 
+
+esse char foi editado emcima do k999 do kof 2001.
+e sei q é  uma responsabilidade mto grande fazer esse char + eu
+resolvi arriscar e ate q ñ fiko tão ruim assim , eu acho. 
+
+
+
+
+  Controles
+  --------
+
+    Basic Controls
+    --------------
+     
+      D - down
+      F - forward
+      U - up
+      B - back
+      x - button X (weak punch)
+      y - button Y (strong punch)
+      a - button A (weak kick)
+      b - button B (strong kick)
+
+      
+
+    Standard Movement
+    -----------------
+      U              - Jump
+      UF             - Jump forwards
+      F              - Walk forwards
+      DF             - Crouch
+      D              - Crouch
+      DB             - Crouch or low guard
+      B              - Walk backwards or high guard
+      UB             - Jump back
+      F, F           - Forward dash
+      B, B           - Back dash
+      xy             - Recovery (when falling)
+
+    Basic Standing Attacks
+    ----------------------
+      X              - W. Punch
+      Y              - S. Punch
+      A              - W. Kick
+      B              - S. Kick
+
+    Basic Crouching Attacks
+    -----------------------
+      X              - Low W. Punch
+      Y              - Low S. Punch
+      A              - Low W. Kick
+      B              - Sweep Kick
+
+    Basic Air Attacks
+    -----------------
+      X              - Air W. Punch
+      Y              - Air S. Punch
+      A              - Air W. Kick
+      B              - Flying Kick
+
+    Throws
+    ------
+    apenas unzinho!!! 
+
+    Special Attacks
+    ---------------
+
+name = "super_laser"
+command = D,F,D,F,x+y
+
+name = "flexa_de_sagita"
+command = D,F,D,F,x
+
+name = "super_meteoro"
+command = D,F,D,F,y
+
+name = "super_poeira"
+command = D,B,D,B,a
+
+name = "super_circulo"
+command = D,B,D,B,b
+
+name = "super_chute"
+command = D,B,b
+
+name = "super_chute"
+command = D,B,a
+
+name = "sequencia"
+command = D,B,y
+
+name = "sequencia"
+command = D,B,x
+
+
+
+ VLW GALERA !!!! QUALQUER COISA mande para cavaleirodegothan@hotmail.com
+2006.

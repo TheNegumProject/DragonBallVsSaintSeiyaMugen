@@ -1,0 +1,31 @@
+; Player information
+[Info]
+name = "Sorento de Sirene"        	;Name of character
+displayname = "Sorento de Sirene" 	;Name of character to display
+versiondate = 04,14,2002    	;Version date of character (MM-DD-YYYY)
+mugenversion = 04,14,2002   	;Version of M.U.G.E.N character works on
+author = "fido"         	;Character author name
+pal.defaults = 6,3,4,2     	 ;Default palettes in order of preference
+
+; Files for the player
+[Files]
+cmd     = sorento_CMD.cmd		   	;Command set
+stcommon= seiya_common1.cns 			;Common states
+cns     = sorento_BASIC.cns  			;Constants
+st      = sorento_BASIC.cns   			;States
+st2      = sorento_SPECIAL.cns   		;States
+st3      = sorento_HYPER.cns   			;States
+sprite  = sorento01K.sff   			;Sprite
+anim    = sorento03_AIR.air  			;Animation
+sound   = sorento_SND.snd   			;Sound
+pal1    = 002.act				;Palettes (can have up to 12)
+pal2    = 002.act
+pal3    = 002.act
+pal4    = 001.act
+pal5    = 001.act
+pal6    = 001.act
+
+; Arcade mode
+[Arcade]
+intro.storyboard = intro.def
+ending.storyboard = ending.def

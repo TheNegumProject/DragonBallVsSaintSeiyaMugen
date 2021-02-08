@@ -1,0 +1,27 @@
+[Info]
+name="Seiya de Sagitario"
+DisplayName="Seiya de Sagitario"    
+versiondate =19,12,2006    
+mugenversion =31,12,2003   
+author ="SAGA_DE_GEMINIS" & "sS_Shaka_Ss"
+pal.defaults =1, 2
+
+[Files]
+cmd=seiyasag.cmd
+cns=seiyasag.cns
+st=seiyasag.cns
+stcommon=seiyasag2.cns
+sprite=seiyasag.sff
+anim=seiyasag.air
+sound=seiyasag.snd
+pal1=oro1.act
+
+[ARCADE]
+intro.storyboard =
+
+
+
+
+
+
+ending.storyboard=

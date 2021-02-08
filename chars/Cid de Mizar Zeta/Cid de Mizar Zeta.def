@@ -1,0 +1,28 @@
+;CESARBALLESTER@HOTMAIL.COM 
+;CONTACTENCE PARA IDEAS,SUGERENCIAS
+;SI SABEN DIBUJAR SPRITES,PROGRAMAR,FOTOS,LO QUE SEA
+;SIEMPRE NECESITAREMOS UNA MANO !!!!!
+;ESPERO QUE LO DISFRUTEN, UN ABRAZO A TODOS !!!
+
+[Info]
+name="Mizard de Zeta"
+DisplayName="Cyd"    
+versiondate = 22,04,2005    
+mugenversion = 11,29,2000   
+author = "HADES81"
+pal.defaults = 1,3,2,4,5         
+
+
+[Files]
+cmd=mizard.cmd
+cns=mizard.cns
+st=mizard.cns
+stcommon=mizard2.cns
+sprite=mizard.sff
+anim=mizard.air
+sound=cyd.snd
+pal1=mizard.act
+
+[Arcade]
+intro.storyboard = cydintro.def
+ending.storyboard = cydending.def

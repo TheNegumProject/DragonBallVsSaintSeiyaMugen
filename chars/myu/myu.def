@@ -1,0 +1,19 @@
+[Info]
+Name="myu"
+DisplayName="myu"
+MugenVersion=01,04,2000
+Author="Felipe Lopera"
+VersionDate=
+Pal.Defaults=
+
+[Files]
+cmd=myu.cmd
+cns=myu.cns
+st=myu.cns
+stcommon=myu2.cns
+sprite=myu.sff
+anim=myu.air
+sound=shiryu.snd
+pal1=myu.act
+
+

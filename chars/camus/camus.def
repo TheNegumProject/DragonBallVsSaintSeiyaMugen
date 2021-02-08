@@ -1,0 +1,19 @@
+[Info]
+Name="Camus de Acuario"
+DisplayName="Camus de Aquario"
+VersionDate=7,09,2002
+MugenVersion=11,29,2000
+Author="Aqualudo""modif. par Arcadia - snd japones y arreglos por ShiryuD" 
+Pal.Defaults=
+
+[Files]
+cmd=camus.cmd
+cns=camus.cns
+st=camus.cns
+stcommon=camus2.cns
+sprite=camus.sff
+anim=camus.air
+sound=camus.snd
+pal1=camus.act
+
+

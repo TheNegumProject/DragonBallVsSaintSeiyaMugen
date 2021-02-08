@@ -1,0 +1,54 @@
+
+
+;*****************************************************************************************
+;                                                                                        *                               *
+;Seiya de Pegasus V3 Autor  Grafica : Arsene Lupin (base general de sprit                *
+;                                    Claudio Ricci(MIM) , David Bazbar y Tecla2000)      *                   *
+;                         Programacion : Tecla2000                                       *
+;                                                                                        *                               *
+;*****************************************************************************************
+
+; Player information
+
+[Info]
+
+name = "Seiya de Pegasus V3"      
+displayname = "Seiya de Pegasus V3" 
+versiondate =   20,06,2011  ; inicio 18-03-2011
+mugenversion = 18,01,2011
+author = "Arsene Lupin & Tecla2000" 
+pal.defaults = 1,2,3,4,5,6
+
+;----------------------------------------------------------------------------------------
+;
+; Autor original de la base grafica seiya V1 Claudio Ricci ( MIN ), REformado por David 
+; Bazbar a la grafica de seiya V3 y luego Arsene Lupin lo edito a la grafica final.
+; y programacion de la vercion Final termina por Tecla2000 y una minima colaboracion en
+; la edicion de los sprit.
+; 
+;----------------------------------------------------------------------------------------
+
+[Files]
+
+cmd      = Seiya_Pegaso_v3.cmd
+cns      = Seiya_Pegaso_v3.cns
+st       = Seiya_Pegaso_v3.cns
+st1      = Seiya_Pegaso_v3_Poderes.cns
+st2      = Seiya_Pegaso_v3_speciales.cns
+stcommon = Seiya_Pegaso_v3_2.cns
+sprite   = Seiya_Pegaso_v3.sff
+anim     = Seiya_Pegaso_v3.air
+sound    = Seiya_Pegaso_v3.snd
+
+pal1     = Seiya_Pegaso_v3.act
+pal2     = Seiya_Pegaso_v3_2.act
+pal3     = Seiya_Pegaso_v3_3.act
+pal4     = Seiya_Pegaso_v3_4.act
+pal5     = Seiya_Pegaso_v3_5.act
+pal6     = Seiya_Pegaso_v3_6.act
+pal7     = Seiya_Pegaso_v3_7.act
+pal8     = Seiya_Pegaso_v3_8.act
+pal9     = Seiya_Pegaso_v3_9.act
+pal10    = Seiya_Pegaso_v3_10.act
+pal11    = Seiya_Pegaso_v3_Manga.act
+pal12    = Seiya_Pegaso_v3_Spectro.act

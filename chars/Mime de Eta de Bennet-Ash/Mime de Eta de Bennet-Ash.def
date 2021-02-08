@@ -1,0 +1,37 @@
+;-------------------------------------
+;-------------------------------------
+;Definition file Orfeo by TonyADV
+;-------------------------------------
+;-------------------------------------
+
+
+; Player information
+[Info]
+name ="Mime de Eta de Bennet-Ash"        
+displayname ="Mime" 
+versiondate =14,11,2005    
+mugenversion =04,14,2001 
+author ="TONY ADV"         
+pal.defaults =
+
+; Files for the player
+[Files]
+cmd     =Mime.cmd   
+cns     =Mime.cns   
+st      =Mime.cns 
+stcommon =MimeB.cns 
+sprite  =Mime.sff   
+anim    =Mime.air   
+sound   =Mime.snd  
+pal1=Mime.act
+;pal2 = 002.act		; Hades Color
+;pal3 = 003.act		; Silver Color 
+;pal4 = 004.act		; Gold Color
+;pal5 = 005.act		; Bronze Color  
+;pal6 = 006.act		; Black Color
+;pal7 = 007.act		; Mime Color
+;pal8 = 008.act   		; Spectre Color
+
+[Arcade]
+intro.storyboard =
+ending.storyboard =

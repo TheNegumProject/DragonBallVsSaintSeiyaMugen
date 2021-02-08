@@ -1,0 +1,18 @@
+[Info]
+name="blackdragon"
+DisplayName="Dragon Negro" 
+mugenversion = 01,04,2000   
+author = "gouketsu, sprites cheitta and mim" 
+
+[Files]
+cmd=dragonn.cmd
+cns=dragonn.cns
+st=dragonn.cns
+stcommon=dragonn2.cns
+sprite=dragonnegro.sff
+anim=dragonn.air
+sound=dragonn.snd
+pal1=black.act
+pal2=serie.act
+pal3=grey.act
+pal4=black.act

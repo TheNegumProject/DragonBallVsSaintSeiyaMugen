@@ -1,0 +1,29 @@
+/--------------------------\
+)    	Saint Seiya        (  
+)	 Mythologie        (
+)	   Mugen 	   (
+)                          (
+)  Tehar Magellan Tristane (
+\--------------------------/
+
+[Info]
+name="Shiryu"
+DisplayName="Shiryu Divin" 
+mugenversion = 01,04,2000   
+
+[Files]
+cmd=sirio.cmd
+cns=sirio.cns
+st=sirio.cns
+st2=sirio2.cns
+stcommon=sirio2.cns
+sprite=sirio.sff
+anim=sirio.air
+sound=sirio.snd
+pal1=dragon.act
+pal2=normal.act
+
+
+[Arcade]
+intro.storyboard = siriointro.def
+ending.storyboard = ;ending.def

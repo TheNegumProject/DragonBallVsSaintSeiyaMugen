@@ -1,0 +1,31 @@
+; Definition file for Kyra
+
+; Player information
+[Info]
+name = "Io de Scylla"        
+displayname = "Eo de Scylla" 
+versiondate = 20,01,2004    
+mugenversion = 04,14,2001 
+author = "TonyADV & Angelus"
+Snd VF:Arcadia         
+
+; Files for the player
+[Files]
+cmd     = kyra.cmd   
+cns     = kyra.cns   
+st      = kyra.cns 
+st2      = KyraBeast.cns   
+stcommon = common1.cns 
+sprite  = kyra.sff   
+anim    = kyra.air   
+sound   = Scylla.snd  
+pal1 = Normal.act 
+pal2 = Gold.act
+pal3 = Normal2.act
+pal4 = Spectre.act
+pal5 = Original.act
+pal6 = 
+
+[Arcade]
+intro.storyboard = ;Kyraintro.def
+ending.storyboard = ;Kyraend.def
