@@ -1,0 +1,283 @@
+;--------------------------------------------------------
+[Info]
+name = "Lizard Beach"
+fullname = Lizard Beach v1.1
+related chars = Lizard no Misty
+
+gfx = Mû
+code = Mû & HDP
+revision = HDP
+
+releasedate = 27/09/09
+mugenversion = RC1
+notes = 
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -300
+boundright = 300
+boundhigh = -70
+boundlow = 0
+verticalfollow = 0.8
+tension = 50
+floortenstion = 10
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 5
+cutlow  = 5
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0            
+p1startz = 0           
+p1facing = 1          
+p2startx = 70
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  = -1000 
+rightbound =  1000 
+
+[Bound]
+screenleft = 15   
+screenright = 15  
+
+[StageInfo]
+zoffset = 222
+autoturn = 1
+resetBG = 1
+localcoord = 320, 240
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 128
+color = 50,50,50
+yscale = 0.35
+
+[Music]
+bgmusic = sound/SA_Lizard_Beach.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/SA_Lizard_Beach.sff
+debugbg = 0
+
+;----------
+[BG Sky]
+type  = normal
+spriteno = 1, 0
+start = 0,160
+tile = 1,0
+delta = 0.8,1
+velocity = -0.12
+
+[BG Beach]
+type  = Anim
+actionno = 0
+start =-200,0
+mask = 1
+
+[Begin Action 0]
+0,0, 0,0, 15
+0,1, 0,0, 15
+0,2, 0,0, 15
+0,3, 0,0, 20
+0,4, 0,0, 20
+0,5, 0,0, 20
+
+[BG Sun]
+type  = normal
+spriteno = 3, 0
+start = -100,0
+trans = add
+mask = 1
+delta = 0.8,1
+
+[BG Sun Reflects]
+type  = normal
+spriteno = 4, 0
+start = -100,0
+trans = add
+mask = 1
+delta = 0.8,1
+
+[BG seagull1]
+type  = anim
+actionno = 1
+start = 0, 0
+delta = 1.1, 1.1
+mask = 1
+
+[Begin Action 1] 
+2,10,  0,  0,100
+2, 0,  0,-70,  3
+2, 0, -5,-65,  3
+2, 0,-10,-60,  3
+2, 0,-15,-55,  3
+2, 0,-20,-50,  3
+2, 0,-25,-45,  3
+2, 0,-30,-40,  3
+2, 1,-35,-35,  3
+2, 1,-40,-30,  3
+2, 1,-45,-25,  3
+2, 1,-50,-20,  3
+2, 1,-55,-15,  3
+2, 1,-60,-10,  3
+2, 1,-65, -5,  5
+2, 2,-70,  0,  7
+2, 2,-72,  5,  8
+2, 3,-74, 10, 10
+2, 4,-76, 12, 10
+2, 5,-78, 14, 10
+2, 6,-80, 12, 10
+2, 7,-81, 10, 10
+2, 8,-82,  8, 10
+2, 9,-83,  6, 10
+2,10,  0,  0,600
+
+[BG seagull2]
+type  = anim
+actionno = 2
+start = 310, 80
+delta = 1.1, 1.1
+mask = 1
+
+[Begin Action 2] 
+2, 0,  0,-70,  3,H
+2, 0, -5,-68,  3,H
+2, 0,-10,-66,  3,H
+2, 0,-15,-64,  3,H
+2, 0,-20,-62,  3,H
+2, 0,-25,-60,  3,H
+2, 0,-30,-58,  3,H
+2, 1,-35,-56,  3,H
+2, 1,-40,-54,  3,H
+2, 1,-45,-52,  3,H
+2, 1,-50,-50,  3,H
+2, 1,-55,-48,  3,H
+2, 1,-60,-46,  3,H
+2, 1,-65,-44,  5,H
+2, 2,-70,-40,  7,H
+2, 2,-72,-44,  8,H
+2, 3,-74,-45, 10,H
+2, 4,-76,-46, 10,H
+2, 5,-78,-47, 10,H
+2, 6,-80,-48, 10,H
+2, 7,-81,-49, 10,H
+2, 8,-82,-50, 10,H
+2, 9,-83,-51, 10,H
+2,10,  0,  0,500,H
+
+[BG seagull3]
+type  = anim
+actionno = 3
+start = 320, 85
+delta = 1.1, 1.1
+mask = 1
+
+[Begin Action 3]
+2,10,  0,  0,  5,H
+2, 0,  0,-70,  3,H
+2, 0, -5,-68,  3,H
+2, 0,-10,-66,  3,H
+2, 0,-15,-64,  3,H
+2, 0,-20,-62,  3,H
+2, 0,-25,-60,  3,H
+2, 0,-30,-58,  3,H
+2, 1,-35,-56,  3,H
+2, 1,-40,-54,  3,H
+2, 1,-45,-52,  3,H
+2, 1,-50,-50,  3,H
+2, 1,-55,-48,  3,H
+2, 1,-60,-46,  3,H
+2, 1,-65,-44,  5,H
+2, 2,-70,-40,  7,H
+2, 2,-72,-44,  8,H
+2, 3,-74,-45, 10,H
+2, 4,-76,-46, 10,H
+2, 5,-78,-47, 10,H
+2, 6,-80,-48, 10,H
+2, 7,-81,-49, 10,H
+2, 8,-82,-50, 10,H
+2, 9,-83,-51, 10,H
+2,10,  0,  0,500,H
+
+[BG seagull4]
+type  = anim
+actionno = 4
+start = -220, -30
+delta = 1.1, 1.1
+mask = 1
+
+[Begin Action 4] 
+2,10,  0,  0,300
+2, 0,  0,-70,  3
+2, 0, -5,-65,  3
+2, 0,-10,-60,  3
+2, 0,-15,-55,  3
+2, 0,-20,-50,  3
+2, 0,-25,-45,  3
+2, 0,-30,-40,  3
+2, 1,-35,-35,  3
+2, 1,-40,-30,  3
+2, 1,-45,-25,  3
+2, 1,-50,-20,  3
+2, 1,-55,-15,  3
+2, 1,-60,-10,  3
+2, 1,-65, -5,  5
+2, 2,-70,  0,  7
+2, 2,-72,  5,  8
+2, 3,-74, 10, 10
+2, 4,-76, 12, 10
+2, 5,-78, 14, 10
+2, 6,-80, 12, 10
+2, 7,-81, 10, 10
+2, 8,-82,  8, 10
+2, 9,-83,  6, 10
+2,10,  0,  0,700
+
+[BG seagull5]
+type  = anim
+actionno = 5
+start = -320, 110
+delta = 1.1, 1.1
+mask = 1
+
+[Begin Action 5]
+2,10,  0,  0,400
+2, 0,  0,-70,  3,H
+2, 0,  5,-68,  3,H
+2, 0, 10,-66,  3,H
+2, 0, 15,-64,  3,H
+2, 0, 20,-62,  3,H
+2, 0, 25,-60,  3,H
+2, 0, 30,-58,  3,H
+2, 1, 35,-56,  3,H
+2, 1, 40,-54,  3,H
+2, 1, 45,-52,  3,H
+2, 1, 50,-50,  3,H
+2, 1, 55,-48,  3,H
+2, 1, 60,-46,  3,H
+2, 1, 65,-44,  5,H
+2, 2, 70,-40,  7,H
+2, 2, 72,-44,  8,H
+2, 3, 74,-45, 10,H
+2, 4, 76,-46, 10,H
+2, 5, 78,-47, 10,H
+2, 6, 80,-48, 10,H
+2, 7, 81,-49, 10,H
+2, 8, 82,-50, 10,H
+2, 9, 83,-51, 10,H
+2,10,  0,  0,600,H
+
+
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------------------------------

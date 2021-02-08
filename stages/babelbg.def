@@ -1,0 +1,201 @@
+;--------------------------------------------------------
+[Info]
+name = "Coliseo en Llamas"
+author = LordKrauser22
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -200
+boundright = 200
+boundhigh = -600
+boundlow = 0
+verticalfollow = .4
+tension = 80
+
+[PlayerInfo]
+p1startx = -55 
+p1starty = 0 
+p1startz = 0
+p1facing = 1 
+p2startx = 85
+p2starty = 0
+p2startz = 0
+p2facing = -1
+leftbound  =  -200
+rightbound =  500
+topbound  =  0
+botbound  =  0
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.4
+
+[Bound]
+screenleft = -13
+screenright = -13 
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+color = 80,80,80
+yscale = .4
+
+[Music]
+bgmusic = sound/GEMINI2.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/babelbg.sff
+debugbg = 0
+
+[BG Ciel]
+type  = normal
+spriteno = 0, 0
+start = -180,100
+delta = .1,.5
+mask = 0
+
+[BG flamme4]
+type  = anim
+actionno = 4
+start = -420,90
+delta = .4, .8
+mask = 1
+
+[BG flamme10]
+type  = anim
+actionno = 5
+start = -380,100
+delta = .4, .8
+mask = 1
+
+[BG flamme4]
+type  = anim
+actionno = 4
+start = -340,110
+delta = .4, .8
+mask = 1
+
+[Begin Action 4] 
+4,0, 0,0, 4
+4,1, 0,0, 4
+4,2, 0,0, 4
+4,3, 0,0, 4
+4,4, 0,0, 4
+4,5, 0,0, 4
+
+[BG flamme5]
+type  = anim
+actionno = 5
+start = -320,140
+delta = .4, .8
+mask = 1
+
+[Begin Action 5] 
+4,3, 0,0, 4
+4,4, 0,0, 4
+4,5, 0,0, 4
+4,0, 0,0, 4
+4,1, 0,0, 4
+4,2, 0,0, 4
+
+[BG flamme7]
+type  = anim
+actionno = 7
+start = -380,100
+delta = .4, .8
+mask = 1
+
+[Begin Action 7]
+7,0, 0,0, 4
+7,1, 0,0, 4
+7,2, 0,0, 4
+7,3, 0,0, 4
+7,4, 0,0, 4
+
+[BG flamme8]
+type  = anim
+actionno = 7
+start = -300,80
+delta = .4, .8
+mask = 1
+
+[BG flamme9]
+type  = anim
+actionno = 9
+start = -340,85
+delta = .4, .8
+mask = 1
+
+[Begin Action 9]
+7,3, 0,0, 4
+7,4, 0,0, 4
+7,0, 0,0, 4
+7,1, 0,0, 4
+7,2, 0,0, 4
+
+[BG flamme9]
+type  = anim
+actionno = 9
+start = -260,75
+delta = .4, .8
+mask = 1
+
+[BG stade]
+type  = normal
+spriteno = 1, 0
+start = -380, 100
+delta = .4,.8
+mask = 1
+
+[BG flamme3]
+type  = anim
+actionno = 3
+start = -380,90
+delta = .8, .9
+tile = 1,0
+tilespacing = 304, 0
+mask = 1
+
+[Begin Action 3] 
+3,0, 0,0, 4
+3,1, 0,0, 4
+3,2, 0,0, 4
+3,3, 0,0, 4
+3,4, 0,0, 4
+3,5, 0,0, 4
+3,6, 0,0, 4
+
+[BG arene]
+type  = normal
+spriteno = 2, 0
+start = -380,110
+delta = 1, 1
+mask = 1
+
+[BG flamme6]
+type  = anim
+actionno = 6
+start = -180,105
+delta = 1.4,.5
+mask = 1
+tile = 1,0
+tilespacing = 160, 0
+layerno = 1
+
+[Begin Action 6] 
+6,0, 0,0, 4
+6,1, 0,0, 4
+6,2, 0,0, 4
+6,3, 0,0, 4
+6,4, 0,0, 4
+6,5, 0,0, 4
+6,6, 0,0, 4
+6,7, 0,0, 4

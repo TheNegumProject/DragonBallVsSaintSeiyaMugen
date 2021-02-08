@@ -1,0 +1,172 @@
+/-------------------------------------\
+|   The Asgard Saga - Artax's Cave	  |
+|		by NeoDarkHuby		  |
+|	Stage for Mugen Saint Seiya	  |
+|	Original version by L.Ovide	  |
+|	  Version 2.0 / 03nov.2002	  |
+|neodarkhuby@hotmail.com - SSGA.ATH.CX|
+\-------------------------------------/
+
+[Info]
+name = "La Caverna de Hagen"
+author = "NeoDarkHuby"
+version = "2.0"
+
+[Camera]
+startx = 0
+starty = -50
+boundleft = -161  
+boundright = 162 	  
+boundhigh = -31
+boundlow =  0
+verticalfollow = 1
+floortension = 0
+tension = 60
+
+[PlayerInfo]
+p1startx = -75
+p1starty = 0
+p1startz = 0
+p1facing = 1
+p2startx = 75
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000 
+topbound  =  0 
+botbound  =  0 
+
+[Scaling]
+topz     = 0  
+botz     = 50   
+topscale = 1 
+botscale = 1.2 
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 228
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 100,100,100
+yscale = 0.2
+reflect = 0
+
+[Music]
+bgmusic = sound/05 - A New War Arises.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/caverne_hagen.sff
+debugbg = 0
+
+[BG lave]
+type = anim
+actionno = 0
+start = -201, 89
+delta = .9, .9
+
+[BG coulée]
+type = anim
+actionno = 1
+start = -201, 89
+delta = .9, .9
+
+[BG coulée2]
+type = anim
+actionno = 1
+start = -131, 140
+delta = .9, .9
+
+[BG fond]
+type = normal
+spriteno = 1,1
+start = -201, 89
+delta = .9, .9
+mask = 1
+
+[BG light]
+type = anim
+actionno = 2
+start = -201, 89      
+delta = .9, .9
+mask = 1
+
+[BG alphaLava]
+type = normal
+spriteno = 1,2
+start = -201, 89
+delta = .9, .9
+mask = 1
+trans = add1
+
+[BG alphaCoulee]
+type = normal
+spriteno = 1,3
+start = -201, 89
+delta = .9, .9
+mask = 1
+trans = add1
+
+[BG alphaCoulee2]
+type = normal
+spriteno = 1,4
+start = -202, 88
+delta = .9, .9
+mask = 1
+trans = add1
+
+[BG caverne]
+type = normal
+spriteno = 1,0
+start = -201, 89
+mask = 1
+
+[BG FrontRock]
+type = normal
+spriteno = 2,0
+start = -201, 89
+mask = 1
+layerno = 1
+delta = 1.1,1
+
+[BG neige]
+type = normal
+spriteno = 2,2
+start = -201, 89
+tile = 0,1
+velocity = 0,.5
+trans = add
+layerno = 1
+mask = 1
+
+[Begin Action 0]
+0,11,0,0,10
+0,1,0,0,11
+0,2,0,0,12
+0,3,0,0,11
+0,1,0,0,10
+0,11,0,0,11
+0,3,0,0,12
+0,2,0,0,11
+
+[Begin Action 1]
+0,4,0,0,10
+0,5,0,0,10
+0,6,0,0,10
+0,7,0,0,10
+0,8,0,0,10
+0,9,0,0,10
+0,10,0,0,10
+
+[Begin Action 2]
+0,20, 0,0, 16,,A
+0,21, 0,0, 16,,A
+0,22, 0,0, 16,,A
+0,21, 0,0, 16,,A

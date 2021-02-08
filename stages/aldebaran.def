@@ -1,0 +1,119 @@
+[Info]
+name = "casa de aldebaran"
+author = "Ivan"
+
+[Camera]
+startx = 0
+starty = -200
+boundleft = -538		
+boundright = 538
+boundhigh = -560
+boundlow = 0
+verticalfollow = .6
+floortension = .8
+tension = 100
+
+[PlayerInfo]
+p1startx = -80
+p1starty = 0
+p1startz = 0
+p1facing = 1
+
+p2startx = 80
+p2starty = 0
+p2startz = 0
+p2facing = -1
+
+leftbound  = -1000
+rightbound =  1000
+topbound  = 0
+botbound  = 0    
+
+[Scaling]
+topz     = 0
+botz     = 50
+topscale = 1
+botscale = 1.2
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 220
+autoturn = 1
+resetBG = 0
+
+[Shadow]
+color = 50,50,50  
+yscale = -.1  
+
+
+[Music]
+bgmusic = sound/14 - Soldier Dream (Instrumental Version).mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/aldebaran.sff
+
+[BG pavimento effetto3d]
+type = parallax
+spriteno = 5,1
+start = 0,159
+layerno = 0
+delta = 0.75,1
+xscale = 1, 1.75
+yscalestart = 100
+yscaledelta = 0
+mask = 0
+
+[BG tempios]
+type = normal
+spriteno = 0,0
+start = 0,278
+delta = 0.8,1
+mask = 1
+
+[BG tempiod]
+type = normal
+spriteno = 0,1
+start = 0,278
+delta = 0.8,1
+mask = 1
+
+[BG LibraCosmo]
+type = anim
+actionno = 1
+start = 0,240
+delta = 1,1
+mask = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;------------------------------
+;LibraCosmo
+[Begin Action 1]
+1,0, 0,0, 12,,a2
+1,1, 0,0, 12,,a2
+1,2, 0,0, 12,,a2
+
+
+
+
+
+
+
+
+

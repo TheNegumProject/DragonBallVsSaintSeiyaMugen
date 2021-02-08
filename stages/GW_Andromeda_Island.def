@@ -1,0 +1,112 @@
+;--------------------------------
+[Info]
+name = "Andromeda Island"
+fullname = Andromeda Island Remix 2009
+related chars = ANdromeda no Shun
+
+gfx = Microcosmo
+code = HDP
+revision = HDP
+
+releasedate = 27/09/09
+mugenversion = RC1
+notes = Microcosmo original stage 2002
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -190
+boundright = 190
+boundhigh = -170
+boundlow = 0
+verticalfollow = 0.7
+tension = 60
+floortension = 20
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 35
+cutlow  = 25
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2facing =-1
+leftbound  = -1000
+rightbound =  1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 218
+autoturn = 1
+resetBG = 1
+localcoord = 320, 240
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 120
+color = 20,100,20
+yscale = -0.12
+
+[Music]
+bgmusic = sound/GW_Andromeda_Island.mp3
+bgvolume = 250
+
+[BGdef]
+spr = stages/GW_Andromeda_Island.sff
+debugbg = 0
+
+[BG 01]
+type  = normal
+spriteno = 0, 1
+start = 0,-60
+tile = 1,0
+delta = 0.2,0.6
+velocity = -0.2,0
+[BG 02]
+type  = normal
+spriteno = 1,0
+start = -155,12
+delta = 0.97,0.97
+mask = 1
+[BG 03]
+type  = normal
+spriteno = 1,1
+start = -163,16
+delta = 0.96,0.97
+mask = 1
+[BG 04]
+type  = normal
+spriteno = 1,2
+start = -160,10
+delta = 1,1
+mask = 1
+[BG 05]
+type  = normal
+spriteno = 2,2
+start = -150,10
+layerno = 1
+delta = 1.2,1.1
+mask = 1
+[BG 06]
+type  = normal
+spriteno = 2,0
+start = -150,10
+layerno = 1
+delta = 1.3,1.1
+mask = 1
+
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------

@@ -1,0 +1,156 @@
+;--------------------------------------------------------
+[Info]
+name = "Death Cliffs"
+fullname = Death Cliffs v1.1
+related chars = Auriga no Capella / Carberus no Dante
+
+gfx = McCready & Mû
+code = HDP
+revision = HDP
+
+releasedate = 27/09/09
+mugenversion = RC1
+notes = 
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+
+;--------------------------------------------------------
+[Camera]
+startx = 0
+starty = 0
+boundleft = -225
+boundright = 225
+boundhigh = -120
+boundlow = 0
+verticalfollow = 0.7
+tension = 60
+floortenstion = 10
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 35
+cutlow  = 25
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 208
+autoturn = 1
+resetBG = 1
+localcoord = 320, 240
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 40
+color = 30,30,30
+yscale = -0.1
+fade.range = 208,200
+
+[Music]
+bgmusic = sound/SA_Death_Cliffs.mp3
+bgvolume = 255
+
+[BGdef]
+spr = stages/SA_Death_Cliffs.sff
+
+[BG sky]
+type = normal
+spriteno = 0,1
+start = 0,-35
+tile = 1,0
+delta = 0.2,0.2
+velocity = -0.1
+mask = 0
+
+[BG mountains]
+type = normal
+spriteno = 4,0
+start = 0,-20
+mask = 1
+delta = 0.3,0.3
+
+[BG rockbck]
+type = normal
+spriteno = 6,0
+start = 0,-20
+mask = 1
+delta = 0.55,0.55
+
+[BG rocklft1]
+type = normal
+spriteno = 5,0
+start = -5,-20
+mask = 1
+delta = 0.7,0.7
+[BG rocklft2]
+type = normal
+spriteno = 3,0
+start = -5,-20
+mask = 1
+delta = 0.7,0.7
+
+[BG rock1]
+type = normal
+spriteno = 2,0
+start = 0,-20
+layerno = 0
+trans = none
+mask = 1
+delta = 0.7,0.7
+
+[BG fogb]
+type = normal
+spriteno = 11,0
+start = 0,0
+tile = 1,0
+delta = 0.9,0.9
+velocity = -0.2
+mask = 1
+trans = add
+
+[BG ground]
+type = normal
+spriteno = 1,0
+start = 0,-20
+mask = 1
+
+[BG fogf]
+type = normal
+spriteno = 10,0
+start = 0,0
+tile = 1,0
+delta = 1.1,1.1
+velocity = -0.55
+layerno = 1
+trans = add
+
+[BG hdp0]
+type = normal
+spriteno = 60,0
+tile = 1,1
+trans = add
+[BG hdp]
+type = normal
+spriteno = 60,0
+tile = 1,1
+trans = sub
+layerno = 1
+
+
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------------------------------

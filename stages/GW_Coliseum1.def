@@ -1,0 +1,133 @@
+;----------------------------------------------------------------------
+[Info]
+name = "Galaxian Coliseum I"
+fullname = Galaxian Wars Coliseum I, Japan v1.1
+related chars = Bronze Saints
+
+gfx = McCready
+code = HDP
+revision = HDP
+
+releasedate = 12/10/09
+engine version = MUGEN v1.0
+notes = 
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;----------------------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -245
+boundright = 245
+boundhigh = -225
+boundlow = 5
+verticalfollow = 0.9
+floortension = 30
+tension = 80
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 5
+cutlow  = 5
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+
+[Bound]
+screenleft = 36
+screenright = 36
+
+[StageInfo]
+zoffset = 221
+autoturn = 1
+resetBG = 1
+
+[Shadow]
+intensity = 110
+color = 100,100,100
+yscale = 0.2
+fade.range = -500,-200
+
+[Music]
+bgmusic = sound/GW_Coliseum1.mp3
+bgvolume = 254
+
+[BGdef]
+spr = stages/GW_Coliseum1.sff
+debugbg = 0
+
+[BG 1]
+type = normal
+spriteno = 5,0
+delta = 0.8,1
+start = 0,10
+tile = 1,1
+velocity = 0.1, 0.03
+mask = 1
+
+[BG 2]
+type = normal
+spriteno = 2,0
+start = -5,10
+delta = 0.9, 0.88
+mask = 1
+
+[BG 3]
+type = anim
+actionno = 3
+start = -5,10
+delta = 0.9, 0.88
+mask = 1
+
+[BG 4]
+type = anim
+actionno = 4
+start = -5,10
+delta = 0.9, 0.88
+mask = 1
+
+[BG 5]
+type = normal
+spriteno = 2,1
+start = -5,10
+delta = 0.9, 0.88
+mask = 1
+
+[BG 6]
+type = normal
+spriteno = 1,0
+start = -4,10
+delta = 1, 1
+mask = 1
+
+[Begin action 3]
+3,0,0,0,9
+3,1,0,0,4
+3,2,0,0,7
+3,1,0,0,3
+
+[Begin action 4]
+4,1,0,0,8,,AS256D256
+4,1,0,0,8,,AS240D256
+4,1,0,0,8,,AS220D256
+4,1,0,0,8,,AS200D256
+4,1,0,0,8,,AS180D256
+4,1,0,0,8,,AS160D256
+4,1,0,0,12,,AS150D256
+4,1,0,0,6,,AS160D256
+4,1,0,0,6,,AS180D256
+4,1,0,0,6,,AS200D256
+4,1,0,0,6,,AS220D256
+4,1,0,0,6,,AS240D256
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;----------------------------------------------------------------------

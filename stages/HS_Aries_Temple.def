@@ -1,0 +1,201 @@
+;--------------------------------------------------------
+[Info]
+name = "Aries Temple"
+fullname = Aries Temple 2009 v2.5
+related chars = Seiya / Shion / DM .... ^^
+
+gfx = HDP
+code = HDP
+revision = HDP
+
+releasedate = 27/09/09
+mugenversion = RC1
+notes = Last new version, maybe update later.
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------------------------------
+
+[Camera]
+startx = 0
+starty = O
+boundleft = -164
+boundright = 164
+boundhigh = -400
+boundlow = 0
+verticalfollow = 0.7
+floortension = 0
+tension = 60
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 35
+cutlow = 25
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+localcoord = 320, 240
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 120
+color = 0,10,0
+yscale = -0.15
+fade.range = -400,-100
+
+[Music]
+bgmusic = sound/Soldier Guitar.mp3
+bgvolume = 240
+
+[BGdef]
+spr = stages/HS_Aries_Temple.sff
+debugbg = 0
+
+[BG sky]
+type = normal
+spriteno = 0,1
+tile = 1,1
+delta = 0.7,0.7
+start = 0,10
+
+[BG star1]
+type = normal
+spriteno = 0,3
+id = 1
+trans = add
+mask = 1
+
+[BG star2]
+type = normal
+spriteno = 0,3
+start = -100,-20
+id = 1
+trans = add
+mask = 1
+
+[BG monts]
+type = normal
+spriteno = 0,2
+start = 0,50
+delta = 0.8, 0.8
+mask = 1
+
+[BG MainFloor]
+type  = parallax
+spriteno = 1, 2
+start = -2,30
+delta = 0.78, 1
+mask = 0
+xscale = 1, 1.464
+yscalestart = 140
+yscaledelta =  0
+
+[BG stairs]
+type  = normal
+spriteno = 3, 0
+start = 0,0
+delta = 0.78, 1
+mask = 1
+
+[BG fondnoir]
+type = anim
+actionno = 200
+start = 0,0
+delta = 0.78, 1
+mask = 1
+
+[begin action 200]
+2,0,0,0,-1, ,S
+
+[BG cache]
+type  = normal
+spriteno = 1, 1
+start = 0,0
+delta = 0.78, 1
+
+[BG sol]
+type = normal
+spriteno = 2,8
+start = 0,55
+delta = 0.78, 1
+
+[BG piliers0]
+type = normal
+spriteno = 2,6
+start = 0,0
+delta = 0.50, 0.89
+mask = 1
+
+[BG piliers1]
+type = normal
+spriteno = 2,5
+start = 0,0
+delta = 0.57, 0.91
+mask = 1
+
+[BG piliers2]
+type = normal
+spriteno = 2,2
+start = 0,0
+delta = 0.64, 0.94
+mask = 1
+
+[BG piliers3]
+type = normal
+spriteno = 2,1
+start = 0,0
+delta = 0.71, .97
+mask = 1
+
+[BG facade]
+type = normal
+spriteno = 2,3
+start = 0,0
+delta = 0.78, 1
+mask = 1
+
+[BGCtrlDef Star1]
+CtrlID = 1
+looptime = 1000
+[BGCtrl 1.1]
+type = velset
+time = 0
+x = -4.1
+y = 4
+[BGCtrl 1.2]
+type = Posset
+time = 500
+y = 0
+x = 0
+
+[BG hdp0]
+type = normal
+spriteno = 6,0
+tile = 1,1
+trans = add
+[BG hdp]
+type = normal
+spriteno = 6,0
+tile = 1,1
+trans = sub
+layerno = 1
+
+
+www.sanctuarysoldiers.com
+Do not use without authorization.

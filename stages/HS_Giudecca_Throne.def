@@ -1,0 +1,195 @@
+;--------------------------------
+[Info]
+name = "Giudecca Throne"
+fullname = Giudecca Throne V1.1
+related chars = 
+
+gfx = HDP
+code = HDP
+revision = HDP
+
+releasedate = 27/09/09
+mugenversion = RC1
+notes = previously unreleased
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------
+
+[Camera]
+startx = 0
+starty = 0
+boundleft = -98
+boundright = 98
+boundhigh = -160
+boundlow = 0
+verticalfollow = 0.9
+floortension = 50
+tension = 60
+overdrawhigh = 0
+overdrawlow = 0
+cuthigh = 0
+cutlow = 0
+
+[PlayerInfo]
+p1startx = -70
+p1starty = 0
+p1facing = 1
+p2startx = 70
+p2starty = 0
+p2facing = -1
+leftbound  = -1000
+rightbound =  1000
+
+[Bound]
+screenleft = 15
+screenright = 15
+
+[StageInfo]
+zoffset = 200
+autoturn = 1
+resetBG = 1
+localcoord = 320, 240
+xscale = 1
+yscale = 1
+
+[Shadow]
+intensity = 0
+[Reflection]
+intensity = 70
+
+[Music]
+bgmusic = sound/HS_Giudecca_Throne.mp3
+bgvolume = 250
+[BGdef]
+spr = stages/HS_Giudecca_Throne.sff
+debugbg = 0
+
+[BG WallThrone]
+type = normal
+spriteno = 0,1
+delta = 0.92,0.92
+start = -258,-185
+[BG HighStairs]
+type = normal
+spriteno = 0,2
+delta = 0.94,0.94
+start = -268,-192
+[BG Voile]
+type = anim
+actionno = 77
+delta = 0.96,0.96
+start = -268,-197
+[begin action 77]
+7,0,0,0,30,,AS220D220
+7,1,0,0,20,,AS220D220
+7,2,0,0,30,,AS220D220
+7,1,0,0,20,,AS220D220
+7,0,0,0,30,,AS220D220
+7,1,0,0,20,,AS220D220
+7,2,0,0,30,,AS220D220
+7,1,0,0,20,,AS220D220
+7,0,0,0,40,,AS220D220
+7,1,0,0,10,,AS220D220
+7,2,0,0,10,,AS220D220
+7,3,0,0,10,,AS220D220
+7,4,0,0,9,,AS220D220
+7,5,0,0,9,,AS220D220
+7,6,0,0,8,,AS220D220
+7,7,0,0,7,,AS220D220
+7,8,0,0,6,,AS220D220
+7,9,0,0,5,,AS220D220
+7,10,0,0,5,,AS220D220
+7,11,0,0,5,,AS220D220
+7,10,0,0,5,,AS220D220
+7,9,0,0,5,,AS220D220
+7,8,0,0,6,,AS220D220
+7,7,0,0,7,,AS220D220
+7,6,0,0,8,,AS220D220
+7,5,0,0,8,,AS220D220
+7,4,0,0,8,,AS220D220
+7,3,0,0,8,,AS220D220
+7,2,0,0,8,,AS220D220
+7,1,0,0,8,,AS220D220
+[BG Curtains]
+type = normal
+spriteno = 0,4
+delta = 0.97,0.97
+start = -258,-197
+mask = 1
+[BG Walls]
+type = normal
+spriteno = 1,0
+delta = 0.98,0.98
+start = -258,-197
+mask = 1
+[BG Floor0]
+type = normal
+spriteno = 5,0
+delta = 1,0.98
+start = -257,-200
+mask = 1
+[BG Floor1]
+type = normal
+spriteno = 5,1
+delta = 1,0.98
+start = -257,-200
+mask = 1
+[BG Floor2]
+type = normal
+spriteno = 5,2
+delta = 1,0.98
+start = -257,-200
+mask = 1
+[BG Floor3]
+type = normal
+spriteno = 5,3
+delta = 1,0.98
+start = -257,-200
+mask = 1
+[BG Stairs]
+type = normal
+spriteno = 2,0
+delta = 1,0.98
+start = -258,-199
+mask = 1
+[BG DragonLeft]
+type = normal
+spriteno = 3,0
+delta = 1,0.98
+start = -258,-200
+mask = 1
+[BG DragonRight]
+type = normal
+spriteno = 3,1
+delta = 1,0.98
+start = -258,-200
+mask = 1
+[BG blocLeft]
+type = normal
+spriteno = 3,3
+delta = 1,0.98
+start = -258,-200
+mask = 1
+[BG blocRight]
+type = normal
+spriteno = 3,2
+delta = 1,0.98
+start = -258,-200
+mask = 1
+[BG hdp0]
+type = normal
+spriteno = 6,0
+tile = 1,1
+trans = add
+[BG hdp]
+type = normal
+spriteno = 6,0
+tile = 1,1
+trans = sub
+layerno = 1
+
+
+www.sanctuarysoldiers.com
+Do not use without authorization.
+;--------------------------------
